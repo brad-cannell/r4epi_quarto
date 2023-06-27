@@ -1,6 +1,8 @@
+<img align="left" src="img/r4epi_icon.png" alt="R4Epi hex logo" width="250" height="289">
+
 # R4Epi Quarto
 
-A repository for the Quarto version of R4Epi.
+A repository for the Quarto version of [R4Epi](www.r4epi.com).
 
 ## Useful websites:
 
@@ -54,3 +56,13 @@ quarto publish netlify
 ## Where to publish
 
 I've used Netlify in the past and have been happy with it. However, I'm not sure that it is necessary or efficient to add the extra layer of using Netlify in GitHub Pages will work just as well. Why introduce a third site into the mix if we don't have to? For now, I may just stick with GitHub Pages.
+
+## Textbook version Notes:
+- Major: physical copy editions
+- Minor: new chapters, deletion of chapters, chapter reordering.
+- 3rd level: significant edits to existing chapters
+- Version number doesn’t change with typo (I.e., spelling and grammar) corrections. 
+
+<br clear="left"/>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
