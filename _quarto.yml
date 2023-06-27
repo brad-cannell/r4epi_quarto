@@ -1,0 +1,72 @@
+project:
+  type: book
+  output-dir: _book
+
+# Book formatting types and options
+format:
+  html:
+    theme: 
+      - cosmo
+      - r4epi_styles.scss
+  pdf:
+    documentclass: scrreprt
+
+# Set editor to default to source view instead of visual view
+editor: source
+
+# To make sure that R, Python, and Julia code is only executed locally, 
+# configure your project to use Quarto’s freeze feature by adding this to your 
+# _quarto.yml. (https://quarto.org/docs/publishing/netlify.html)
+execute:
+  freeze: auto
+
+# Book structure and options
+book:
+  # Basic metadata
+  title: "R 4 Epidemiology"
+  date: today
+  favicon: img/r4epi_favicon.png
+  repo-url: https://github.com/brad-cannell/r4epi_quarto
+  repo-actions: [edit]
+  page-footer: 
+    left: |
+      R for Epidemiology
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
+  # Book options
+  search: true
+  downloads: [pdf] # https://quarto.org/docs/books/book-output.html#sidebar-tools
+  sharing: [twitter, facebook, linkedin]
+  page-navigation: true # Haven't played with this much yet. https://quarto.org/docs/books/book-structure.html#page-navigation
+
+  # Chapter sturcture
+  # https://quarto.org/docs/books/book-structure.html
+  chapters:
+    # Index is the landing page for the HTML version of the book.
+    - index.qmd
+    
+    # Parts can be qmd files (if you want explanitory text) or characater strings
+    # if you only want a part title. The separate qmd document method does not 
+    # look good in pdf format.
+    - part: "Getting Started"
+      # Make sure to type "chapters" again under each part.
+      # chapters: 
+      # - book_options.qmd
+      # - other.qmd
+      
+    # - part: "Coding Tools and Best Practices"
+    #   chapters: 
+    #     - rmd_documents.rmd
+    
+    # Built-in chapters
+    # - part: "Built-in Chapters"
+    #   chapters:
+    #     - references.qmd
+  
+  # We can also add appendicies and track them separately from other book parts.  
+  # appendices: 
+  #   - appendix_example.qmd
+
+bibliography: references.bib
+

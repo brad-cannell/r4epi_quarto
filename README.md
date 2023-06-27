@@ -41,3 +41,16 @@ quarto::quarto_render(output_format = "all")
 quarto publish gh-pages
 ```
 ````
+
+## Publishing to Netlify
+
+[This article is great](https://quarto.org/docs/publishing/netlify.html). After committing, and making sure you are on the main branch, type `quarto publish netlify` in the terminal.
+
+````
+```{bash}
+quarto publish netlify
+```
+````
+## Where to publish
+
+I've used Netlify in the past and have been happy with it. However, I'm not sure that it is necessary or efficient to add the extra layer of using Netlify in GitHub Pages will work just as well. Why introduce a third site into the mix if we don't have to? For now, I may just stick with GitHub Pages.
