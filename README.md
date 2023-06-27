@@ -13,7 +13,7 @@ A repository for the Quarto version of R4Epi.
 We can render the files by clicking the Render button in RStudio. To render the HTML and PDF files at the same time, type `quarto render` into the terminal. 
 
 ````
-```{{bash}}
+```{bash}
 quarto render
 ```
 ````
@@ -25,7 +25,7 @@ You can also render Quarto files with a native R code chunk.
 - The output_format argument: Target output format (defaults to "html"). The option "all" will render all formats defined within the file or project.
 
 ````
-```{{r}}
+```{r}
 #| Render with R
 #| eval: false
 quarto::quarto_render(output_format = "all")
@@ -37,7 +37,7 @@ quarto::quarto_render(output_format = "all")
 [This article is great](https://quarto.org/docs/publishing/github-pages.html). After committing, and making sure you are on the main branch, type `quarto publish gh-pages` in the terminal.
 
 ````
-```{{bash}}
+```{bash}
 quarto publish gh-pages
 ```
 ````
