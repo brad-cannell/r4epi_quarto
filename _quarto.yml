@@ -32,7 +32,7 @@ book:
   favicon: img/r4epi_favicon.png
   site-url: https://brad-cannell.github.io/r4epi_quarto/
   repo-url: https://github.com/brad-cannell/r4epi_quarto
-  repo-actions: [edit]
+  repo-actions: [edit, issue]
   page-footer: 
     left: |
       R for Epidemiology
@@ -56,7 +56,7 @@ book:
     # Parts can be qmd files (if you want explanitory text) or characater strings
     # if you only want a part title. The separate qmd document method does not 
     # look good in pdf format.
-    - part: "Getting Started"
+    # - part: "Getting Started"
       # Make sure to type "chapters" again under each part.
       # chapters: 
       # - book_options.qmd
