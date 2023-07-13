@@ -10,6 +10,10 @@ format:
       - r4epi_styles.scss
   pdf:
     documentclass: scrreprt
+    
+# Bibliography and citation options
+bibliography: references.bib
+csl: ama.csl
 
 # Set editor to default to source view instead of visual view
 editor: source
@@ -26,6 +30,7 @@ book:
   title: "R 4 Epidemiology"
   date: today
   favicon: img/r4epi_favicon.png
+  site-url: https://brad-cannell.github.io/r4epi_quarto/
   repo-url: https://github.com/brad-cannell/r4epi_quarto
   repo-actions: [edit]
   page-footer: 
@@ -69,6 +74,3 @@ book:
   # We can also add appendicies and track them separately from other book parts.  
   # appendices: 
   #   - appendix_example.qmd
-
-bibliography: references.bib
-
