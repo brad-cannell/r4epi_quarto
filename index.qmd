@@ -1,7 +1,7 @@
 # Welcome {.unnumbered}
 
 <!-- R4Epi Hex Sticker -->
-<img align="right" src="img/r4epi_icon.png" alt="R4Epi hex logo" width="208" height="240" style="margin: 0 1em 0 1em">
+<img align="right" src="r4epi_icon.png" alt="R4Epi hex logo" width="208" height="240" style="margin: 0 1em 0 1em">
 
 Welcome to R for Epidemiology! 
 

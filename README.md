@@ -1,4 +1,4 @@
-<img align="left" src="img/r4epi_icon.png" alt="R4Epi hex logo" width="250" height="289">
+<img align="left" src="r4epi_icon.png" alt="R4Epi hex logo" width="250" height="289">
 
 # R4Epi Quarto
 

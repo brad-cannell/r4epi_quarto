@@ -29,7 +29,7 @@ book:
   # Basic metadata
   title: "R 4 Epidemiology"
   date: today
-  favicon: img/r4epi_favicon.png
+  favicon: r4epi_favicon.png
   site-url: https://brad-cannell.github.io/r4epi_quarto/
   repo-url: https://github.com/brad-cannell/r4epi_quarto
   repo-actions: [edit, issue]
@@ -50,8 +50,8 @@ book:
   chapters:
     # Index is the landing page for the HTML version of the book.
     - index.qmd
-    - introduction.qmd
-    - contributing.qmd
+    - chapters/introduction.qmd
+    - chapters/contributing/contributing.qmd
     
     # Parts can be qmd files (if you want explanitory text) or characater strings
     # if you only want a part title. The separate qmd document method does not 
