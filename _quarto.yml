@@ -71,6 +71,6 @@ book:
     #   chapters:
     #     - references.qmd
   
-  # We can also add appendicies and track them separately from other book parts.  
-  # appendices:
-    # - glossary.qmd
+  # We can also add appendices and track them separately from other book parts.  
+  appendices:
+    - chapters/appendices/glossary.qmd

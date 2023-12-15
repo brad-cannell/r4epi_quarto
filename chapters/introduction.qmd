@@ -6,21 +6,21 @@ We're going to start the introduction by writing down some basic goals that unde
 
 The goals of this book are:   
 
-1. To teach you how to use R and RStudio as tools for applied epidemiology. Our goal is not to teach you to be a computer scientist or an advanced R programmer. Therefore, some readers who are experienced programmers may catch some technical inaccuracies regarding what we consider to be the fine points of what R is doing "under the hood."    
+1. **To teach you how to use R and RStudio as tools for applied epidemiology**.^[In this case, "tools for applied epidemiology" means (1) understanding epidemiologic concepts; and (2) completing and interpreting epidemiologic analyses.] Our goal is not to teach you to be a computer scientist or an advanced R programmer. Therefore, some readers who are experienced programmers may catch some technical inaccuracies regarding what we consider to be the fine points of what R is doing "under the hood."    
 
-2. To make this writing as accessible and practically useful as possible without stripping out all of the complexity that makes doing epidemiology in real life a challenge. In other words, We're going to try to give you all the tools you need to _do_ epidemiology in "real world" conditions (as opposed to ideal conditions) without providing a whole bunch of extraneous (often theoretical) stuff that detracts from _doing_. Having said that, we will strive to add links to the other (often theoretical) stuff for readers who are interested.
+2. **To make this writing as accessible and practically useful as possible without stripping out all of the complexity that makes doing epidemiology in real life a challenge**. In other words, We're going to try to give you all the tools you need to _do_ epidemiology in "real world" conditions (as opposed to ideal conditions) without providing a whole bunch of extraneous (often theoretical) stuff that detracts from _doing_. Having said that, we will strive to add links to the other (often theoretical) stuff for readers who are interested.
 
-3. To teach you to accomplish common _tasks_, rather than teach you to use functions or families of functions. In many R courses and texts, there is a focus on learning all the things a function, or set of related functions, can do. It's then up to you, the reader, to sift through all of these capabilities and decided which, if any, of the things that _can_ be done will accomplish the tasks that you are _actually trying_ to accomplish. Instead, we will strive to start with the end in mind. What is the task we are actually trying to accomplish? What are some functions/methods we could use to accomplish that task? What are the strengths and limitations of each?
+3. **To teach you to accomplish common _tasks_**, rather than teach you to use functions or families of functions. In many R courses and texts, there is a focus on learning all the things a function, or set of related functions, can do. It's then up to you, the reader, to sift through all of these capabilities and decided which, if any, of the things that _can_ be done will accomplish the tasks that you are _actually trying_ to accomplish. Instead, we will strive to start with the end in mind. What is the task we are actually trying to accomplish? What are some functions/methods we could use to accomplish that task? What are the strengths and limitations of each?
 
-4. To start each concept by showing you the end result and then deconstruct how we arrived at that result, where possible. We find that it is easier for many people to understand new concepts when learning them as a component of a final product.
+4. **To start each concept by showing you the end result** and then deconstruct how we arrived at that result, where possible. We find that it is easier for many people to understand new concepts when learning them as a component of a final product.
 
-5. To learn concepts with data instead of (or alongside) mathematical formulas and text descriptions, where possible. We find that it is easier for many people to understand new concepts by seeing them in action.
+5. **To learn concepts with data** instead of (or alongside) mathematical formulas and text descriptions, where possible. We find that it is easier for many people to understand new concepts by seeing them in action.
 
 ## Text conventions used in this book {.unnumbered}
 
-* **Bold** text is used to highlight important terms, file names, and file extensions.
-
-* `Highlighted inline code` is used to emphasize small sections of R code and program elements such as variable or function names.
+- We will hyperlink many keywords or phrases to their [glossary](appendices/glossary.qmd) entry.
+- Additionally, we may use **bold** face for a word or phrase that we want to call attention to, but it is not necessarily a keyword or phrase that we want to define in the glossary.
+- `Highlighted inline code` is used to emphasize small sections of R code and program elements such as variable or function names.
 
 ## Other reading {.unnumbered}
 

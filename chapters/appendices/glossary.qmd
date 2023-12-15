@@ -1,4 +1,4 @@
-# Glossary
+# Glossary {#sec-glossary}
 
 **Console**. Coming soon.
 
