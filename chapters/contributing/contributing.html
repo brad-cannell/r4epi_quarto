@@ -251,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="unnumbered anchored" data-anchor-id="typos">Typos</h2>
 <p>The easiest way for you to contribute is to help us clean up the little typos and grammatical errors that inevitably sneak into the text.</p>
 <p>If you spot a typo, you can offer a correction directly in GitHub. You will first need to create a free GitHub account: <a href="https://github.com/join">sign-up at github.com</a>. Later in the book, we will cover using GitHub in greater depth (See <a href="../using_git_github/using_git_github.html"><span>Chapter&nbsp;2</span></a>). Here, we’re just going to walk you through how to fix a typo without much explanation of how GitHub works.</p>
-<p>Let’s say you spot a typoo while reading along.</p>
+<p>Let’s say you spot a typo while reading along.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="typo_on_screen.png" class="img-fluid" width="787"></p>
@@ -263,7 +263,6 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="edit_button.png" class="img-fluid" width="156"></p>
 </div>
 </div>
-<p>🔴 Left off here. - I need to change the screenshots and the description of the process because it changes a little with Quarto. Open Safari to update the screenshots.</p>
 <p>The first time you click the icon, you will be taken to the R4Epi repository on GitHub and asked to fork it. For our purposes, you can think of a GitHub repository as being similar to a shared folder on Dropbox or Google Drive.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -287,54 +286,53 @@ Note
 <p>After you fork the repository, you will see a text editor on your screen.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="text_editor.png" class="img-fluid" width="1263"></p>
+<p><img src="text_editor.png" class="img-fluid" width="1373"></p>
 </div>
 </div>
-<p>The text editor will display the contents of the file used to make the chapter you were looking at when you clicked the <code>edit</code> button. In this example, it was a file named <code>contributing.qmd</code>. The <code>.qmd</code> file extension means that the file is a Quarto file. We will learn more about Quarto files in <a href="../quarto_files/quarto_files.html"><span>Chapter&nbsp;1</span></a>, but for now just know that Quarto files can be used to create web pages and other documents that contain a mix of R code, text, and images. You may not understand the code you see in the text editor yet, but you will probably be able to skim through the text and find the typo you want to fix.</p>
-<p>Next, scroll down through the text until you find the typo and fix it.</p>
+<p>The text editor will display the contents of the file used to make the chapter you were looking at when you clicked the <code>edit</code> button. In this example, it was a file named <code>contributing.qmd</code>. The <code>.qmd</code> file extension means that the file is a Quarto file. We will learn more about Quarto files in <a href="../quarto_files/quarto_files.html"><span>Chapter&nbsp;1</span></a>, but for now just know that Quarto files can be used to create web pages and other documents that contain a mix of R code, text, and images.</p>
+<p>Next, scroll down through the text until you find the typo and fix it. In this case, line 11 contains the word “typoo”. To fix it, you just need to click in the editor window and begin typing. In this case, you would click next to the word “typoo” and delete the second “o”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="fix_typo.png" class="img-fluid" width="1268"></p>
+<p><img src="fix_typo.png" class="img-fluid" width="1378"></p>
 </div>
 </div>
-<p>Now, the only thing left to do is propose your typo fix to the authors. To do so, simply scroll to the bottom of the same screen where you made the edits to the file. There, you will see a <code>Propose changes</code> form box you can fill out. In the first line, type a brief (i.e., 72 characters or less) summary of the change you made. There is also a box to add a more detailed description of what you did, but you shouldn’t need to use it for a simple typo fix.</p>
+<p>Now, the only thing left to do is propose your typo fix to the authors. To do so, click the green <code>Commit changes...</code> button on the right side of the screen above the text editor (surrounded with a red box in the screenshot above). When you click it, a new <code>Propose changes</code> box will appear on your screen. Type a brief (i.e., 72 characters or less) summary of the change you made in the <code>Commit message</code> box. There is also an <code>Extended description</code> box where you can add a more detailed description of what you did. In the screenshot below, shows an example commit message and extended description that will make it easy for the author to quickly figure out exactly what changes are being proposed.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="propose_changes.png" class="img-fluid" width="1259"></p>
+<p><img src="propose_changes.png" class="img-fluid" width="505"></p>
 </div>
 </div>
 <p>Next, click the <code>Propose changes</code> button. That will take you to another screen where you will be able to create a pull request. This screen is kind of busy, but try not to let it overwhelm you.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="create_pull_request_1.png" class="img-fluid" width="1232"></p>
+<p><img src="create_pull_request_1.png" class="img-fluid" width="1239"></p>
 </div>
 </div>
-<p>For now, we will focus on the three different sections of the screen that are highlighted with a red outline. We will start at the bottom and work our way up. The red box that is closest to the bottom of the screenshot shows us that the change we made was on line 93. We removed the word “typoo” (highlighted in red) and added the word “typo” (highlighted in green). The red box in the middle of the screenshot shows us the brief description we wrote for our proposed change – “Fixed a typo in index.Rmd”. Finally, the red box closest to the top of the screenshot is surrounding the <code>Create pull request</code> button. Let’s go ahead and click it now.</p>
+<p>For now, we will focus on the three different sections of the screen that are highlighted with a red outline. We will start at the bottom and work our way up. The red box that is closest to the bottom of the screenshot shows us that the change that made was on line 11. The word “typoo” (highlighted in red) was replaced with the word “typo” (highlighted in green). The red box in the middle of the screenshot shows us the brief description that was written for our proposed change – “Fix a typo in contributing.qmd”. Finally, the red box closest to the top of the screenshot is surrounding the <code>Create pull request</code> button. You will click it to move on with your pull request.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="create_pull_request_2.png" class="img-fluid" width="1268"></p>
+<p><img src="create_pull_request_2.png" class="img-fluid" width="1250"></p>
 </div>
 </div>
-<p>After doing so, we will get one final chance to amend the description of our proposed changes. We don’t want to change our description, so let’s go ahead and click <code>Create pull request</code> one more time. Our job is done! It is now up to the authors to review the changes we’ve proposed and “pull” them into the file in their repository.</p>
+<p>After doing so, you will get one final chance to amend the description of your proposed changes. If you are happy with the commit message and description, then click the <code>Create pull request</code> button one more time. At this point, your job is done! It is now up to the authors to review the changes you’ve proposed and “pull” them into the file in their repository.</p>
 <p>In case you are curious, here is what the process looks like on the authors’ end. First, when we open the R4Epi repository page on GitHub, we will see that there is a new pull request.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="create_pull_request_3.png" class="img-fluid" width="632"></p>
+<p><img src="create_pull_request_3.png" class="img-fluid" width="607"></p>
 </div>
 </div>
 <p>When we open the pull request, we can see the proposed changes to the file.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="create_pull_request_4.png" class="img-fluid" width="1245"></p>
+<p><img src="create_pull_request_4.png" class="img-fluid" width="1588"></p>
 </div>
 </div>
 <p>Then, all we have to do is click the <code>Merge pull request button</code> and the fixed file is “pulled in” to replace the file with the typo.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="create_pull_request_5.png" class="img-fluid" width="946"></p>
+<p><img src="create_pull_request_5.png" class="img-fluid" width="932"></p>
 </div>
 </div>
-<p>🔴 Left off here. Moving over content from index.Rmd.</p>
 
 
 </section>
