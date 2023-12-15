@@ -12,6 +12,10 @@
 
   * **Returns:** Instead of saying, “the `seq()` function _gives us_ a sequence of numbers…” we could say, “the `seq()` function _returns_ us a sequence of numbers…” In programming lingo, functions _return_ one or more results.  
   
+[Repository]{#glossary-repository} 
+
+:  GitHub's documentation says "a repository contains all of your code, your files, and each file's revision history. You can discuss and manage your work within the repository."@GitHub2023-tt A repository can exist _locally_ as a set of files on your computer. A repository can also exist _remotely_ as a set of files on a sever somewhere, for example, on GitHub.
+  
 **Global environment**. Coming soon.
 
 **Objects**. Coming soon.

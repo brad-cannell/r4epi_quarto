@@ -57,19 +57,22 @@ book:
     # if you only want a part title. The separate qmd document method does not 
     # look good in pdf format.
     # - part: "Getting Started"
-      # Make sure to type "chapters" again under each part.
-      # chapters: 
-      # - book_options.qmd
-      # - other.qmd
+    # Make sure to type "chapters" again under each part.
+      # chapters:
+      #   - book_options.qmd
+      #   - other.qmd
       
-    # - part: "Coding Tools and Best Practices"
-    #   chapters: 
-    #     - rmd_documents.rmd
+    - part: "Coding Tools and Best Practices"
+      chapters:
+        - chapters/quarto_files/quarto_files.qmd
+        
+    - part: "Collaboration"
+      chapters:
+        - chapters/using_git_github/using_git_github.qmd
     
-    # Built-in chapters
-    # - part: "Built-in Chapters"
-    #   chapters:
-    #     - references.qmd
+    - part: "References"
+      chapters:
+        - references.qmd
   
   # We can also add appendices and track them separately from other book parts.  
   appendices:
