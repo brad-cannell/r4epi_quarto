@@ -18,6 +18,10 @@
   
 **Global environment**. Coming soon.
 
+[Issue (GitHub)]{#glossary-issue}
+
+:  GitHub's documentation says issues are "items you can create in a repository to plan, discuss and track work. Issues are simple to create and flexible to suit a variety of scenarios. You can use issues to track work, give or receive feedback, collaborate on ideas or tasks, and efficiently communicate with others."@GitHub2024-im
+
 **Objects**. Coming soon.
 
 **R**. R is an integrated suite of software facilities for data manipulation, calculation and graphical display. R is very much a vehicle for newly developing methods of interactive data analysis. It has developed rapidly and has been extended by a large collection of packages. However, most programs written in R are essentially ephemeral, written for a single piece of data analysis. @R_Development_Core_Team2020-sj

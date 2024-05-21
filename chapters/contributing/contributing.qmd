@@ -116,3 +116,22 @@ Then, all we have to do is click the `Merge pull request button` and the fixed f
 
 knitr::include_graphics("create_pull_request_5.png")
 ```
+
+## Issues {.unnumbered}
+
+There may be times when you see a problem that you don't know how to fix, but you still want to make the authors aware of. In that case, you can create an [issue](../appendices/glossary.qmd#glossary-issue) in the R4Epi repository. To do so, navigate to the issue tracker using this link: https://github.com/brad-cannell/r4epi/issues. 
+
+```{r}
+#| label: contributing_issues
+#| echo: false
+
+knitr::include_graphics("issue_tracker.png")
+```
+
+Once there, you can check to see if someone has already raised the issue you are concerned about. If not, you can click the green "New issue" button to raise it yourself.
+
+Please note that R4Epi uses a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this book, you agree to abide by its terms.
+
+## License Information {.unnumbered}
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This book was created by Brad Cannell and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.

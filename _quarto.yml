@@ -52,6 +52,7 @@ book:
     - index.qmd
     - chapters/introduction.qmd
     - chapters/contributing/contributing.qmd
+    - chapters/about_the_authors/about_the_authors.qmd
     
     # Parts can be qmd files (if you want explanitory text) or characater strings
     # if you only want a part title. The separate qmd document method does not 
