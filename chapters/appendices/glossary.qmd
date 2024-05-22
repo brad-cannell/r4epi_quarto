@@ -12,10 +12,6 @@
 
   * **Returns:** Instead of saying, “the `seq()` function _gives us_ a sequence of numbers…” we could say, “the `seq()` function _returns_ us a sequence of numbers…” In programming lingo, functions _return_ one or more results.  
   
-[Repository]{#glossary-repository} 
-
-:  GitHub's documentation says "a repository contains all of your code, your files, and each file's revision history. You can discuss and manage your work within the repository."@GitHub2023-tt A repository can exist _locally_ as a set of files on your computer. A repository can also exist _remotely_ as a set of files on a sever somewhere, for example, on GitHub.
-  
 **Global environment**. Coming soon.
 
 [Issue (GitHub)]{#glossary-issue}
@@ -24,8 +20,14 @@
 
 **Objects**. Coming soon.
 
-**R**. R is an integrated suite of software facilities for data manipulation, calculation and graphical display. R is very much a vehicle for newly developing methods of interactive data analysis. It has developed rapidly and has been extended by a large collection of packages. However, most programs written in R are essentially ephemeral, written for a single piece of data analysis. @R_Development_Core_Team2020-sj
+[R]{#glossary-r} 
 
-**R markdown documents**. R markdown documents are text files that can be used to clean and analyze your data interactively as well as share your final results in many different formats (e.g., Microsoft Word, PDF, and even websites). R markdown documents weave together R code, narrative text, and multimedia content together into a polished final product. @RStudio2020-yx
+:  R's documentation says "R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues."@R_Core_Team2024-sk R is open source, and you can download it for free from The Comprehensive R Archive Network (CRAN) at https://cran.r-project.org/.
+  
+[Repository]{#glossary-repository} 
 
-**RStudio**. RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. RStudio is available in open source and commercial editions and runs on the desktop (Windows, Mac, and Linux) or in a browser connected to RStudio Server or RStudio Server Pro (Debian/Ubuntu, Red Hat/CentOS, and SUSE Linux). @RStudio2020-fe
+:  GitHub's documentation says "a repository contains all of your code, your files, and each file's revision history. You can discuss and manage your work within the repository."@GitHub2023-tt A repository can exist _locally_ as a set of files on your computer. A repository can also exist _remotely_ as a set of files on a sever somewhere, for example, on GitHub.
+
+[RStudio]{#glossary-rstudio} 
+
+:  RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. RStudio is available in open source and commercial editions and runs on the desktop (Windows, Mac, and Linux) or in a browser connected to RStudio Server or RStudio Server Pro (Debian/Ubuntu, Red Hat/CentOS, and SUSE Linux). @RStudio2020-fe

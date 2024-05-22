@@ -63,6 +63,10 @@ book:
       #   - book_options.qmd
       #   - other.qmd
       
+    - part: "Getting Started"
+      chapters: 
+        - chapters/installing_r_and_rstudio/installing_r_and_rstudio.qmd
+      
     - part: "Coding Tools and Best Practices"
       chapters:
         - chapters/quarto_files/quarto_files.qmd
