@@ -66,6 +66,7 @@ book:
     - part: "Getting Started"
       chapters: 
         - chapters/installing_r_and_rstudio/installing_r_and_rstudio.qmd
+        - chapters/what_is_r/what_is_r.qmd
       
     - part: "Coding Tools and Best Practices"
       chapters:
