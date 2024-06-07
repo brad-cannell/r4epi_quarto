@@ -67,6 +67,11 @@ book:
       chapters: 
         - chapters/installing_r_and_rstudio/installing_r_and_rstudio.qmd
         - chapters/what_is_r/what_is_r.qmd
+        - chapters/navigating_rstudio/navigating_rstudio.qmd
+        
+     
+
+        
       
     - part: "Coding Tools and Best Practices"
       chapters:
