@@ -320,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>It’s called the Console/Terminal/Jobs pane because it has three tabs you can click on: Console, Terminal, and Jobs. However, we will mostly refer to it as the Console pane and we will mostly ignore the Terminal and Jobs tabs. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we discuss anytime soon, and I want to keep things as simple as possible.</p>
+<p>It’s called the Console/Terminal/Jobs pane because it has three tabs you can click on: Console, Terminal, and Jobs. However, we will mostly refer to it as the Console pane and we will mostly ignore the Terminal and Jobs tabs. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we discuss anytime soon, and we want to keep things as simple as possible.</p>
 <p>The <strong>console</strong> is the most basic way to interact with R. You can type a command to R into the console prompt (the prompt looks like “&gt;”) and R will respond to what you type. For example, below I’ve typed “1 plus 1,” hit enter, and the R console returned the sum of the numbers 1 and 1. @ref(fig:one-plus-one)</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -344,11 +344,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>In the screenshot above we see a couple new things demonstrated. @ref(fig:seq-function)</p>
-<p>First, as promised, we have more than one line of results (or output). The first line of results starts with a 1 in brackets (i.e., [1]), which indicates that this line of results starts with the first result. In this case the first result is the number 2. The second line of results starts with a 29 in brackets (i.e., [29]), which indicates that this line of results starts with the twenty-ninth result. In this case the twenty-ninth result is the number 58. If you count the numbers in the first line, there should be 28 – results 1 through 28. I also want to make it clear that “1” and “29” are NOT results themselves. They are just helping us count the number of results per line.</p>
+<p>First, as promised, we have more than one line of results (or output). The first line of results starts with a 1 in brackets (i.e., [1]), which indicates that this line of results starts with the first result. In this case the first result is the number 2. The second line of results starts with a 29 in brackets (i.e., [29]), which indicates that this line of results starts with the twenty-ninth result. In this case the twenty-ninth result is the number 58. If you count the numbers in the first line, there should be 28 – results 1 through 28.We also want to make it clear that “1” and “29” are NOT results themselves. They are just helping us count the number of results per line.</p>
 <p>The second new thing here that you may have noticed is our use of a <strong>function</strong>. Functions are a <strong>BIG DEAL</strong> in R. So much so that R is called a <em>functional language</em>. You don’t really need to know all the details of what that means; however, you should know that, in general, everything you <em>do</em> in R you will <em>do</em> with a function. By contrast, everything you <em>create</em> in R will be an <em>object</em>. If you wanted to make an analogy between the R language and the English language, functions are verbs – they <em>do</em> things – and objects are nouns – they <em>are</em> things. This may be confusing right now. Don’t worry. It will become clearer soon.</p>
 <p>Most functions in R begin with the function name followed by parentheses. For example, <code>seq()</code>, <code>sum()</code>, and <code>mean()</code>.</p>
 <p><em>Question</em>: What is the name of the function we used in the example above?</p>
-<p>It’s the <code>seq()</code> function – short for sequence. Inside the function, you may notice that there are three pairs of words, equal symbols, and numbers that are separated by commas. They are, <code>from = 2</code>, <code>to = 100</code>, and <code>by = 2</code>. In this case, <code>from</code>, <code>to</code>, and <code>by</code> are all <strong>arguments</strong> to the <code>seq()</code> function. I don’t know why they are called arguments, but as far as we are concerned, they just are. We will learn more about functions and arguments later, but for now just know that arguments <em>give functions the information they need to give us the result we want</em>.</p>
+<p>It’s the <code>seq()</code> function – short for sequence. Inside the function, you may notice that there are three pairs of words, equal symbols, and numbers that are separated by commas. They are, <code>from = 2</code>, <code>to = 100</code>, and <code>by = 2</code>. In this case, <code>from</code>, <code>to</code>, and <code>by</code> are all <strong>arguments</strong> to the <code>seq()</code> function.We don’t know why they are called arguments, but as far as we are concerned, they just are. We will learn more about functions and arguments later, but for now just know that arguments <em>give functions the information they need to give us the result we want</em>.</p>
 <p>In this case, the <code>seq()</code> function gives us a sequence of numbers, but we have to give it information about where that sequence should start, where it should end, and how many steps should be in the middle. Here the sequence begins with the value we gave to the <code>from</code> argument (i.e., 2), ends with the value we gave to the <code>to</code> argument (i.e., 100), and increases at each step by the number we gave to the <code>by</code> argument (i.e., 2). So, 2, 4, 6, 8 … 100.</p>
 <p>While it’s convenient, let’s also learn some programming terminology:</p>
 <ul>
@@ -356,13 +356,23 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Pass:</strong> In programming lingo, you <em>pass</em> a value to a function argument. For example, in the function call <code>seq(from = 2, to = 100, by = 2)</code> we could say that we passed a value of 2 to the <code>from</code> argument, we passed a value of 100 to the <code>to</code> argument, and we passed a value of 2 to the <code>by</code> argument.</p></li>
 <li><p><strong>Returns:</strong> Instead of saying, “the <code>seq()</code> function <em>gives us</em> a sequence of numbers…” we could say, “the <code>seq()</code> function <em>returns</em> a sequence of numbers…” In programming lingo, functions <em>return</em> one or more results.</p></li>
 </ul>
-<p class="note">
-🗒<strong>Side Note:</strong> The <code>seq()</code> function isn’t particularly important or noteworthy. I essentially chose it at random to illustrate some key points. However, arguments, passing values, and return values are extremely important concepts and we will return to them many times.
-</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>🗒<strong>Side Note:</strong> The <code>seq()</code> function isn’t particularly important or noteworthy.We essentially chose it at random to illustrate some key points. However, arguments, passing values, and return values are extremely important concepts and we will return to them many times.</p>
+</div>
+</div>
 </section>
 <section id="the-environment-pane" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="the-environment-pane"><span class="header-section-number">3.2</span> The environment pane</h2>
-<p>The second pane we are going to talk about is the Environment/History/Connections pane. @ref(fig:environment-pane) However, we will mostly refer to it as the Environment pane and we will mostly ignore the History and Connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and I want to keep things as simple as possible.</p>
+<p>The second pane we are going to talk about is the Environment/History/Connections pane. @ref(fig:environment-pane) However, we will mostly refer to it as the Environment pane and we will mostly ignore the History and Connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -385,15 +395,35 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Here we see that we created a new object called <code>x</code>, which now appears in our <strong>Global Environment</strong>. @ref(fig:environment-pane2) This gives us another great opportunity to discuss some new concepts.</p>
-<p>First, we created the <code>x</code> object in the Console by <em>assigning</em> the value 2 to the letter x. We did this by typing “x” followed by a less than symbol (&lt;), a dash symbol (-), and the number 2. R is kind of unique in this way. I have never seen another programming language (although I’m sure they are out there) that uses <code>&lt;-</code> to assign values to variables. By the way, <code>&lt;-</code> is called the assignment operator (or assignment arrow), and ”assign” here means “make x contain 2” or “put 2 inside x.”</p>
+<p>First, we created the <code>x</code> object in the Console by <em>assigning</em> the value 2 to the letter x. We did this by typing “x” followed by a less than symbol (&lt;), a dash symbol (-), and the number 2. R is kind of unique in this way.We have never seen another programming language (although I’m sure they are out there) that uses <code>&lt;-</code> to assign values to variables. By the way, <code>&lt;-</code> is called the assignment operator (or assignment arrow), and ”assign” here means “make x contain 2” or “put 2 inside x.”</p>
 <p>In many other languages you would write that as <code>x = 2</code>. But, for whatever reason, in R it is <code>&lt;-</code>. Unfortunately, <code>&lt;-</code> is more awkward to type than <code>=</code>. Fortunately, RStudio gives us a keyboard shortcut to make it easier. To type the assignment operator in RStudio, just hold down Option + - (dash key) on a Mac or Alt + - (dash key) on a PC and RStudio will insert <code>&lt;-</code> complete with spaces on either side of the arrow. This may still seem awkward at first, but you will get used to it.</p>
-<p class="note">
-🗒<strong>Side Note:</strong> A note about using the letter “x”: By convention, the letter “x” is a widely used variable name. You will see it used a lot in example documents and online. However, there is nothing special about the letter x. We could have just as easily used any other letter (<code>a &lt;- 2</code>), word (<code>variable &lt;- 2</code>), or descriptive name (<code>my_favorite_number &lt;- 2</code>) that is allowed by R.
-</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>🗒<strong>Side Note:</strong> A note about using the letter “x”: By convention, the letter “x” is a widely used variable name. You will see it used a lot in example documents and online. However, there is nothing special about the letter x. We could have just as easily used any other letter (<code>a &lt;- 2</code>), word (<code>variable &lt;- 2</code>), or descriptive name (<code>my_favorite_number &lt;- 2</code>) that is allowed by R.</p>
+</div>
+</div>
 <p>Second, you can see that our Global Environment now includes the object <code>x</code>, which has a value of 2. In this case, we would say that <code>x</code> is a <strong>numeric vector</strong> of length 1 (i.e., it has one value stored in it). We will talk more about vectors and vector types soon. For now, just notice that objects that you can manipulate or analyze in R will appear in your Global Environment.</p>
-<p class="warning">
-⚠️<strong>Warning:</strong> R is a <strong>case sensitive</strong> language. That means that uppercase x (X) and lowercase x (x) are different things to R. So, if you assign 2 to lower case x (<code>x &lt;- 2</code>). And then later ask R to tell what number you stored in uppercase X, you will get an error (<code>Error: object 'X' not found</code>).
-</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>⚠️<strong>Warning:</strong> R is a <strong>case sensitive</strong> language. That means that uppercase x (X) and lowercase x (x) are different things to R. So, if you assign 2 to lower case x (<code>x &lt;- 2</code>). And then later ask R to tell what number you stored in uppercase X, you will get an error (<code>Error: object 'X' not found</code>).</p>
+</div>
+</div>
 </section>
 <section id="the-files-pane" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="the-files-pane"><span class="header-section-number">3.3</span> The files pane</h2>
@@ -419,7 +449,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>For example, in the screenshot above @ref(fig:help) we typed the <code>seq</code> into the search bar. The help pane then shows us a page of documentation for the <code>seq()</code> function. The documentation includes a brief description of what the function does, outlines all the arguments the <code>seq()</code> function recognizes, and, if you scroll down, gives examples of using the <code>seq()</code> function. Admittedly, this help documentation can seem a little like reading Greek (assuming you don’t speak Greek) at first. But, you will get more comfortable using it with practice. I hated the help documentation when I was learning R. Now, I use it <em>all the time</em>.</p>
+<p>For example, in the screenshot above @ref(fig:help) we typed the <code>seq</code> into the search bar. The help pane then shows us a page of documentation for the <code>seq()</code> function. The documentation includes a brief description of what the function does, outlines all the arguments the <code>seq()</code> function recognizes, and, if you scroll down, gives examples of using the <code>seq()</code> function. Admittedly, this help documentation can seem a little like reading Greek (assuming you don’t speak Greek) at first. But, you will get more comfortable using it with practice.We hated the help documentation when we were learning R. Now,we use it <em>all the time</em>.</p>
 </section>
 <section id="the-source-pane" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="the-source-pane"><span class="header-section-number">3.4</span> The source pane</h2>
@@ -434,7 +464,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>If you click any of these options, a new pane will appear. I will arbitrarily pick the first option – R Script.</p>
+<p>If you click any of these options, a new pane will appear.We will arbitrarily pick the first option – R Script.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -445,7 +475,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>When I do, a new pane appears. It’s called the <strong>source pane</strong>. In this case, the source pane contains an untitled R Script. We won’t get into the details now because I don’t want to overwhelm you, but soon you will do the majority of your R programming in the source pane.</p>
+<p>When we do, a new pane appears. It’s called the <strong>source pane</strong>. In this case, the source pane contains an untitled R Script. We won’t get into the details now because we don’t want to overwhelm you, but soon you will do the majority of your R programming in the source pane.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
