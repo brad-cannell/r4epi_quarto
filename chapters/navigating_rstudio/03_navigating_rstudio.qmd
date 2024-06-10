@@ -75,7 +75,7 @@ While it’s convenient, let’s also learn some programming terminology:
 
 ## The environment pane
 
-The second pane we are going to talk about is the Environment/History/Connections pane.  \@ref(fig:environment-pane) However, we will mostly refer to it as the Environment pane and we will mostly ignore the History and Connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible. 
+The second pane we are going to talk about is the Environment/History/Connections pane.  \@ref(fig:environment-pane) However, we will mostly refer to it as the environment pane and we will mostly ignore the History and Connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible. 
 
 ```{r}
 #| label: navigating_RStudio_interface_interface_environment-pane
@@ -115,7 +115,7 @@ Second, you can see that our Global Environment now includes the object `x`, whi
 
 ## The files pane
 
-Next, let’s talk about the Files/Plots/Packages/Help/Viewer pane (that’s a mouthful). \@ref(fig:files-pane) 
+Next, let’s talk about the Files/Plots/Packages/Help/Viewer pane (that’s a mouthful). \@ref(fig:files_pane) 
 
 ```{r}
 #| label: navigating_RStudio_interface_files-pane
