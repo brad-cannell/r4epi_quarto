@@ -465,16 +465,7 @@ Note
 </div>
 <p>How is code different from the code chunk before it? You got it! We didn’t explicitly write the names of the function arguments inside of the <code>seq()</code> function. So, how did we get the same results? We got the same results because R allows us to pass values to function arguments by name <em>or</em> by position. When we pass values to a function <em>by position</em>, R will pass the first input value to the first function argument, the second input value to the second function argument, the third input value to the third function argument, and so on.</p>
 <p>But how do we know what the first, second, and third arguments to a function are? Do you remember our discussion about RStudio’s [help tab][The files pane] in the previous chapter? There, we saw the documentation for the <code>seq()</code> function.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../navigating_rstudio/help.png" class="img-fluid figure-img"></p>
-<figcaption>The help tab.</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<p>knitr::include_graphics(“/chapters/navigating_rstudio/help.png”)</p>
 <p>In the “Usage” section of the documentation for the <code>seq()</code> function, we can see that all of the arguments that the <code>seq()</code> function accepts. These documentation files are a little cryptic until you get used to them but look directly underneath the part that says “## Default S3 method.” There, it tells us that the <code>seq()</code> function understands the <code>from</code>, <code>to</code>, <code>by</code>, <code>length.out</code>, <code>along.with</code>, and <code>...</code> arguments. The <code>from</code> argument is first argument to the <code>seq()</code> function because it is listed there first, the <code>to</code> argument is second argument to the <code>seq()</code> function because it is listed there second, and so on. It is really that simple. Therefore, when we type <code>seq(2, 100, 2)</code>, R automatically translates it to <code>seq(from = 2, to = 100, by = 2)</code>. And this is called passing values to function arguments by position.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
