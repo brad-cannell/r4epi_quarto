@@ -63,6 +63,7 @@ book:
         - chapters/what_is_r/what_is_r.qmd
         - chapters/navigating_rstudio/navigating_rstudio.qmd
         - chapters/speaking_r/speaking_r.qmd
+        - chapters/lets_get_programming/lets_get_programming.qmd
         
      
 
