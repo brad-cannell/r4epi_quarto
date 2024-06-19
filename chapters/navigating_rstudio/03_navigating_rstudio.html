@@ -49,36 +49,50 @@ ul.task-list li input[type="checkbox"] {
 <section id="navigating-the-rstudio-interface" class="level1">
 <h1>Navigating the RStudio Interface</h1>
 <p>You now have R and RStudio on your computer and you have some idea of what R and RStudio are. At this point, it is really common for people to open RStudio and get totally overwhelmed. <em>“What am I looking at?”</em> <em>”What do I click first?”</em> <em>“Where do I even start?”</em> Don’t worry if these, or similar, thoughts have crossed your mind. You are in good company and we will start to clear some of them up in this chapter.</p>
-<p>When you first load RStudio you should see a screen that looks very similar to what you see in the picture below. @ref(fig:rstudio) In the current view, you see three <strong>panes</strong> and each pane has multiple tabs. Don’t beat yourself up if this isn’t immediately obvious. We’ll make it clearer soon.</p>
+<p>When you first load RStudio you should see a screen that looks very similar to what you see in the picture below. <a href="#fig-rstudio" class="quarto-xref">Figure&nbsp;1</a> In the current view, you see three <strong>panes</strong> and each pane has multiple tabs. Don’t beat yourself up if this isn’t immediately obvious. We’ll make it clearer soon.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="rstudio.png" class="img-fluid figure-img"></p>
+<div id="fig-rstudio" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rstudio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="rstudio.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rstudio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The default RStudio user interface.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <section id="the-console" class="level2">
 <h2 class="anchored" data-anchor-id="the-console">The console</h2>
-<p>The first pane we are going to talk about is the Console/Terminal/Jobs pane. @ref(fig:console)</p>
+<p>The first pane we are going to talk about is the console/terminal/jobs pane. <a href="#fig-console" class="quarto-xref">Figure&nbsp;2</a></p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="console.png" class="img-fluid figure-img"></p>
+<div id="fig-console" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-console-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="console.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-console-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The R Console.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>It’s called the Console/Terminal/Jobs pane because it has three tabs you can click on: Console, Terminal, and Jobs. However, we will mostly refer to it as the Console pane and we will mostly ignore the Terminal and Jobs tabs. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we discuss anytime soon, and we want to keep things as simple as possible.</p>
-<p>The <strong>console</strong> is the most basic way to interact with R. You can type a command to R into the console prompt (the prompt looks like “&gt;”) and R will respond to what you type. For example, below we’ve typed “1 plus 1,” hit enter, and the R console returned the sum of the numbers 1 and 1. @ref(fig:one-plus-one)</p>
+<p>It’s called the console/terminal/jobs pane because it has three tabs you can click on: console, terminal, and jobs. However, we will mostly refer to it as the console pane and we will mostly ignore the terminal and jobs tabs. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we discuss anytime soon, and we want to keep things as simple as possible.</p>
+<p>The <strong>console</strong> is the most basic way to interact with R. You can type a command to R into the console prompt (the prompt looks like “&gt;”) and R will respond to what you type. For example, below we’ve typed “1 plus 1,” hit enter, and the R console returned the sum of the numbers 1 and 1. <a href="#fig-one-plus-one" class="quarto-xref">Figure&nbsp;3</a></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="one_plus_one.png" class="img-fluid figure-img"></p>
-<figcaption>Doing some addition in the R console.</figcaption>
+<div id="fig-one-plus-one" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-one-plus-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="one_plus_one.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-one-plus-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Doing some addition in the R console.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -86,16 +100,20 @@ ul.task-list li input[type="checkbox"] {
 <p>The number 1 you see in brackets before the 2 (i.e., [1]) is telling you that this line of results starts with the first result. That fact is obvious here because there is only one result. To make this idea clearer, let’s show you a result with multiple lines.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="seq_function.png" class="img-fluid figure-img"></p>
-<figcaption>Demonstrating a function that returns multiple results.</figcaption>
+<div id="fig-seqfunction" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-seqfunction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="seq_function.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-seqfunction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Demonstrating a function that returns multiple results.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>In the screenshot above we see a couple new things demonstrated. @ref(fig:seq-function)</p>
-<p>First, as promised, we have more than one line of results (or output). The first line of results starts with a 1 in brackets (i.e., [1]), which indicates that this line of results starts with the first result. In this case the first result is the number 2. The second line of results starts with a 29 in brackets (i.e., [29]), which indicates that this line of results starts with the twenty-ninth result. In this case the twenty-ninth result is the number 58. If you count the numbers in the first line, there should be 28 – results 1 through 28. we also want to make it clear that “1” and “29” are NOT results themselves. They are just helping us count the number of results per line.</p>
+<p>In the screenshot above we see a couple new things demonstrated. <a href="#fig-seqfunction" class="quarto-xref">Figure&nbsp;4</a></p>
+<p>First, as promised, we have more than one line of results (or output). The first line of results starts with a 1 in brackets (i.e., [1]), which indicates that this line of results starts with the first result. In this case the first result is the number 2. The second line of results starts with a 29 in brackets (i.e., [29]), which indicates that this line of results starts with the twenty-ninth result. In this case the twenty-ninth result is the number 58. If you count the numbers in the first line, there should be 28 – results 1 through 28. We also want to make it clear that “1” and “29” are NOT results themselves. They are just helping us count the number of results per line.</p>
 <p>The second new thing here that you may have noticed is our use of a <strong>function</strong>. Functions are a <strong>BIG DEAL</strong> in R. So much so that R is called a <em>functional language</em>. You don’t really need to know all the details of what that means; however, you should know that, in general, everything you <em>do</em> in R you will <em>do</em> with a function. By contrast, everything you <em>create</em> in R will be an <em>object</em>. If you wanted to make an analogy between the R language and the English language, functions are verbs – they <em>do</em> things – and objects are nouns – they <em>are</em> things. This may be confusing right now. Don’t worry. It will become clearer soon.</p>
 <p>Most functions in R begin with the function name followed by parentheses. For example, <code>seq()</code>, <code>sum()</code>, and <code>mean()</code>.</p>
 <p><em>Question</em>: What is the name of the function we used in the example above?</p>
@@ -123,30 +141,38 @@ Note
 </section>
 <section id="the-environment-pane" class="level2">
 <h2 class="anchored" data-anchor-id="the-environment-pane">The environment pane</h2>
-<p>The second pane we are going to talk about is the Environment/History/Connections pane. @ref(fig:environment-pane) However, we will mostly refer to it as the Environment pane and we will mostly ignore the History and Connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible.</p>
+<p>The second pane we are going to talk about is the environment/history/connections pane. <a href="#fig-environment-pane" class="quarto-xref">Figure&nbsp;5</a> However, we will mostly refer to it as the environment pane and we will mostly ignore the history and connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="environment_pane.png" class="img-fluid figure-img"></p>
-<figcaption>The environment pane</figcaption>
+<div id="fig-environment-pane" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-environment-pane-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="environment_pane.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-environment-pane-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The environment pane
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The Environment pane shows you all the <strong>objects</strong> that R can currently use for data management or analysis. In this picture, @ref(fig:environment-pane) our environment is empty. Let’s create an object and add it to our Environment.</p>
+<p>The Environment pane shows you all the <strong>objects</strong> that R can currently use for data management or analysis. In this picture, <a href="#fig-environment-pane" class="quarto-xref">Figure&nbsp;5</a> our environment is empty. Let’s create an object and add it to our environment.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="environment_pane2.png" class="img-fluid figure-img"></p>
-<figcaption>The vector x in the global environment.</figcaption>
+<div id="fig-environment-pane2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-environment-pane2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="environment_pane2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-environment-pane2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: The vector x in the global environment.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>Here we see that we created a new object called <code>x</code>, which now appears in our <strong>Global Environment</strong>. @ref(fig:environment-pane2) This gives us another great opportunity to discuss some new concepts.</p>
-<p>First, we created the <code>x</code> object in the Console by <em>assigning</em> the value 2 to the letter x. We did this by typing “x” followed by a less than symbol (&lt;), a dash symbol (-), and the number 2. R is kind of unique in this way. we have never seen another programming language (although I’m sure they are out there) that uses <code>&lt;-</code> to assign values to variables. By the way, <code>&lt;-</code> is called the assignment operator (or assignment arrow), and ”assign” here means “make x contain 2” or “put 2 inside x.”</p>
+<p>Here we see that we created a new object called <code>x</code>, which now appears in our <strong>Global Environment</strong>. <a href="#fig-environment-pane2" class="quarto-xref">Figure&nbsp;6</a> This gives us another great opportunity to discuss some new concepts.</p>
+<p>First, we created the <code>x</code> object in the console by <em>assigning</em> the value 2 to the letter x. We did this by typing “x” followed by a less than symbol (&lt;), a dash symbol (-), and the number 2. R is kind of unique in this way. we have never seen another programming language (although I’m sure they are out there) that uses <code>&lt;-</code> to assign values to variables. By the way, <code>&lt;-</code> is called the assignment operator (or assignment arrow), and ”assign” here means “make x contain 2” or “put 2 inside x.”</p>
 <p>In many other languages you would write that as <code>x = 2</code>. But, for whatever reason, in R it is <code>&lt;-</code>. Unfortunately, <code>&lt;-</code> is more awkward to type than <code>=</code>. Fortunately, RStudio gives us a keyboard shortcut to make it easier. To type the assignment operator in RStudio, just hold down Option + - (dash key) on a Mac or Alt + - (dash key) on a PC and RStudio will insert <code>&lt;-</code> complete with spaces on either side of the arrow. This may still seem awkward at first, but you will get used to it.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -178,13 +204,17 @@ Warning
 </section>
 <section id="the-files-pane" class="level2">
 <h2 class="anchored" data-anchor-id="the-files-pane">The files pane</h2>
-<p>Next, let’s talk about the Files/Plots/Packages/Help/Viewer pane (that’s a mouthful). @ref(fig:files-pane)</p>
+<p>Next, let’s talk about the Files/Plots/Packages/Help/Viewer pane (that’s a mouthful). <a href="#fig-files-pane" class="quarto-xref">Figure&nbsp;7</a></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="files_pane.png" class="img-fluid figure-img"></p>
-<figcaption>The Files/Plots/Packages/Help/Viewer pane.</figcaption>
+<div id="fig-files-pane" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-files-pane-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="files_pane.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-files-pane-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: The Files/Plots/Packages/Help/Viewer pane.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -192,25 +222,33 @@ Warning
 <p>Again, some of these tabs are more applicable for us than others. For us, the <strong>files</strong> tab and the <strong>help</strong> tab will probably be the most useful. You can think of the files tab as a mini Finder window (for Mac) or a mini File Explorer window (for PC). The help tab is also extremely useful once you get acclimated to it.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="help.png" class="img-fluid figure-img"></p>
-<figcaption>The help tab.</figcaption>
+<div id="fig-help" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-help-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="help.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-help-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: The help tab.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>For example, in the screenshot above @ref(fig:help) we typed the <code>seq</code> into the search bar. The help pane then shows us a page of documentation for the <code>seq()</code> function. The documentation includes a brief description of what the function does, outlines all the arguments the <code>seq()</code> function recognizes, and, if you scroll down, gives examples of using the <code>seq()</code> function. Admittedly, this help documentation can seem a little like reading Greek (assuming you don’t speak Greek) at first. But, you will get more comfortable using it with practice. We hated the help documentation when we were learning R. Now, we use it <em>all the time</em>.</p>
+<p>For example, in the screenshot above <a href="#fig-help" class="quarto-xref">Figure&nbsp;8</a> we typed the <code>seq</code> into the search bar. The help pane then shows us a page of documentation for the <code>seq()</code> function. The documentation includes a brief description of what the function does, outlines all the arguments the <code>seq()</code> function recognizes, and, if you scroll down, gives examples of using the <code>seq()</code> function. Admittedly, this help documentation can seem a little like reading Greek (assuming you don’t speak Greek) at first. But, you will get more comfortable using it with practice. We hated the help documentation when we were learning R. Now, we use it <em>all the time</em>.</p>
 </section>
 <section id="the-source-pane" class="level2">
 <h2 class="anchored" data-anchor-id="the-source-pane">The source pane</h2>
-<p>There is actually a fourth pane available in RStudio. If you click on the icon shown below you will get the following dropdown box with a list of files you can create. @ref(fig:source1)</p>
+<p>There is actually a fourth pane available in RStudio. If you click on the icon shown below you will get the following dropdown box with a list of files you can create. <a href="#fig-source1" class="quarto-xref">Figure&nbsp;9</a></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="source1.png" class="img-fluid figure-img"></p>
-<figcaption>Click the new source file icon.</figcaption>
+<div id="fig-source1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="source1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Click the new source file icon.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -218,10 +256,14 @@ Warning
 <p>If you click any of these options, a new pane will appear. We will arbitrarily pick the first option – R Script.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="source2.png" class="img-fluid figure-img"></p>
-<figcaption>New source file options.</figcaption>
+<div id="fig-source2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="source2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: New source file options.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -229,10 +271,14 @@ Warning
 <p>When we do, a new pane appears. It’s called the <strong>source pane</strong>. In this case, the source pane contains an untitled R Script. We won’t get into the details now because we don’t want to overwhelm you, but soon you will do the majority of your R programming in the source pane.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="source3.png" class="img-fluid figure-img"></p>
-<figcaption>A blank R script in the source pane.</figcaption>
+<div id="fig-source3" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="source3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: A blank R script in the source pane.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -243,10 +289,14 @@ Warning
 <p>Finally, We’re going to recommend that you change a few settings in RStudio before we move on. Start by clicking <code>Tools</code>, and then <code>Global Options</code> in RStudio’s menu bar, which probably runs horizontally across the top of your computer’s screen.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="preferences1.png" class="img-fluid figure-img"></p>
-<figcaption>Select the preferences menu on Mac.</figcaption>
+<div id="fig-preferences1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-preferences1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="preferences1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preferences1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Select the preferences menu on Mac.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -254,10 +304,14 @@ Warning
 <p>In the <code>General</code> tab, we recommend turning off the <code>Restore .Rdata into workspace at startup</code> option. We also recommend setting the <code>Save workspace .Rdata on exit</code> dropdown to <code>Never</code>. Finally, we recommend turning off the <code>Always save history (even when not saving .Rdata)</code> option.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="preferences3.png" class="img-fluid figure-img"></p>
-<figcaption>General options tab.</figcaption>
+<div id="fig-preferences3" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-preferences3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="preferences3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preferences3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: General options tab.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -265,10 +319,14 @@ Warning
 <p>We change our editor theme to Twilight in the <code>Appearance</code> tab. We aren’t necessarily recommending that you change your theme – this is entirely personal preference – we’re just letting you know why our screenshots will look different from here on out.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="preferences4.png" class="img-fluid figure-img"></p>
-<figcaption>Appearance tab.</figcaption>
+<div id="fig-preferences4" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-preferences4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="preferences4.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preferences4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: Appearance tab.
+</figcaption>
 </figure>
 </div>
 </div>
