@@ -694,9 +694,19 @@ Copy and paste:
 </div>
 <p>As you can see, both methods produce the exact same result. The second method, however, requires a little less typing and results in fewer objects cluttering up your global environment. What we mean by that is that the <code>names</code> and <code>heights</code> vectors won’t exist independently in your global environment. Rather, they will only exist as columns of the <code>class</code> data frame.</p>
 <p>You may have also noticed that when we created the <code>names</code> and <code>heights</code> vectors (columns) directly inside of the <code>data.frame()</code> function we used the equal sign (<code>=</code>) to assign values instead of the assignment arrow (<code>&lt;-</code>). This is just one of those quirky R exceptions we talked about in the chapter on speaking R’s language. In fact, <code>=</code> and <code>&lt;-</code> can be used interchangeably in R. It is only by convention that we usually use <code>&lt;-</code> for assigning values, but use <code>=</code> for assigning values to columns in data frames. we don’t know why this is the convention. If it were up to me, we wouldn’t do this. We would just pick <code>=</code> or <code>&lt;-</code> and use it in all cases where we want to assign values. But, it isn’t up to me and we gave up on trying to fight it a long time ago. Your R programming life will be easier if you just learn to assign values this way – even if it’s dumb. 🤷</p>
-<p class="warning">
-⚠️<strong>Warning:</strong> By definition, all columns in a data frame must have the same length (i.e., number of rows). That means that each vector you create when building your data frame must have the same number of values in it. For example, the class data frame above has four names and four heights. If we had only entered three heights, we would have gotten the following error: <code>Error in data.frame(names = c("John", "Sally", "Brad", "Anne"), heights = c(68,  : arguments imply differing number of rows: 4, 3</code>
-</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>⚠️<strong>Warning:</strong> By definition, all columns in a data frame must have the same length (i.e., number of rows). That means that each vector you create when building your data frame must have the same number of values in it. For example, the class data frame above has four names and four heights. If we had only entered three heights, we would have gotten the following error: <code>Error in data.frame(names = c("John", "Sally", "Brad", "Anne"), heights = c(68,  : arguments imply differing number of rows: 4, 3</code></p>
+</div>
+</div>
 </section>
 <section id="tibbles" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="tibbles"><span class="header-section-number">5.4</span> Tibbles</h2>
@@ -942,9 +952,19 @@ Copy and paste:
 4  Anne      NA</code></pre>
 </div>
 </div>
-<p class="warning">
-⚠️<strong>Warning:</strong> Make sure you capitalize <code>NA</code> and don’t use any spaces or quotation marks. Also, make sure you use <code>NA</code> instead of writing <code>"Missing"</code> or something like that.
-</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>⚠️<strong>Warning:</strong> Make sure you capitalize <code>NA</code> and don’t use any spaces or quotation marks. Also, make sure you use <code>NA</code> instead of writing <code>"Missing"</code> or something like that.</p>
+</div>
+</div>
 <p>By default, R considers <code>NA</code> to be a logical-type value (as opposed to character or numeric). for example:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(<span class="cn">NA</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
