@@ -73,6 +73,7 @@ book:
       
     - part: "Coding Tools and Best Practices"
       chapters:
+        - chapters/r_scripts/r_scripts.qmd
         - chapters/quarto_files/quarto_files.qmd
         
     - part: "Collaboration"
