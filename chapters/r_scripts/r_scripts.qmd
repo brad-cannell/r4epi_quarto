@@ -4,7 +4,7 @@ Up to this point, we've only showed you how to submit your R code to R in the co
 
 ```{r}
 #| label: fig-using-console
-#| ech: FALSE
+#| echo: FALSE
 #| fig-cap: Submitting R code in the console.
 
 
