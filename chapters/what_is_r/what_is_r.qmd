@@ -8,7 +8,7 @@ Data is information about objects (e.g., people, places, schools) and observable
 
 <!-- maybe insert a data fig -->
 
-Here we have a table, which is a common way of organizing data. In R, we will typically refer to these tables as **[data frames]**.
+Here we have a table, which is a common way of organizing data. In R, we will typically refer to these tables as **data frames**.
 
 ```{r}
 #| label: what_is_r_table
