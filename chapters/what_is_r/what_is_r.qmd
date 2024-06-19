@@ -8,7 +8,7 @@ Data is information about objects (e.g., people, places, schools) and observable
 
 <!-- maybe insert a data fig -->
 
-Here we have a table, which is a common way of organizing data. In R, we will typically refer to these tables as **data frames**.
+Here we have a table, which is a common way of organizing data. In R, we will typically refer to these tables as **[data frames]**.
 
 ```{r}
 #| label: what_is_r_table
@@ -137,7 +137,7 @@ knitr::include_graphics("competencies_present.png")
 
 And finally, the ultimate goal is typically to present your findings in some form or another. For example, a report, a website, or a journal article. With R you can present your results in many different formats with relative ease. In fact, this is one of our favorite things about R and RStudio. In this class you will learn how to take your text, tabular, or graphical results and then publish them in many different formats including Microsoft Word, html files that can be viewed in web browsers, and pdf documents. Let’s take a look at some examples.
 
-1. **Microsoft Word documents**. [Click here](https://www.dropbox.com/s/6l1ikp6wbyue9bd/chap_2_example_word_docI.docx?dl=0) to view an example report created for one of my research projects in Microsoft Word.   
+1. **Microsoft Word documents**. [Click here](https://www.dropbox.com/s/6l1ikp6wbyue9bd/chap_2_example_word_docI.docx?dl=0) to view an example report created for one of our research projects in Microsoft Word.   
 2. **PDF documents**. [Click here](https://www.dropbox.com/s/hheuyv5qcabf197/chap_2_example_pdf.pdf?dl=0) to view a data dictionary we created in PDF format.   
-3. **HTML files**. Hypertext Markup Language (HTML) files are what you are looking at whenever you view a webpage. You can use R to create HTML files that others can view in their web browser. You can email them these files to view in their web browser, or you can make them available for others to view online just like any other website. [Click here](https://brad-cannell.github.io/detect_recruitment_dashboard/) to view an example dashboard we created for one of my research projects.    
+3. **HTML files**. Hypertext Markup Language (HTML) files are what you are looking at whenever you view a webpage. You can use R to create HTML files that others can view in their web browser. You can email them these files to view in their web browser, or you can make them available for others to view online just like any other website. [Click here](https://brad-cannell.github.io/detect_recruitment_dashboard/) to view an example dashboard we created for one of our research projects.    
 4. **Web applications**. You can even use R to create full-fledged web applications. View the [RStudio website](https://shiny.rstudio.com/gallery/) to see some examples.

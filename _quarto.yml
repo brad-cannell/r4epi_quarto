@@ -11,6 +11,8 @@ format:
   pdf:
     documentclass: scrreprt
     
+  
+    
 # Bibliography and citation options
 bibliography: references.bib
 csl: ama.csl
