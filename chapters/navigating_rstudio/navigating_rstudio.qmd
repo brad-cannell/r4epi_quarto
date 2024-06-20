@@ -1,8 +1,8 @@
 # Navigating the RStudio Interface
 
-You now have R and RStudio on your computer and you have some idea of what R and RStudio are. At this point, it is really common for people to open RStudio and get totally overwhelmed. _“What am I looking at?”_ _”What do I click first?”_ _“Where do I even start?”_ Don’t worry if these, or similar, thoughts have crossed your mind. You are in good company and we will start to clear some of them up in this chapter.
+If you followed along with the previous chapters, you have R and RStudio installed on your computer and you have some idea of what R and RStudio are. At this point, it can be common for people to open RStudio and get totally overwhelmed. _“What am I looking at?”_ _”What do I click first?”_ _“Where do I even start?”_ Don’t worry if these, or similar, thoughts have crossed your mind. You are in good company and we will start to clear some of them up in this chapter.
 
-When you first load RStudio you should see a screen that looks very similar to what you see in the picture below. @fig-rstudio In the current view, you see three **panes** and each pane has multiple tabs. Don’t beat yourself up if this isn't immediately obvious. We’ll make it clearer soon.
+When we load RStudio, we should see a screen that looks very similar to @fig-rstudio below. There, we see three **panes**, and each pane has multiple tabs.
 
 ```{r}
 #| label: fig-rstudio
@@ -13,10 +13,9 @@ When you first load RStudio you should see a screen that looks very similar to w
 knitr::include_graphics("rstudio.png")
 ```
 
-## The console
+## The console pane
 
-The first pane we are going to talk about is the console/terminal/jobs pane. @fig-console
-
+The first pane we are going to talk about is the **console/terminal/background jobs** pane.
 
 ```{r}
 #| label: fig-console
@@ -27,9 +26,9 @@ The first pane we are going to talk about is the console/terminal/jobs pane. @fi
 knitr::include_graphics("console.png",)
 ```
 
-It’s called the console/terminal/jobs pane because it has three tabs you can click on: console, terminal, and jobs. However, we will mostly refer to it as the console pane and we will mostly ignore the terminal and jobs tabs. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we discuss anytime soon, and we want to keep things as simple as possible. 
+It’s called the "console/terminal/background jobs" pane because it has three tabs we can click on by default: "console", "terminal", and "background jobs". However, we will refer to this pane as the "console pane" and will mostly ignore the terminal and background jobs tabs for now. We aren’t ignoring them because they aren’t useful; instead, we are ignoring them because using them isn’t essential for anything we will discuss in this chapter, and we want to keep things as simple as possible for now.
 
-The **console** is the most basic way to interact with R. You can type a command to R into the console prompt (the prompt looks like “>”) and R will respond to what you type. For example, below we’ve typed “1 plus 1,” hit enter, and the R console returned the sum of the numbers 1 and 1. @fig-one-plus-one
+The [console](../appendices/glossary.qmd#glossary-console) is the most basic way to interact with R. We can type a command to R into the console prompt (the prompt looks like “>”) and R will respond to what we type. For example, below we typed “1 + 1,” pressed the return/enter key, and the R console returned the sum of the numbers 1 and 1.
 
 ```{r}
 #| label: fig-one-plus-one
@@ -39,10 +38,10 @@ The **console** is the most basic way to interact with R. You can type a command
 knitr::include_graphics("one_plus_one.png")
 ```
 
-The number 1 you see in brackets before the 2 (i.e., [1]) is telling you that this line of results starts with the first result. That fact is obvious here because there is only one result. To make this idea clearer, let’s show you a result with multiple lines.
+The number 1 we see in brackets before the 2 (i.e., [1]) is telling us that this line of results starts with the first result. That fact is obvious here because there is only one result. So, let's look at a result that spans multiple lines to make this idea clearer.
 
 ```{r}
-#| label: fig-seqfunction
+#| label: fig-seq-function
 #| echo: false
 #| fig-cap: Demonstrating a function that returns multiple results.
 
@@ -50,27 +49,29 @@ The number 1 you see in brackets before the 2 (i.e., [1]) is telling you that th
 knitr::include_graphics("seq_function.png")
 ```
 
-In the screenshot above we see a couple new things demonstrated. @fig-seqfunction
+In @fig-seq-function we see examples of a couple of new concepts that are worth discussing.
 
-First, as promised, we have more than one line of results (or output). The first line of results starts with a 1 in brackets (i.e., [1]), which indicates that this line of results starts with the first result. In this case the first result is the number 2. The second line of results starts with a 29 in brackets (i.e., [29]), which indicates that this line of results starts with the twenty-ninth result. In this case the twenty-ninth result is the number 58. If you count the numbers in the first line, there should be 28 -- results 1 through 28. We also want to make it clear that “1” and “29” are NOT results themselves. They are just helping us count the number of results per line. 
+First, as promised, we have more than one line of results (or output). The first line of results starts with a 1 in brackets (i.e., [1]), which indicates that this line of results starts with the first result. In this case, the first result is the number 2. The second line of results starts with a 29 in brackets (i.e., [29]), which indicates that this line of results starts with the twenty-ninth result. In this case, the twenty-ninth result is the number 58. If we count the numbers in the first line, there should be 28 -- results 1 through 28. We also want to make it clear that “1” and “29” are _NOT_ results themselves. They are just helping us count the number of results per line. 
 
-The second new thing here that you may have noticed is our use of a **function**. Functions are a **BIG DEAL** in R. So much so that R is called a _functional language_. You don’t really need to know all the details of what that means; however, you should know that, in general, everything you _do_ in R you will _do_ with a function. By contrast, everything you _create_ in R will be an _object_. If you wanted to make an analogy between the R language and the English language, functions are verbs -- they _do_ things -- and objects are nouns -- they _are_ things. This may be confusing right now. Don’t worry. It will become clearer soon.
+The second new thing that you may have noticed in @fig-seq-function is our use of a **function**. Functions are a **BIG DEAL** in R. So much so that R is called a _functional language_. We don’t really need to know all the details of what that means; however, we should know that, in general, everything we _do_ in R we will _do_ with a function. By contrast, everything we _create_ in R will be an _object_. If we wanted to make an analogy between the R language and the English language, we could think of functions as verbs -- they _do_ things -- and objects as nouns -- they _are_ things. This distinction likely seems abstract and confusing at the moment, but we will make it more concrete soon.
 
 Most functions in R begin with the function name followed by parentheses. For example, `seq()`, `sum()`, and `mean()`. 
 
 _Question_: What is the name of the function we used in the example above? 
 
-It’s the `seq()` function – short for sequence. Inside the function, you may notice that there are three pairs of words, equal symbols, and numbers that are separated by commas. They are, `from = 2`, `to = 100`, and `by = 2`. In this case, `from`, `to`, and `by` are all **arguments** to the `seq()` function. We don’t know why they are called arguments, but as far as we are concerned, they just are. We will learn more about functions and arguments later, but for now just know that arguments _give functions the information they need to give us the result we want_. 
+_Answer_: We used the `seq()` function – short for sequence - in the example above. 
 
-In this case, the `seq()` function gives us a sequence of numbers, but we have to give it information about where that sequence should start, where it should end, and how many steps should be in the middle. Here the sequence begins with the value we gave to the `from` argument (i.e., 2), ends with the value we gave to the `to` argument (i.e., 100), and increases at each step by the number we gave to the `by` argument (i.e., 2). So, 2, 4, 6, 8 … 100. 
+You may notice that there are three pairs of words, equal symbols, and numbers that are separated by commas inside the `seq()` function. They are, `from = 2`, `to = 100`, and `by = 2`. The words `from`, `to`, and `by` are all [arguments](../appendices/glossary.qmd#glossary-arguments) to the `seq()` function. We will learn more about functions and arguments later. For now, just know that arguments _give functions the information they need to give us the result we want_. 
 
-While it’s convenient, let’s also learn some programming terminology:
+In this case, the `seq()` function [returns](../appendices/glossary.qmd#glossary-returns) a sequence of numbers. But first, we had to give it information about where that sequence should start, where it should end, and how many steps should be in the middle. Above, the sequence began with the value we [passed](../appendices/glossary.qmd#glossary-pass) to the `from` argument (i.e., 2), it ended with the value we passed to the `to` argument (i.e., 100), and it increased at each step by the number we passed to the `by` argument (i.e., 2). So, 2, 4, 6, 8 … 100.
 
-* **Arguments:** Arguments always go _inside_ the parentheses of a function and give the function the information it needs to give us the result we want.   
+Whether you realize it or not, we've covered some important programming terms while discussing the `seq()` function above. Before we move on to discussing RStudio's other panes, let’s quickly review and reinforce a few of terms we will use repeatedly in this book.
 
-* **Pass:** In programming lingo, you _pass_ a value to a function argument. For example, in the function call `seq(from = 2, to = 100, by = 2)` we could say that we passed a value of 2 to the `from` argument, we passed a value of 100 to the `to` argument, and we passed a value of 2 to the `by` argument.   
+* [Arguments](../appendices/glossary.qmd#glossary-arguments): Arguments always live _inside_ the parentheses of R functions and receive information the function needs to generate the result we want.
 
-* **Returns:** Instead of saying, “the `seq()` function _gives us_ a sequence of numbers…” we could say, “the `seq()` function _returns_ a sequence of numbers…” In programming lingo, functions _return_ one or more results.   
+* [Pass](../appendices/glossary.qmd#glossary-pass): In programming lingo, we _pass_ a value to a function argument. For example, in the function call `seq(from = 2, to = 100, by = 2)` we could say that we _passed_ a value of 2 to the `from` argument, we _passed_ a value of 100 to the `to` argument, and we _passed_ a value of 2 to the `by` argument.
+
+* [Return](../appendices/glossary.qmd#glossary-return): Instead of saying, “the `seq()` function _gives us_ a sequence of numbers…” we say, “the `seq()` function _returns_ a sequence of numbers…” In programming lingo, functions _return_ one or more results.
 
 ::: callout-note
 🗒**Side Note:** The `seq()` function isn’t particularly important or noteworthy. We essentially chose it at random to illustrate some key points. However, arguments, passing values, and return values are extremely important concepts and we will return to them many times.

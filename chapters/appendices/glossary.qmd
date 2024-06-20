@@ -1,16 +1,24 @@
 # Glossary {#sec-glossary}
 
-**Console**. Coming soon.
+[Console]{#glossary-console}
+
+:  The console is located in RStudio's bottom-right pane by default. The R console is an interactive programming environment where we can enter and execute R commands. It's the the most basic interface for interacting with R, providing immediate feedback and results from the code we enter. The R console is useful for testing small pieces of code and interactive data exploration. However, we recommend using R scripts or Quarto files for all but the simplest programming or data analysis tasks.
 
 **Data frame**. For our purposes, data frames are just R's term for data set or data table. Data frames are made up of columns (variables) and rows (observations). In R, all columns of a data frame must have the same length.
 
 **Functions**. Coming soon.
 
-  * **Arguments:** Arguments always go _inside_ the parentheses of a function and give the function the information it needs to give us the result we want.   
+  * [Arguments]{#glossary-arguments}
 
-  * **Pass:** In programming lingo, you _pass_ a value to a function argument. For example, in the funtion call `seq(from = 2, to = 100, by = 2)` we could say that we passed a value of 2 to the `from` argument, we passed a value of 100 to the `to` argument, and we passed a value of 2 to the `by` argument.  
+    :  Arguments always live _inside_ the parentheses of R functions and receive information the function needs to generate the result we want.
+    
+  * [Pass]{#glossary-pass}
 
-  * **Returns:** Instead of saying, “the `seq()` function _gives us_ a sequence of numbers…” we could say, “the `seq()` function _returns_ us a sequence of numbers…” In programming lingo, functions _return_ one or more results.  
+    :  In programming lingo, we _pass_ a value to a function argument. For example, in the function call `seq(from = 2, to = 100, by = 2)` we could say that we _passed_ a value of 2 to the `from` argument, we _passed_ a value of 100 to the `to` argument, and we _passed_ a value of 2 to the `by` argument.
+
+  * [Return]{#glossary-return}
+
+    :  Instead of saying, “the `seq()` function _gives us_ a sequence of numbers…” we could say, “the `seq()` function _returns_ a sequence of numbers…” In programming lingo, functions _return_ one or more results.
   
 **Global environment**. Coming soon.
 
