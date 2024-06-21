@@ -79,7 +79,7 @@ Whether you realize it or not, we've covered some important programming terms wh
 
 ## The environment pane
 
-The second pane we are going to talk about is the environment/history/connections pane. @fig-environment-pane However, we will mostly refer to it as the environment pane and we will mostly ignore the history and connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible. 
+The second pane we are going to talk about is the environment/history/connections pane in @fig-environment-pane. However, we will mostly refer to it as the environment pane and we will mostly ignore the history and connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible. 
 
 ```{r}
 #| label: fig-environment-pane
