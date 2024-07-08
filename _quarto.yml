@@ -72,6 +72,7 @@ book:
       chapters:
         - chapters/r_scripts/r_scripts.qmd
         - chapters/quarto_files/quarto_files.qmd
+        - chapters/r_projects/projects.qmd
         
     - part: "Collaboration"
       chapters:
