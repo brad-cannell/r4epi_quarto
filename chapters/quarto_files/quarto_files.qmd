@@ -82,7 +82,7 @@ At this point, you may be thinking "Ok, that Quarto gallery has some cool stuff,
 
 RStudio makes it very easy to create your own Quarto file, of which there are several types. In this chapter, we're going to show you how to create a Quarto file that can be rendered to an HTML file and viewed in your web browser.
 
-The process is actually really similar to the process we used to create an R script. Start by clicking on the icon shown below in @fig-new_quarto_document_01.
+The process is actually really similar to the process we used to create an R script. Start by clicking on the icon shown below in @fig-new-quarto-document-01.
 
 ```{r}
 #| label: fig-new-quarto-document-01
@@ -136,7 +136,7 @@ And that is all we have to do to create a basic Quarto file. Next, we're going t
 
 ## YAML headers
 
-The YAML header is unlike anything we've seen before. The YAML header always begins and ends with dash-dash-dash (`---`) typed on its own line (1 & 6 in @fig-new-quarto-document-o4). The code written inside the YAML header generally falls into two categories:
+The YAML header is unlike anything we've seen before. The YAML header always begins and ends with dash-dash-dash (`---`) typed on its own line (1 & 6 in @fig-new-quarto-document-04). The code written inside the YAML header generally falls into two categories:
 
 1. Values to be rendered in the Quarto file. For example, in @fig-new-quarto-document-04 we told Quarto to title our document "Test Quarto". The title is added to the file by adding the `title` keyword, followed by a colon (`:`), followed by a character string wrapped in quotes. Examples of other values we could have added include `author` and `date`.
 
