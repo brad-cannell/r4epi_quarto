@@ -74,7 +74,7 @@ book:
         - chapters/quarto_files/quarto_files.qmd
         - chapters/r_projects/projects.qmd
         - chapters/best_practices/best_practices.qmd
-        
+        - chapters/using_pipes/using_pipes.qmd
         
     - part: "Collaboration"
       chapters:
