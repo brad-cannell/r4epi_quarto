@@ -5,11 +5,12 @@ Hidden comments placeholder
 ---------------------------
 
 To preview:
-bookdown::preview_chapter("chapters/02_part_coding_tools_and_best_practices/05_using_pipes.Rmd")
+bookdown::preview_chapter("chapters/using_pipes/using_pipes.qmd")
 
 Copy and paste:
 👆**Here's what we did above:**
 -->
+
 
 ```{r}
 #| include: FALSE

@@ -6,7 +6,7 @@ This chapter gives an overview of file paths.
 Maybe start with importing data and then come back to this?
 
 To preview:
-bookdown::preview_chapter("chapters/03_part_data_transfer/02_file_paths.Rmd")
+bookdown::preview_chapter("chapters/file_paths/file_paths.qmd")
 
 👆**Here's what we did above:**
 -->
@@ -130,12 +130,21 @@ knitr::include_graphics("where.png")
 
 Alternatively, as shown below, we can right click on the file we want the path for to open the same drop-down menu shown above. But, if we hold down the `alt/option` key the `Copy` menu option changes to `Copy ... as Pathname`. We can then left-click that option to copy the path and paste it into our R code.
 
-```{r}
-#| label: file_path_gif
-#| echo: FALSE
 
+::: {.content-visible when-format="html"}
+
+```{r}
+#| label: fig-file-paths
+#| echo: false
+#| fig-cap: |
+#|   A gif about file paths.
+#| fig-alt: |
+#|   A gif about file paths.
 
 knitr::include_graphics("file_path_gif.gif")
+```
+
+:::
 ```
 
 A similar method exists in Windows as well. First, we _hold down the shift key_ and right click on the file we want the path for. Then, we click `Copy as path` in the drop-down menu that appears and paste the file path into our R code.
