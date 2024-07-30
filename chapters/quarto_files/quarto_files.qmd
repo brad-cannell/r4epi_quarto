@@ -1,4 +1,4 @@
-# Quarto Files
+# Quarto Files {#sec-quarto-files}
 
 <!-- 
 Hidden comments placeholder

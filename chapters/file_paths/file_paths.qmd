@@ -6,7 +6,7 @@ This chapter gives an overview of file paths.
 Maybe start with importing data and then come back to this?
 
 To preview:
-bookdown::preview_chapter("chapters/file_paths/file_paths.qmd")
+bookdown::preview_chapter("r4epi/chapters/03_part_data_transfer")
 
 👆**Here's what we did above:**
 -->
@@ -115,6 +115,8 @@ On a Mac, we right-click on the file we want the path for and a drop-down menu w
 ```{r}
 #| label: file_paths_get_info
 #| echo: FALSE
+
+
 knitr::include_graphics("get_info.png")
 ```
 
@@ -264,7 +266,7 @@ Let's quickly recap what we needed to do to be able to use relative file paths.
 
 2. We needed to save our R code and our data inside of the R project directory. 
 
-3. We needed to share the R project folder with our collaborators. This part wasn't shown, but it was implied. We could have shared our R project by email. We could have shared our R project by using a shared cloud-based file storage service like Dropbox, Google Drive, or OneDrive. Better yet, we could have shared our R project using a [GitHub repository](Introduction to git and GitHub), which we will discuss later in the book. 
+3. We needed to share the R project folder with our collaborators. This part wasn't shown, but it was implied. We could have shared our R project by email. We could have shared our R project by using a shared cloud-based file storage service like Dropbox, Google Drive, or OneDrive. Better yet, we could have shared our R project using a [GitHub repository](../chapters/intro_git_github/intro_git_github.qmd), which we will discuss later in the book. 
 
 4. We replaced all absolute file paths in our code with relative file paths. In general, we should _always_ use relative file paths if at all possible. It makes our code easier to read and maintain, and it makes life so much easier for us when we collaborate with others! 
 

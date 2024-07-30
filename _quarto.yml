@@ -82,6 +82,9 @@ book:
          - chapters/file_paths/file_paths.qmd
          
     - part: "Collaboration"
+      chapters: 
+      - chapters/intro_git_github/intro_git_github.qmd
+      - chapters/using_git_github/using_git_github.qmd
       
     
     - part: "References"
