@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/using_git_github/using_git_github.html" rel="next">
+<link href="../../chapters/data_transfer/data_transfer.html" rel="next">
 <link href="../../chapters/best_practices/best_practices.html" rel="prev">
 <link href="../../r4epi_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
@@ -283,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Data Transfer</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -291,8 +310,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/data_transfer/data_transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Introduction to Data Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/file_paths/file_paths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">File Paths</span></span></a>
   </div>
 </li>
       </ul>
@@ -300,7 +325,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Data Transfer</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -308,8 +333,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/data_transfer/data_transfer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction to Data Transfer</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -326,7 +357,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -395,7 +426,7 @@ Hidden comments placeholder
 ---------------------------
 
 To preview:
-bookdown::preview_chapter("chapters/02_part_coding_tools_and_best_practices/05_using_pipes.Rmd")
+bookdown::preview_chapter("chapters/using_pipes/using_pipes.qmd")
 
 Copy and paste:
 👆**Here's what we did above:**
@@ -643,8 +674,8 @@ Note
 <li><p>If a line of code contains a pipe operator, the pipe operator should generally be the last thing typed on the line.</p></li>
 <li><p>The pipe operator should always have a space in front of it.</p></li>
 <li><p>If the pipe operator isn’t the last thing typed on the line, then it should be have a space after it too.</p></li>
-<li><p>“If the function you’re piping into has named arguments (like <code>mutate()</code> or <code>summarize()</code>), put each argument on a new line. If the function doesn’t have named arguments (like <code>select()</code> or <code>filter()</code>), keep everything on one line unless it doesn’t fit, in which case you should put each argument on its own line.”<span class="citation" data-cites="Wickham2023-ta"><sup><a href="../../references.html#ref-Wickham2023-ta" role="doc-biblioref"><strong>Wickham2023-ta?</strong></a></sup></span></p></li>
-<li><p>“After the first step of the pipeline, indent each line by two spaces. RStudio will automatically put the spaces in for you after a line break following a <code>|&gt;</code> . If you’re putting each argument on its own line, indent by an extra two spaces. Make sure <code>)</code> is on its own line, and un-indented to match the horizontal position of the function name.”<span class="citation" data-cites="Wickham2023-ta"><sup><a href="../../references.html#ref-Wickham2023-ta" role="doc-biblioref"><strong>Wickham2023-ta?</strong></a></sup></span></p></li>
+<li><p>“If the function you’re piping into has named arguments (like <code>mutate()</code> or <code>summarize()</code>), put each argument on a new line. If the function doesn’t have named arguments (like <code>select()</code> or <code>filter()</code>), keep everything on one line unless it doesn’t fit, in which case you should put each argument on its own line.”<span class="citation" data-cites="Wickham2023-ta"><sup><a href="../../references.html#ref-Wickham2023-ta" role="doc-biblioref">1</a></sup></span></p></li>
+<li><p>“After the first step of the pipeline, indent each line by two spaces. RStudio will automatically put the spaces in for you after a line break following a <code>|&gt;</code> . If you’re putting each argument on its own line, indent by an extra two spaces. Make sure <code>)</code> is on its own line, and un-indented to match the horizontal position of the function name.”<span class="citation" data-cites="Wickham2023-ta"><sup><a href="../../references.html#ref-Wickham2023-ta" role="doc-biblioref">1</a></sup></span></p></li>
 </ol>
 <p>Each of these recommendations are demonstrated in the code below.</p>
 <div class="cell">
@@ -687,6 +718,11 @@ Note
 <p>We think it’s important to note that not everyone in the R programming community is a fan of using pipes. We hope that we’ve made a compelling case for why we use pipes, but we acknowledge that it is ultimately a preference, and that using pipes is not the best choice in all circumstances. Whether or not you choose to use the pipe operator is up to you; however, we will be using them extensively throughout the remainder of this book.</p>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Wickham2023-ta" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Wickham H, Çetinkaya-Rundel M, Grolemund G. Workflow: Code style. In: <em><span>R</span> for Data Science</em>. second.; 2023.</div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -1106,8 +1142,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/using_git_github/using_git_github.html" class="pagination-link" aria-label="Using git and GitHub">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/data_transfer/data_transfer.html" class="pagination-link" aria-label="Introduction to Data Transfer">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Introduction to Data Transfer</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
