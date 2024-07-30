@@ -145,7 +145,6 @@ knitr::include_graphics("file_path_gif.gif")
 ```
 
 :::
-```
 
 A similar method exists in Windows as well. First, we _hold down the shift key_ and right click on the file we want the path for. Then, we click `Copy as path` in the drop-down menu that appears and paste the file path into our R code.
 
@@ -221,7 +220,7 @@ knitr::include_graphics("relative_file_paths_03_check_project.png")
 
 In that context, R starts looking for files _in our R project folder_ -- no matter where we put the R project folder on our computer. 
 
-For example, in the next screenshot, we can see that the R project folder [we previously created][R projects] (arrow 1), which is called `my_first_project`, is located on a computer's desktop. One way we can tell that it's an R project is because it contains an R project file (arrow 2). We can also see that our R project now contains a `folder`, which contains an Excel file called `form_20.xlsx` (arrow 3). Finally, we can see that we we've added a new R markdown file called `test_relative_links.Rmd` (arrow 4). That file contains the code we wrote to import `form_20.xlsx` as an R data frame. 
+For example, in the next screenshot, we can see that the [R project](../r_projects/projects.qmd) folder we previously created) (arrow 1), which is called `my_first_project`, is located on a computer's desktop. One way we can tell that it's an R project is because it contains an R project file (arrow 2). We can also see that our R project now contains a `folder`, which contains an Excel file called `form_20.xlsx` (arrow 3). Finally, we can see that we we've added a new R markdown file called `test_relative_links.Rmd` (arrow 4). That file contains the code we wrote to import `form_20.xlsx` as an R data frame. 
 
 ```{r}
 #| label: relative_file_paths_04_check_files
@@ -261,11 +260,11 @@ As you can see, the absolute path still doesn't work on Arthur's computer, but t
 
 Let's quickly recap what we needed to do to be able to use relative file paths. 
 
-1. We need to create an [R project][R projects].
+1. We need to create an [R project](../r_projects/projects.qmd).
 
 2. We needed to save our R code and our data inside of the R project directory. 
 
-3. We needed to share the R project folder with our collaborators. This part wasn't shown, but it was implied. We could have shared our R project by email. We could have shared our R project by using a shared cloud-based file storage service like Dropbox, Google Drive, or OneDrive. Better yet, we could have shared our R project using a [GitHub repository][Introduction to git and GitHub], which we will discuss later in the book. 
+3. We needed to share the R project folder with our collaborators. This part wasn't shown, but it was implied. We could have shared our R project by email. We could have shared our R project by using a shared cloud-based file storage service like Dropbox, Google Drive, or OneDrive. Better yet, we could have shared our R project using a [GitHub repository](Introduction to git and GitHub), which we will discuss later in the book. 
 
 4. We replaced all absolute file paths in our code with relative file paths. In general, we should _always_ use relative file paths if at all possible. It makes our code easier to read and maintain, and it makes life so much easier for us when we collaborate with others! 
 

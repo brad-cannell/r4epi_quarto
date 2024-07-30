@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.23)  29 JUL 2024 21:57
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.23)  29 JUL 2024 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -807,7 +807,7 @@ Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count359
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 236.
-No file index.aux.
+(./index.aux)
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
@@ -1066,9 +1066,6 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 242.
 Package hyperref Info: Link coloring ON on input line 242.
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1107,36 +1104,117 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-]
-No file index.toc.
-\tf@toc=\write5
-\openout5 = `index.toc'.
-
+] (./index.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.665pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.475pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95099pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.66568pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.4755pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 2.
 
 
 [2
 
 ]
+Overfull \hbox (1.09497pt too wide) detected at line 66
+ []\TU/lmss/bx/n/10.95 101
+ []
 
-[3
+
+
+[3]
+Overfull \hbox (2.82748pt too wide) detected at line 80
+ []\TU/lmss/bx/n/12 111
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 81
+ []\TU/lmss/bx/n/10.95 112
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 83
+ []\TU/lmss/bx/n/10.95 119
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 92
+ []\TU/lmss/bx/n/10.95 132
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 93
+ []\TU/lmss/bx/n/10.95 139
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 109
+ []\TU/lmss/bx/n/10.95 147
+ []
+
+
+Overfull \hbox (2.82748pt too wide) detected at line 115
+ []\TU/lmss/bx/n/12 158
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 116
+ []\TU/lmss/bx/n/10.95 159
+ []
+
+
+
+[4]
+Overfull \hbox (1.09497pt too wide) detected at line 117
+ []\TU/lmss/bx/n/10.95 161
+ []
+
+
+Overfull \hbox (2.82748pt too wide) detected at line 120
+ []\TU/lmss/bx/n/12 176
+ []
+
+
+Overfull \hbox (2.82748pt too wide) detected at line 121
+ []\TU/lmss/bx/n/12 177
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 122
+ []\TU/lmss/bx/n/10.95 178
+ []
+
+
+Overfull \hbox (2.82748pt too wide) detected at line 123
+ []\TU/lmss/bx/n/12 179
+ []
+
+
+Overfull \hbox (1.09497pt too wide) detected at line 124
+ []\TU/lmss/bx/n/10.95 179
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `index.toc'.
+
+
+
+[5]
+
+[6
 
 ]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95099pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.66568pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4755pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 318.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 318.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 320.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1157,18 +1235,15 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 320.
 
 
-[4
+[7
 
 ]
 
-[5]
-
-LaTeX Warning: Reference `sec-using-git-and-github' on page 6 undefined on input line 435.
-
+[8]
 File: chapters/contributing/typo_on_screen.png Graphic file (type bmp)
 <chapters/contributing/typo_on_screen.png>
 
-Overfull \hbox (10.95807pt too wide) in paragraph at lines 441--442
+Overfull \hbox (10.95807pt too wide) in paragraph at lines 440--441
 [][] 
  []
 
@@ -1177,102 +1252,99 @@ File: chapters/contributing/edit_button.png Graphic file (type bmp)
 File: chapters/contributing/fork_button.png Graphic file (type bmp)
 <chapters/contributing/fork_button.png>
 
-Overfull \hbox (10.95859pt too wide) in paragraph at lines 453--454
+Overfull \hbox (10.95859pt too wide) in paragraph at lines 452--453
 [][] 
  []
 
 
 
-[6
+[9
 
 ]
 File: chapters/contributing/text_editor.png Graphic file (type bmp)
 <chapters/contributing/text_editor.png>
 
-Overfull \hbox (10.94939pt too wide) in paragraph at lines 473--474
+Overfull \hbox (10.94939pt too wide) in paragraph at lines 472--473
 [][] 
  []
 
 File: chapters/contributing/fix_typo.png Graphic file (type bmp)
 <chapters/contributing/fix_typo.png>
 
-Overfull \hbox (10.9511pt too wide) in paragraph at lines 488--489
-[][] 
- []
-
-
-
-[7]
-File: chapters/contributing/propose_changes.png Graphic file (type bmp)
-<chapters/contributing/propose_changes.png>
-
-Overfull \hbox (10.95369pt too wide) in paragraph at lines 502--503
-[][] 
- []
-
-
-
-[8]
-File: chapters/contributing/create_pull_request_1.png Graphic file (type bmp)
-<chapters/contributing/create_pull_request_1.png>
-
-Overfull \hbox (10.93846pt too wide) in paragraph at lines 508--509
-[][] 
- []
-
-
-
-[9]
-File: chapters/contributing/create_pull_request_2.png Graphic file (type bmp)
-<chapters/contributing/create_pull_request_2.png>
-
-Overfull \hbox (10.96066pt too wide) in paragraph at lines 522--523
+Overfull \hbox (10.9511pt too wide) in paragraph at lines 487--488
 [][] 
  []
 
 
 
 [10]
-File: chapters/contributing/create_pull_request_3.png Graphic file (type bmp)
-<chapters/contributing/create_pull_request_3.png>
+File: chapters/contributing/propose_changes.png Graphic file (type bmp)
+<chapters/contributing/propose_changes.png>
 
-Overfull \hbox (10.96109pt too wide) in paragraph at lines 535--536
-[][] 
- []
-
-File: chapters/contributing/create_pull_request_4.png Graphic file (type bmp)
-<chapters/contributing/create_pull_request_4.png>
-
-Overfull \hbox (10.93073pt too wide) in paragraph at lines 540--541
+Overfull \hbox (10.95369pt too wide) in paragraph at lines 501--502
 [][] 
  []
 
 
 
 [11]
-File: chapters/contributing/create_pull_request_5.png Graphic file (type bmp)
-<chapters/contributing/create_pull_request_5.png>
+File: chapters/contributing/create_pull_request_1.png Graphic file (type bmp)
+<chapters/contributing/create_pull_request_1.png>
 
-Overfull \hbox (10.94722pt too wide) in paragraph at lines 546--547
+Overfull \hbox (10.93846pt too wide) in paragraph at lines 507--508
 [][] 
  []
 
 
-LaTeX Warning: Hyper reference `glossary-issue' on page 12 undefined on input line 555.
-
-
 
 [12]
-File: chapters/contributing/issue_tracker.png Graphic file (type bmp)
-<chapters/contributing/issue_tracker.png>
+File: chapters/contributing/create_pull_request_2.png Graphic file (type bmp)
+<chapters/contributing/create_pull_request_2.png>
 
-Overfull \hbox (10.95251pt too wide) in paragraph at lines 559--560
+Overfull \hbox (10.96066pt too wide) in paragraph at lines 521--522
 [][] 
  []
 
 
 
 [13]
+File: chapters/contributing/create_pull_request_3.png Graphic file (type bmp)
+<chapters/contributing/create_pull_request_3.png>
+
+Overfull \hbox (10.96109pt too wide) in paragraph at lines 534--535
+[][] 
+ []
+
+File: chapters/contributing/create_pull_request_4.png Graphic file (type bmp)
+<chapters/contributing/create_pull_request_4.png>
+
+Overfull \hbox (10.93073pt too wide) in paragraph at lines 539--540
+[][] 
+ []
+
+
+
+[14]
+File: chapters/contributing/create_pull_request_5.png Graphic file (type bmp)
+<chapters/contributing/create_pull_request_5.png>
+
+Overfull \hbox (10.94722pt too wide) in paragraph at lines 545--546
+[][] 
+ []
+
+
+
+[15]
+File: chapters/contributing/issue_tracker.png Graphic file (type bmp)
+<chapters/contributing/issue_tracker.png>
+
+Overfull \hbox (10.95251pt too wide) in paragraph at lines 558--559
+[][] 
+ []
+
+
+
+[16]
 File: chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-a4a233699ebb8edeaca4e7ae0455099b.pdf Graphic file (type pdf)
 <use chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-a4a233699ebb8edeaca4e7ae0455099b.pdf>
 File: chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-d19241927d9e636802f0f0caca52c0af.pdf Graphic file (type pdf)
@@ -1283,7 +1355,7 @@ File: chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-1cbf
 <use chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-1cbfc0b82b7e84c9b17b238bfd9a886e.pdf>
 
 
-[14
+[17
 
 ]
 File: chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-a4a233699ebb8edeaca4e7ae0455099b.pdf Graphic file (type pdf)
@@ -1292,14 +1364,14 @@ File: chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-ab37
 <use chapters/about_the_authors/about_the_authors_files/figure-pdf/fa-icon-ab37b36564b32e84e458655a90d49135.pdf>
 
 
-[15]
+[18]
 part I.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 681.
+(scrkbase)              on input line 680.
 
 
-[16
+[19
 
 ]
 chapter 1.
@@ -1318,109 +1390,103 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-
-LaTeX Warning: Hyper reference `glossary-r' on page 17 undefined on input line 685.
-
-
-LaTeX Warning: Hyper reference `glossary-rstudio' on page 17 undefined on input line 689.
-
 File: chapters/installing_r_and_rstudio/mac_cran.png Graphic file (type bmp)
 <chapters/installing_r_and_rstudio/mac_cran.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 724--725
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 723--724
 [][] 
  []
 
 
 
-[17
+[20
 
 ]
 File: chapters/installing_r_and_rstudio/mac_download_r.png Graphic file (type bmp)
 <chapters/installing_r_and_rstudio/mac_download_r.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 728--729
-[][] 
- []
-
-
-
-[18]
-File: chapters/installing_r_and_rstudio/mac_r_version.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_r_version.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 737--738
-[][] 
- []
-
-File: chapters/installing_r_and_rstudio/mac_install_r1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_install_r1.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 744--745
-[][] 
- []
-
-
-
-[19]
-File: chapters/installing_r_and_rstudio/mac_install_r2.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_install_r2.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 751--752
-[][] 
- []
-
-File: chapters/installing_r_and_rstudio/mac_view_r.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_view_r.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 756--757
-[][] 
- []
-
-
-
-[20]
-File: chapters/installing_r_and_rstudio/mac_download_rstudio1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_download_rstudio1.png>
-
-Overfull \hbox (10.9374pt too wide) in paragraph at lines 765--766
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 727--728
 [][] 
  []
 
 
 
 [21]
-File: chapters/installing_r_and_rstudio/mac_install_rstudio1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_install_rstudio1.png>
+File: chapters/installing_r_and_rstudio/mac_r_version.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_r_version.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 772--773
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 736--737
+[][] 
+ []
+
+File: chapters/installing_r_and_rstudio/mac_install_r1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_install_r1.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 743--744
 [][] 
  []
 
 
 
 [22]
-File: chapters/installing_r_and_rstudio/mac_install_rstudio2.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_install_rstudio2.png>
+File: chapters/installing_r_and_rstudio/mac_install_r2.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_install_r2.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 778--779
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 750--751
 [][] 
  []
 
-File: chapters/installing_r_and_rstudio/mac_open_rstudio.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/mac_open_rstudio.png>
+File: chapters/installing_r_and_rstudio/mac_view_r.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_view_r.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 783--784
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 755--756
 [][] 
  []
 
 
 
 [23]
+File: chapters/installing_r_and_rstudio/mac_download_rstudio1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_download_rstudio1.png>
+
+Overfull \hbox (10.9374pt too wide) in paragraph at lines 764--765
+[][] 
+ []
+
+
+
+[24]
+File: chapters/installing_r_and_rstudio/mac_install_rstudio1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_install_rstudio1.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 771--772
+[][] 
+ []
+
+
+
+[25]
+File: chapters/installing_r_and_rstudio/mac_install_rstudio2.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_install_rstudio2.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 777--778
+[][] 
+ []
+
+File: chapters/installing_r_and_rstudio/mac_open_rstudio.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/mac_open_rstudio.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 782--783
+[][] 
+ []
+
+
+
+[26]
 File: chapters/installing_r_and_rstudio/mac_open_warning.png Graphic file (type bmp)
 <chapters/installing_r_and_rstudio/mac_open_warning.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 787--788
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 786--787
 [][] 
  []
 
@@ -1428,111 +1494,280 @@ Missing character: There is no 🎉 (U+1F389) in font [lmroman10-regular]:mappin
 File: chapters/installing_r_and_rstudio/mac_view_rstudio.png Graphic file (type bmp)
 <chapters/installing_r_and_rstudio/mac_view_rstudio.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 792--793
-[][] 
- []
-
-
-
-[24]
-File: chapters/installing_r_and_rstudio/pc_cran.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_cran.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 800--801
-[][] 
- []
-
-
-
-[25]
-File: chapters/installing_r_and_rstudio/pc_download_r1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_download_r1.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 804--805
-[][] 
- []
-
-File: chapters/installing_r_and_rstudio/pc_download_r2.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_download_r2.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 808--809
-[][] 
- []
-
-
-
-[26]
-File: chapters/installing_r_and_rstudio/pc_download_r3.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_download_r3.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 816--817
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 791--792
 [][] 
  []
 
 
 
 [27]
-File: chapters/installing_r_and_rstudio/pc_install_r1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_install_r1.png>
+File: chapters/installing_r_and_rstudio/pc_cran.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_cran.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 823--824
-[][] 
- []
-
-File: chapters/installing_r_and_rstudio/pc_install_r2.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_install_r2.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 830--831
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 799--800
 [][] 
  []
 
 
 
 [28]
-File: chapters/installing_r_and_rstudio/pc_view_r.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_view_r.png>
+File: chapters/installing_r_and_rstudio/pc_download_r1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_download_r1.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 835--836
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 803--804
+[][] 
+ []
+
+File: chapters/installing_r_and_rstudio/pc_download_r2.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_download_r2.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 807--808
 [][] 
  []
 
 
 
 [29]
-File: chapters/installing_r_and_rstudio/pc_download_rstudio1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_download_rstudio1.png>
+File: chapters/installing_r_and_rstudio/pc_download_r3.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_download_r3.png>
 
-Overfull \hbox (10.9374pt too wide) in paragraph at lines 844--845
-[][] 
- []
-
-File: chapters/installing_r_and_rstudio/pc_install_rstudio1.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_install_rstudio1.png>
-
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 851--852
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 815--816
 [][] 
  []
 
 
 
 [30]
-File: chapters/installing_r_and_rstudio/pc_install_rstudio2.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_install_rstudio2.png>
+File: chapters/installing_r_and_rstudio/pc_install_r1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_install_r1.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 858--859
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 822--823
+[][] 
+ []
+
+File: chapters/installing_r_and_rstudio/pc_install_r2.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_install_r2.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 829--830
 [][] 
  []
 
 
 
 [31]
+File: chapters/installing_r_and_rstudio/pc_view_r.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_view_r.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 834--835
+[][] 
+ []
+
+
+
+[32]
+File: chapters/installing_r_and_rstudio/pc_download_rstudio1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_download_rstudio1.png>
+
+Overfull \hbox (10.9374pt too wide) in paragraph at lines 843--844
+[][] 
+ []
+
+File: chapters/installing_r_and_rstudio/pc_install_rstudio1.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_install_rstudio1.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 850--851
+[][] 
+ []
+
+
+
+[33]
+File: chapters/installing_r_and_rstudio/pc_install_rstudio2.png Graphic file (type bmp)
+<chapters/installing_r_and_rstudio/pc_install_rstudio2.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 857--858
+[][] 
+ []
+
+
+
+[34]
 File: chapters/installing_r_and_rstudio/pc_view_rstudio1.png Graphic file (type bmp)
 <chapters/installing_r_and_rstudio/pc_view_rstudio1.png>
 
-Overfull \hbox (10.96211pt too wide) in paragraph at lines 863--864
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 862--863
 [][] 
  []
 
 Missing character: There is no 🎉 (U+1F389) in font [lmroman10-regular]:mapping=tex-text;!
 File: chapters/installing_r_and_rstudio/pc_view_rstudio2.png Graphic file (type bmp)
-<chapters/installing_r_and_rstudio/pc_vi
+<chapters/installing_r_and_rstudio/pc_view_rstudio2.png>
+
+Overfull \hbox (10.96211pt too wide) in paragraph at lines 867--868
+[][] 
+ []
+
+
+
+[35]
+chapter 2.
+File: chapters/what_is_r/table.png Graphic file (type bmp)
+<chapters/what_is_r/table.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 895--896
+[][] 
+ []
+
+
+
+[36
+
+]
+File: chapters/what_is_r/table_cells.png Graphic file (type bmp)
+<chapters/what_is_r/table_cells.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 899--900
+[][] 
+ []
+
+
+
+[37]
+File: chapters/what_is_r/table_columns.png Graphic file (type bmp)
+<chapters/what_is_r/table_columns.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 915--916
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 930--934
+
+ []
+
+File: chapters/what_is_r/table_column_name.png Graphic file (type bmp)
+<chapters/what_is_r/table_column_name.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 939--940
+[][] 
+ []
+
+
+
+[38]
+File: chapters/what_is_r/table_rows.png Graphic file (type bmp)
+<chapters/what_is_r/table_rows.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 944--945
+[][] 
+ []
+
+File: chapters/what_is_r/table_values.png Graphic file (type bmp)
+<chapters/what_is_r/table_values.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 948--949
+[][] 
+ []
+
+
+
+[39]
+File: chapters/what_is_r/r_logo.png Graphic file (type bmp)
+<chapters/what_is_r/r_logo.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 956--957
+[] 
+ []
+
+
+
+[40]
+Missing character: There is no 😂 (U+1F602) in font [lmroman10-regular]:mapping=tex-text;!
+File: chapters/what_is_r/competencies_overview.png Graphic file (type bmp)
+<chapters/what_is_r/competencies_overview.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 967--968
+[][] 
+ []
+
+
+
+[41]
+File: chapters/what_is_r/competencies_transfer.png Graphic file (type bmp)
+<chapters/what_is_r/competencies_transfer.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 971--972
+[] 
+ []
+
+
+
+[42]
+File: chapters/what_is_r/competencies_manage.png Graphic file (type bmp)
+<chapters/what_is_r/competencies_manage.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 985--986
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1004
+
+ []
+
+
+
+[43]
+File: chapters/what_is_r/competencies_analysis.png Graphic file (type bmp)
+<chapters/what_is_r/competencies_analysis.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 1031--1032
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1045
+
+ []
+
+
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1051
+
+ []
+
+File: chapters/what_is_r/competencies_present.png Graphic file (type bmp)
+<chapters/what_is_r/competencies_present.png>
+
+Overfull \hbox (10.94806pt too wide) in paragraph at lines 1058--1059
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1078
+
+ []
+
+
+Underfull \hbox

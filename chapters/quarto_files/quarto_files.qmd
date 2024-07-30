@@ -5,13 +5,13 @@ Hidden comments placeholder
 ---------------------------
 
 To preview:
-bookdown::preview_chapter("chapters/02_part_coding_tools_and_best_practices/02_quarto.Rmd")
+bookdown::preview_chapter("r4epi/chapters/02_part_coding_tools_and_best_practices")
 
 Copy and paste:
 👆**Here's what we did above:**
 -->
 
-In the chapter on [R Scripts], you learned how to create R scripts -- plain text files that contain R code and comments. These R scripts are kind of a big deal because they give us a simple and effective tool for saving, modifying, and sharing our R code. If it weren't for the existence of [Quarto](https://quarto.org/) files, we would probably do all of the coding in this book using R scripts. However, Quarto files _do_ exist and they are AWESOME! So, we're going to suggest that you use them instead of R scripts the majority of the time.
+In the [R Scripts](../r_scripts/r_scripts.qmd) chapter, you learned how to create R scripts -- plain text files that contain R code and comments. These R scripts are kind of a big deal because they give us a simple and effective tool for saving, modifying, and sharing our R code. If it weren't for the existence of [Quarto](https://quarto.org/) files, we would probably do all of the coding in this book using R scripts. However, Quarto files _do_ exist and they are AWESOME! So, we're going to suggest that you use them instead of R scripts the majority of the time.
 
 It's actually kind of difficult for us to _describe_ what a Quarto file is if you've never seen or heard of one before. Therefore, we're going to start with an example and work backwards from there. @fig-example-quarto below is a Quarto file. It includes the exact same R code and comments as the example we saw in @fig-example-script in the previous chapter. 
 

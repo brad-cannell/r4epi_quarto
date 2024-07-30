@@ -75,18 +75,14 @@ book:
         - chapters/r_projects/projects.qmd
         - chapters/best_practices/best_practices.qmd
         - chapters/using_pipes/using_pipes.qmd
-
+        
     - part: "Data Transfer"
       chapters: 
          - chapters/data_transfer/data_transfer.qmd
          - chapters/file_paths/file_paths.qmd
-        
-        
+         
     - part: "Collaboration"
-      chapters:
-        - chapters/using_git_github/using_git_github.qmd
-        
-
+      
     
     - part: "References"
       chapters:
