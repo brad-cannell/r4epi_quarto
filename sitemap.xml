@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/navigating_rstudio/navigating_rstudio.html</loc>
-    <lastmod>2024-07-30T01:51:46.608Z</lastmod>
+    <lastmod>2024-07-31T01:50:59.788Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/speaking_r/speaking_r.html</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/lets_get_programming/lets_get_programming.html</loc>
-    <lastmod>2024-07-30T02:52:22.325Z</lastmod>
+    <lastmod>2024-07-31T01:51:07.293Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/asking_questions/asking_questions.html</loc>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/quarto_files/quarto_files.html</loc>
-    <lastmod>2024-07-31T01:16:05.970Z</lastmod>
+    <lastmod>2024-07-31T01:50:23.772Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/r_projects/projects.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/best_practices/best_practices.html</loc>
-    <lastmod>2024-07-30T01:51:46.483Z</lastmod>
+    <lastmod>2024-07-31T01:52:18.581Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/using_pipes/using_pipes.html</loc>
@@ -66,11 +66,15 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/file_paths/file_paths.html</loc>
-    <lastmod>2024-07-31T01:16:05.775Z</lastmod>
+    <lastmod>2024-07-31T01:51:36.718Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/importing_plain_text/importing_plain_text.html</loc>
     <lastmod>2024-07-31T01:16:05.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/importing_binary_files/importing_binary_files.html</loc>
+    <lastmod>2024-07-31T01:48:30.134Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/intro_git_github/intro_git_github.html</loc>
@@ -78,7 +82,7 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/chapters/using_git_github/using_git_github.html</loc>
-    <lastmod>2024-07-31T01:16:06.146Z</lastmod>
+    <lastmod>2024-07-31T01:50:15.571Z</lastmod>
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/references.html</loc>
@@ -90,6 +94,6 @@
   </url>
   <url>
     <loc>https://brad-cannell.github.io/r4epi_quarto/R-4-Epidemiology.pdf</loc>
-    <lastmod>2024-07-31T01:19:28.602Z</lastmod>
+    <lastmod>2024-07-31T02:01:09.989Z</lastmod>
   </url>
 </urlset>

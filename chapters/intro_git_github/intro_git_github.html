@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R 4 Epidemiology - 15&nbsp; Introduction to git and GitHub</title>
+<title>R 4 Epidemiology - 16&nbsp; Introduction to git and GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../chapters/using_git_github/using_git_github.html" rel="next">
-<link href="../../chapters/importing_plain_text/importing_plain_text.html" rel="prev">
+<link href="../../chapters/importing_binary_files/importing_binary_files.html" rel="prev">
 <link href="../../r4epi_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -101,7 +101,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -292,6 +292,12 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Importing Plain Text Files</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/importing_binary_files/importing_binary_files.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Importing Binary Files</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -306,13 +312,13 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -329,7 +335,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
       </ul>
@@ -361,20 +367,20 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#versioning" id="toc-versioning" class="nav-link active" data-scroll-target="#versioning"><span class="header-section-number">15.1</span> Versioning</a></li>
-  <li><a href="#preservation" id="toc-preservation" class="nav-link" data-scroll-target="#preservation"><span class="header-section-number">15.2</span> Preservation</a></li>
-  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">15.3</span> Reproducibility</a></li>
-  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration"><span class="header-section-number">15.4</span> Collaboration</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">15.5</span> Summary</a></li>
+  <li><a href="#versioning" id="toc-versioning" class="nav-link active" data-scroll-target="#versioning"><span class="header-section-number">16.1</span> Versioning</a></li>
+  <li><a href="#preservation" id="toc-preservation" class="nav-link" data-scroll-target="#preservation"><span class="header-section-number">16.2</span> Preservation</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">16.3</span> Reproducibility</a></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration"><span class="header-section-number">16.4</span> Collaboration</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">16.5</span> Summary</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/intro_git_github/intro_git_github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></h1>
 </div>
 
 
@@ -422,8 +428,8 @@ bookdown::preview_chapter("chapters/08_part_collaboration/01_intro_git_github.Rm
 <li>Collaboration</li>
 </ol>
 <p>We’ll elaborate on what each of these means to us below. Then, we will introduce you to git and GitHub, and explain why they are some of the best tools currently available to help you with versioning and collaborating. We’ll go ahead and warn you now — git and GitHub can be hard to wrap your mind around at first. In fact, using git and GitHub still frequently causes us confusion and frustration at times. However, we still believe that the payoff is ultimately worth the upfront investment in time and frustration. Additionally, we will do our best to make this introduction as gentle, comprehensible, and practically applicable as possible.</p>
-<section id="versioning" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="versioning"><span class="header-section-number">15.1</span> Versioning</h2>
+<section id="versioning" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="versioning"><span class="header-section-number">16.1</span> Versioning</h2>
 <p>Have you ever worked on a paper or report and had a folder on your computer that looked something like this?</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -445,7 +451,7 @@ bookdown::preview_chapter("chapters/08_part_collaboration/01_intro_git_github.Rm
 <img src="google_doc_01.gif" class="img-fluid figure-img" alt="A gif about Google Docs.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.1: A gif about Google Docs.
+Figure&nbsp;16.1: A gif about Google Docs.
 </figcaption>
 </figure>
 </div>
@@ -460,7 +466,7 @@ Figure&nbsp;15.1: A gif about Google Docs.
 <img src="google_doc_02.gif" class="img-fluid figure-img" alt="A gif about Google Docs2.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.2: A gif about Google Docs2.
+Figure&nbsp;16.2: A gif about Google Docs2.
 </figcaption>
 </figure>
 </div>
@@ -476,7 +482,7 @@ Figure&nbsp;15.2: A gif about Google Docs2.
 <img src="google_doc_03.gif" class="img-fluid figure-img" alt="A gif about Google Docs 3.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.3: A gif about Google Docs 3.
+Figure&nbsp;16.3: A gif about Google Docs 3.
 </figcaption>
 </figure>
 </div>
@@ -492,7 +498,7 @@ Figure&nbsp;15.3: A gif about Google Docs 3.
 <img src="google_doc_04.gif" class="img-fluid figure-img" alt="A gif about Google Docs4.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.4: A gif about Google Docs4.
+Figure&nbsp;16.4: A gif about Google Docs4.
 </figcaption>
 </figure>
 </div>
@@ -508,7 +514,7 @@ Figure&nbsp;15.4: A gif about Google Docs4.
 <img src="google_doc_05.gif" class="img-fluid figure-img" alt="A gif about Google Docs5.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.5: A gif about Google Docs5.
+Figure&nbsp;16.5: A gif about Google Docs5.
 </figcaption>
 </figure>
 </div>
@@ -536,12 +542,12 @@ Figure&nbsp;15.5: A gif about Google Docs5.
 </div>
 </div>
 </section>
-<section id="preservation" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="preservation"><span class="header-section-number">15.2</span> Preservation</h2>
+<section id="preservation" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="preservation"><span class="header-section-number">16.2</span> Preservation</h2>
 <p>In addition to versioning, the ability to preserve all of your code and related project files in the cloud is another great reason to consider using GitHub. In other words, you don’t have to worry about losing your code if your computer is lost, damaged, or replaced. All of your project files can easily be retrieved and restored from GitHub. Although the same is true for other cloud-based file storage services like Dropbox, Google Drive, and OneDrive, remember that GitHub has special built-in tools that those services do not provide.</p>
 </section>
-<section id="reproducibility" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">15.3</span> Reproducibility</h2>
+<section id="reproducibility" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">16.3</span> Reproducibility</h2>
 <p>Reproducibility, or more precisely, <strong>reproducible research</strong>, is a term that may be unfamiliar to many of you. Peng and Hichs (2021) give a nice introduction to reproducible research:<span class="citation" data-cites="Peng2021-xk"><sup><a href="../../references.html#ref-Peng2021-xk" role="doc-biblioref">1</a></sup></span></p>
 <blockquote class="blockquote">
 <p>Scientific progress has long depended on the ability of scientists to communicate to others the details of their investigations… In the past, it might have sufficed to describe the data collection and analysis using a few key words and high-level language. However, with today’s computing-intensive research, the lack of details about the data analysis in particular can make it impossible to recreate any of the results presented in a paper. Compounding these difficulties is the impracticality of describing these myriad details in traditional journal publications using natural language. To address this communication problem, a concept has emerged known as reproducible research, which aims to provide for others far more precise descriptions of an investigator’s work. As such, reproducible research is an extension of the usual communications practices of scientists, adapted to the modern era.</p>
@@ -552,8 +558,8 @@ Figure&nbsp;15.5: A gif about Google Docs5.
 </blockquote>
 <p>We will not delve deeper into the general importance and challenges of reproducible research in this book; however, we encourage readers who are interested in learning more about reproducible research to take a look at both of the articles cited above. Additionally, we believe it’s important to highlight that GitHub is a great tool for making our research more reproducible. Specifically, it provides a platform where others can easily download the data (when we are allowed to make it available), computer code, and documentation needed to recreate our research results. This is a great asset for scientific progress, but only if researchers like us use it effectively.</p>
 </section>
-<section id="collaboration" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="collaboration"><span class="header-section-number">15.4</span> Collaboration</h2>
+<section id="collaboration" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="collaboration"><span class="header-section-number">16.4</span> Collaboration</h2>
 <p>In the sections above, we discussed the ways in which git and GitHub are tools we can use for versioning, preserving our code in the cloud, and making our research more reproducible. All of these are important benefits of using git and GitHub even if we don’t routinely collaborate with others to complete our projects. However, the power of GitHub is even greater when we think about using it as a tool for collaboration — including collaboration with our future selves.</p>
 <p>For example, one research project that we (the authors) both work on is the Detection of Elder abuse Through Emergency Care Technicians (DETECT) project. Let’s say that we would like to start collaborating with you on DETECT. Perhaps we need your help preprocessing some of the DETECT data and conducting an analysis. So, how do we get started?</p>
 <p>Because we created a <strong>repository</strong> on GitHub for the DETECT project, all of the files and documentation you need to get started are easily accessible to you. In fact, you don’t even have to reach out to us first for access. They are freely available to anyone who is interested. Please go ahead and use the following URL to view the DETECT repository now: <a href="https://github.com/brad-cannell/detect_pilot_test_5w" class="uri">https://github.com/brad-cannell/detect_pilot_test_5w</a>. GitHub repositories may look a little confusing at first, but you will get used to them with practice.</p>
@@ -572,8 +578,8 @@ Note
 </div>
 <p>We could have emailed the files back and forth, but what if we accidentally forget to send you one? What if one of the files is too large to email? What if two people are working on the same file at the same time and send out their revisions via email? Which version should we use? In the chapters that follow, we will show you how using GitHub to share project files gets around these, and other, collaboration issues.</p>
 </section>
-<section id="summary" class="level2" data-number="15.5">
-<h2 data-number="15.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">15.5</span> Summary</h2>
+<section id="summary" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">16.5</span> Summary</h2>
 <p>In summary, git and GitHub are awesome tools to use when our projects involve research and/or data analysis. They allow us to store all of our files in the cloud with the added benefit of versioning and many other collaboration tools. The primary disadvantage of using GitHub instead of just emailing code files or using general-purpose cloud storage services is its learning curve. But, in the following chapters, we hope to give you enough knowledge to make GitHub immediately useful to you. Over time, you can continue to hone your GitHub skills and really take advantage of everything it has to offer. We think if you make this initial investment, it is unlikely that you will ever look back.</p>
 
 
@@ -999,13 +1005,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/importing_plain_text/importing_plain_text.html" class="pagination-link" aria-label="Importing Plain Text Files">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Importing Plain Text Files</span></span>
+      <a href="../../chapters/importing_binary_files/importing_binary_files.html" class="pagination-link" aria-label="Importing Binary Files">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Importing Binary Files</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/using_git_github/using_git_github.html" class="pagination-link" aria-label="Using git and GitHub">
-        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
