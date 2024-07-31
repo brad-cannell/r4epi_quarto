@@ -1074,6 +1074,8 @@ To do so, Brad will first click `Fetch upstream` followed by the green `Fetch an
 ```{r}
 #| label: pull_request_24
 #| echo: FALSE
+
+
 knitr::include_graphics("pull_request_24.png")
 ```
 

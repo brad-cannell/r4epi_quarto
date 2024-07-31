@@ -78,8 +78,11 @@ book:
         
     - part: "Data Transfer"
       chapters: 
-         - chapters/data_transfer/data_transfer.qmd
-         - chapters/file_paths/file_paths.qmd
+      - chapters/data_transfer/data_transfer.qmd
+      - chapters/file_paths/file_paths.qmd
+      - chapters/importing_plain_text/importing_plain_text.qmd
+        
+      
          
     - part: "Collaboration"
       chapters: 
