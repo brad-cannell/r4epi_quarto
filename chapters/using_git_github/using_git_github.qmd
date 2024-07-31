@@ -143,7 +143,7 @@ knitr::include_graphics("repositories_01.png")
 ```
 
 ::: callout-warning
-⚠️**Warning:** Just because we _can_ upload data to GitHub doesn't mean we _should_ upload data to GitHub. Often, the data we use in epidemiology contains [protected health information](https://privacyruleandresearch.nih.gov/pr_07.asp) (PHI) that we must go to great lengths to keep secure. In general, GitHub is **NOT** considered a secure place to store our data and should not be used for this purpose. Below, we will demonstrate how to make sure our data isn't uploaded to GitHub with the rest of the files in our repository.
+Just because we _can_ upload data to GitHub doesn't mean we _should_ upload data to GitHub. Often, the data we use in epidemiology contains [protected health information](https://privacyruleandresearch.nih.gov/pr_07.asp) (PHI) that we must go to great lengths to keep secure. In general, GitHub is **NOT** considered a secure place to store our data and should not be used for this purpose. Below, we will demonstrate how to make sure our data isn't uploaded to GitHub with the rest of the files in our repository.
 :::
 
 To create a new repository in GitHub, we will simply click the green `Create repository` button. This button will look slightly different depending on where we are at in the GitHub website. The screenshot below was taken from Arthur Epi's (our fictitious research assistant) main landing page (i.e., <https://github.com/>).

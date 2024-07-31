@@ -81,6 +81,7 @@ book:
       - chapters/data_transfer/data_transfer.qmd
       - chapters/file_paths/file_paths.qmd
       - chapters/importing_plain_text/importing_plain_text.qmd
+      - chapters/importing_binary_files/importing_binary_files.qmd
         
       
          

@@ -57,7 +57,7 @@ knitr::include_graphics("quarto_files.png")
 In @fig-quarto-files above, the HTML file is highlighted with a red box and ends with the `.html` file extension. The Quarto file is below the HTML file and ends with the `.qmd` file extension. Both of these files can be modified, saved, and shared with others. 
 
 :::callout-warning
-⚠️**Warning:** HTML documents often require supporting files (e.g., images, CSS style sheets, and JavaScript scripts) to produce the final formatted output you see in the @fig-rendered-preview. Notice that we used the `embed-resources: true` option in our yaml header (yaml headers are described in more detail below). Including that option makes it possible for us to send a single HTML file to others with all the supporting files embedded. Please see the [Quarto documentation](https://quarto.org/docs/output-formats/html-basics#self-contained) for more information about HTML document options.
+HTML documents often require supporting files (e.g., images, CSS style sheets, and JavaScript scripts) to produce the final formatted output you see in the @fig-rendered-preview. Notice that we used the `embed-resources: true` option in our yaml header (yaml headers are described in more detail below). Including that option makes it possible for us to send a single HTML file to others with all the supporting files embedded. Please see the [Quarto documentation](https://quarto.org/docs/output-formats/html-basics#self-contained) for more information about HTML document options.
 :::
 
 ## What is Quarto?

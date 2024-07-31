@@ -73,18 +73,18 @@ OR
 `C:/Users/bradcannell/Desktop/NTRHD/my_study_data.csv` (On Windows)
 
 ::: callout-warning
-⚠️**Warning:** Mac and Linux use forward slashes in file paths (`/`) by default. Windows uses backslashes (`\`) in file paths by default. However, no matter which operating system we are using, we should still use forward slashes in the file paths we pass to import and export functions in RStudio. **In other words, use forward slashes even if you are using Windows.**
+Mac and Linux use forward slashes in file paths (`/`) by default. Windows uses backslashes (`\`) in file paths by default. However, no matter which operating system we are using, we should still use forward slashes in the file paths we pass to import and export functions in RStudio. **In other words, use forward slashes even if you are using Windows.**
 :::
 
 These directions may be read in a more human-like way by replacing the slashes with "and then". For example, `/Users/bradcannell/Desktop/NTRHD/my_study_data.csv` can be read as "starting at the computer's home directory, go into files that are accessible to the username `bradcannell`, and then go into the folder called `Desktop`, and then go into the folder called `NTRHD`, and then get the file called `my_study_data.csv`."
 
 ::: callout-warning
-⚠️**Warning:** You will need to change `bradcannell` to your username, unless your username also happens to be `bradcannell`
+You will need to change `bradcannell` to your username, unless your username also happens to be `bradcannell`
 :::
 
 
 ::: callout-warning
-⚠️**Warning:** Notice that we typed `.csv` at the end immediately after the name of our file `my_study_data`. The `.csv` we typed is called a **file extension**. File extensions tell the computer the file's type and what programs can use it. In general, we MUST use the full file name and extension when importing and exporting data in R.
+ Notice that we typed `.csv` at the end immediately after the name of our file `my_study_data`. The `.csv` we typed is called a **file extension**. File extensions tell the computer the file's type and what programs can use it. In general, we MUST use the full file name and extension when importing and exporting data in R.
 :::
 
 **Self Quiz:**
