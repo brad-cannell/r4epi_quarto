@@ -1,39 +1,39 @@
-/* quarto syntax highlight colors */
+/* Quarto syntax highlight colors */
 :root {
-  --quarto-hl-ot-color: #003B4F;
-  --quarto-hl-at-color: #657422;
-  --quarto-hl-ss-color: #20794D;
-  --quarto-hl-an-color: #5E5E5E;
-  --quarto-hl-fu-color: #4758AB;
-  --quarto-hl-st-color: #20794D;
-  --quarto-hl-cf-color: #003B4F;
-  --quarto-hl-op-color: #5E5E5E;
-  --quarto-hl-er-color: #AD0000;
-  --quarto-hl-bn-color: #AD0000;
-  --quarto-hl-al-color: #AD0000;
-  --quarto-hl-va-color: #111111;
-  --quarto-hl-bu-color: inherit;
-  --quarto-hl-ex-color: inherit;
-  --quarto-hl-pp-color: #AD0000;
-  --quarto-hl-in-color: #5E5E5E;
-  --quarto-hl-vs-color: #20794D;
-  --quarto-hl-wa-color: #5E5E5E;
-  --quarto-hl-do-color: #5E5E5E;
-  --quarto-hl-im-color: #00769E;
-  --quarto-hl-ch-color: #20794D;
-  --quarto-hl-dt-color: #AD0000;
-  --quarto-hl-fl-color: #AD0000;
-  --quarto-hl-co-color: #5E5E5E;
-  --quarto-hl-cv-color: #5E5E5E;
-  --quarto-hl-cn-color: #8f5902;
-  --quarto-hl-sc-color: #5E5E5E;
-  --quarto-hl-dv-color: #AD0000;
-  --quarto-hl-kw-color: #003B4F;
+  --Quarto-hl-ot-color: #003B4F;
+  --Quarto-hl-at-color: #657422;
+  --Quarto-hl-ss-color: #20794D;
+  --Quarto-hl-an-color: #5E5E5E;
+  --Quarto-hl-fu-color: #4758AB;
+  --Quarto-hl-st-color: #20794D;
+  --Quarto-hl-cf-color: #003B4F;
+  --Quarto-hl-op-color: #5E5E5E;
+  --Quarto-hl-er-color: #AD0000;
+  --Quarto-hl-bn-color: #AD0000;
+  --Quarto-hl-al-color: #AD0000;
+  --Quarto-hl-va-color: #111111;
+  --Quarto-hl-bu-color: inherit;
+  --Quarto-hl-ex-color: inherit;
+  --Quarto-hl-pp-color: #AD0000;
+  --Quarto-hl-in-color: #5E5E5E;
+  --Quarto-hl-vs-color: #20794D;
+  --Quarto-hl-wa-color: #5E5E5E;
+  --Quarto-hl-do-color: #5E5E5E;
+  --Quarto-hl-im-color: #00769E;
+  --Quarto-hl-ch-color: #20794D;
+  --Quarto-hl-dt-color: #AD0000;
+  --Quarto-hl-fl-color: #AD0000;
+  --Quarto-hl-co-color: #5E5E5E;
+  --Quarto-hl-cv-color: #5E5E5E;
+  --Quarto-hl-cn-color: #8f5902;
+  --Quarto-hl-sc-color: #5E5E5E;
+  --Quarto-hl-dv-color: #AD0000;
+  --Quarto-hl-kw-color: #003B4F;
 }
 
-/* other quarto variables */
+/* other Quarto variables */
 :root {
-  --quarto-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --Quarto-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 pre > code.sourceCode > span {

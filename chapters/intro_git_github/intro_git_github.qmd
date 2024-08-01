@@ -54,9 +54,9 @@ First, we will type a little bit of text in our Google Doc. It doesn’t really 
 #| label: fig-google-doc-01
 #| echo: FALSE
 #| fig-cap: |
-#|   A gif about Google Docs.
+#|   A gif about text in Google Docs.
 #| fig-alt: |
-#|   A gif about Google Docs.
+#|   A gif about text in Google Docs.
 
 
 
@@ -71,9 +71,9 @@ Now, let’s say that we decide to make a change to our text. Specifically, we d
 #| label: fig-google-doc-02
 #| echo: FALSE
 #| fig-cap: |
-#|   A gif about Google Docs2.
+#|   A gif about text change in Google Docs.
 #| fig-alt: |
-#|   A gif about Google Docs2.
+#|   A gif about text change in Google Docs.
 
 knitr::include_graphics("google_doc_02.gif")
 ```
@@ -87,12 +87,13 @@ Now, let’s say that we changed our mind again and we want to go back to using 
 #| label: fig-google-doc-03
 #| echo: false
 #| fig-cap: |
-#|   A gif about Google Docs 3.
+#|   A gif about version history in Google Docs.
 #| fig-alt: |
-#|   A gif about Google Docs 3.
+#|   A gif about version history in Google Docs.
 
 knitr::include_graphics("google_doc_03.gif")
 ```
+:::
 
 This is great! We don’t have to save a bunch of different files like we saw in the “messy” folder at the beginning of this section. Instead, there is only one document, and we can see all the versions of that document, who created the various versions of that document, when all the various versions of that document were created, and exactly what changed from one version to the next. In other words, we have a complete record of the evolution of this document in the **version history** — how we got from the blank document we started with to the current version of the document we are working with today. 
 
@@ -103,9 +104,9 @@ Further, if we want to turn back the clock to a previous version of the document
 #| label: fig-google-doc-04
 #| echo: FALSE
 #| fig-cap: |
-#|   A gif about Google Docs4.
+#|   A gif about restoring versions in Google Docs.
 #| fig-alt: |
-#|   A gif about Google Docs4.
+#|   A gif about restoring versions in Google Docs.
 
 knitr::include_graphics("google_doc_04.gif")
 ```
@@ -121,9 +122,9 @@ variables X and Y for two groups of people - Group 1 and Group 2. Completing thi
 #| label: fig-google-doc-05
 #| echo: FALSE
 #| fig-cap: |
-#|   A gif about Google Docs5.
+#|   A gif about naming current Google Doc versions.
 #| fig-alt: |
-#|   A gif about Google Docs5.
+#|   A gif about naming current Google Doc versions.
 
 
 knitr::include_graphics("google_doc_05.gif")
@@ -138,6 +139,10 @@ Now let’s say that we decide to use medians in our table instead of means. Aft
 ```{r}
 #| label: google_doc_06
 #| echo: FALSE
+#| fig-cap: |
+#|   A gif about switching back to an old version in Google Docs.
+#| fig-alt: |
+#|   A gif about switching back to an old version in Google Docs.
 
 
 knitr::include_graphics("google_doc_06.png")
@@ -149,6 +154,12 @@ Can you guess what we are about to do next? That’s right! We changed our minds
 ```{r}
 #| label: google_doc_07
 #| echo: FALSE
+#| fig-cap: |
+#|   A gif about restoring versions in Google Docs.
+#| fig-alt: |
+#|   A gif about restoring versions in Google Docs.
+
+#| 
 knitr::include_graphics("google_doc_07.gif")
 ```
 :::

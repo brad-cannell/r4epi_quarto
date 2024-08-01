@@ -146,4 +146,4 @@ When you do, a new untitled R Script will appear in the source pane.
 knitr::include_graphics("new_r_script3.png")
 ```
 
-And that's pretty much it. Everything else in figure @fig-example-script is just R code and comments about the R code. But, you can now easily save, modify, and share this code with others. In the next chapter, we are going to learn how to write R code in R markdown files, where we can add a ton of whistles and bells to this simple R script.
+And that's pretty much it. Everything else in figure @fig-example-script is just R code and comments about the R code. But, you can now easily save, modify, and share this code with others. In the next chapter, we are going to learn how to write R code in Quarto files, where we can add a ton of whistles and bells to this simple R script.

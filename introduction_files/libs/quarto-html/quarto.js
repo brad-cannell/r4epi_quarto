@@ -1,4 +1,4 @@
-const sectionChanged = new CustomEvent("quarto-sectionChanged", {
+const sectionChanged = new CustomEvent("Quarto-sectionChanged", {
   detail: {},
   bubbles: true,
   cancelable: false,
@@ -52,10 +52,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   }
 
   const tocEl = window.document.querySelector('nav.toc-active[role="doc-toc"]');
-  const sidebarEl = window.document.getElementById("quarto-sidebar");
-  const leftTocEl = window.document.getElementById("quarto-sidebar-toc-left");
+  const sidebarEl = window.document.getElementById("Quarto-sidebar");
+  const leftTocEl = window.document.getElementById("Quarto-sidebar-toc-left");
   const marginSidebarEl = window.document.getElementById(
-    "quarto-margin-sidebar"
+    "Quarto-margin-sidebar"
   );
   // function to determine whether the element has a previous sibling that is active
   const prevSiblingIsActiveLink = (el) => {
@@ -170,7 +170,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     return false;
   };
 
-  const categorySelector = "header.quarto-title-block .quarto-category";
+  const categorySelector = "header.Quarto-title-block .Quarto-category";
   const activateCategories = (href) => {
     // Find any categories
     // Surround them with a link pointing back to:
@@ -198,12 +198,12 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   }
 
   function offsetRelativeUrl(url) {
-    const offset = getMeta("quarto:offset");
+    const offset = getMeta("Quarto:offset");
     return offset ? offset + url : url;
   }
 
   function offsetAbsoluteUrl(url) {
-    const offset = getMeta("quarto:offset");
+    const offset = getMeta("Quarto:offset");
     const baseUrl = new URL(offset, window.location);
 
     const projRelativeUrl = url.replace(baseUrl, "");
@@ -326,13 +326,13 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
             const toggleContainer = window.document.createElement("div");
             toggleContainer.style.width = "100%";
             toggleContainer.classList.add("zindex-over-content");
-            toggleContainer.classList.add("quarto-sidebar-toggle");
+            toggleContainer.classList.add("Quarto-sidebar-toggle");
             toggleContainer.classList.add("headroom-target"); // Marks this to be managed by headeroom
             toggleContainer.id = placeholderDescriptor.id;
             toggleContainer.style.position = "fixed";
 
             const toggleIcon = window.document.createElement("i");
-            toggleIcon.classList.add("quarto-sidebar-toggle-icon");
+            toggleIcon.classList.add("Quarto-sidebar-toggle-icon");
             toggleIcon.classList.add("bi");
             toggleIcon.classList.add("bi-caret-down-fill");
 
@@ -347,13 +347,13 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
               );
             }
             toggleTitle.classList.add("zindex-over-content");
-            toggleTitle.classList.add("quarto-sidebar-toggle-title");
+            toggleTitle.classList.add("Quarto-sidebar-toggle-title");
             toggleContainer.append(toggleTitle);
 
             const toggleContents = window.document.createElement("div");
             toggleContents.classList = el.classList;
             toggleContents.classList.add("zindex-over-content");
-            toggleContents.classList.add("quarto-sidebar-toggle-contents");
+            toggleContents.classList.add("Quarto-sidebar-toggle-contents");
             for (const child of el.children) {
               if (child.id === "toc-title") {
                 continue;
@@ -413,7 +413,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
               }, 50)
             );
 
-            window.addEventListener("quarto-hrChanged", () => {
+            window.addEventListener("Quarto-hrChanged", () => {
               elRect = undefined;
             });
 
@@ -524,19 +524,19 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   // Manage the visibility of the toc and the sidebar
   const marginScrollVisibility = manageSidebarVisiblity(marginSidebarEl, {
-    id: "quarto-toc-toggle",
+    id: "Quarto-toc-toggle",
     titleSelector: "#toc-title",
     dismissOnClick: true,
   });
   const sidebarScrollVisiblity = manageSidebarVisiblity(sidebarEl, {
-    id: "quarto-sidebarnav-toggle",
+    id: "Quarto-sidebarnav-toggle",
     titleSelector: ".title",
     dismissOnClick: false,
   });
   let tocLeftScrollVisibility;
   if (leftTocEl) {
     tocLeftScrollVisibility = manageSidebarVisiblity(leftTocEl, {
-      id: "quarto-lefttoc-toggle",
+      id: "Quarto-lefttoc-toggle",
       titleSelector: "#toc-title",
       dismissOnClick: true,
     });
@@ -649,7 +649,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     }
   };
 
-  window.quartoToggleReader = () => {
+  window.QuartoToggleReader = () => {
     // Applies a slow class (or removes it)
     // to update the transition speed
     const slowTransition = (slow) => {
@@ -665,7 +665,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       };
 
       manageTransition("TOC", slow);
-      manageTransition("quarto-sidebar", slow);
+      manageTransition("Quarto-sidebar", slow);
     };
     const readerMode = !isReaderMode();
     setReaderModeValue(readerMode);
@@ -684,7 +684,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   };
 
   const highlightReaderToggle = (readerMode) => {
-    const els = document.querySelectorAll(".quarto-reader-toggle");
+    const els = document.querySelectorAll(".Quarto-reader-toggle");
     if (els) {
       els.forEach((el) => {
         if (readerMode) {
@@ -698,7 +698,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   const setReaderModeValue = (val) => {
     if (window.location.protocol !== "file:") {
-      window.localStorage.setItem("quarto-reader-mode", val);
+      window.localStorage.setItem("Quarto-reader-mode", val);
     } else {
       localReaderMode = val;
     }
@@ -706,7 +706,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   const isReaderMode = () => {
     if (window.location.protocol !== "file:") {
-      return window.localStorage.getItem("quarto-reader-mode") === "true";
+      return window.localStorage.getItem("Quarto-reader-mode") === "true";
     } else {
       return localReaderMode;
     }
@@ -794,9 +794,9 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 // grouped tabsets
 window.addEventListener("pageshow", (_event) => {
   function getTabSettings() {
-    const data = localStorage.getItem("quarto-persistent-tabsets-data");
+    const data = localStorage.getItem("Quarto-persistent-tabsets-data");
     if (!data) {
-      localStorage.setItem("quarto-persistent-tabsets-data", "{}");
+      localStorage.setItem("Quarto-persistent-tabsets-data", "{}");
       return {};
     }
     if (data) {
@@ -806,7 +806,7 @@ window.addEventListener("pageshow", (_event) => {
 
   function setTabSettings(data) {
     localStorage.setItem(
-      "quarto-persistent-tabsets-data",
+      "Quarto-persistent-tabsets-data",
       JSON.stringify(data)
     );
   }

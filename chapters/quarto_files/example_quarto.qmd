@@ -1,5 +1,5 @@
 ---
-title: "Example Quarto Document"
+title: "Example Quarto/Document"
 format: 
   html:
     embed-resources: true

@@ -222,7 +222,7 @@ knitr::include_graphics("relative_file_paths_03_check_project.png")
 
 In that context, R starts looking for files _in our R project folder_ -- no matter where we put the R project folder on our computer. 
 
-For example, in the next screenshot, we can see that the [R project](../r_projects/projects.qmd) folder we previously created) (arrow 1), which is called `my_first_project`, is located on a computer's desktop. One way we can tell that it's an R project is because it contains an R project file (arrow 2). We can also see that our R project now contains a `folder`, which contains an Excel file called `form_20.xlsx` (arrow 3). Finally, we can see that we we've added a new R markdown file called `test_relative_links.Rmd` (arrow 4). That file contains the code we wrote to import `form_20.xlsx` as an R data frame. 
+For example, in the next screenshot, we can see that the [R project](../r_projects/projects.qmd) folder we previously created) (arrow 1), which is called `my_first_project`, is located on a computer's desktop. One way we can tell that it's an R project is because it contains an R project file (arrow 2). We can also see that our R project now contains a `folder`, which contains an Excel file called `form_20.xlsx` (arrow 3). Finally, we can see that we we've added a new Quarto/ file called `test_relative_links.Rmd` (arrow 4). That file contains the code we wrote to import `form_20.xlsx` as an R data frame. 
 
 ```{r}
 #| label: relative_file_paths_04_check_files

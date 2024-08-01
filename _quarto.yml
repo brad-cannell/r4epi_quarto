@@ -22,7 +22,7 @@ editor: source
 
 # To make sure that R, Python, and Julia code is only executed locally, 
 # configure your project to use Quarto’s freeze feature by adding this to your 
-# _quarto.yml. (https://quarto.org/docs/publishing/netlify.html)
+# _quarto/.yml. (https://quarto.org/docs/publishing/netlify.html)
 execute:
   freeze: auto
 
@@ -33,22 +33,22 @@ book:
   date: today
   favicon: r4epi_favicon.png
   site-url: https://brad-cannell.github.io/r4epi_quarto/
-  repo-url: https://github.com/brad-cannell/r4epi_quarto
+  repo-url: https://github.com/brad-cannell/r4epi_quarto/ 
   repo-actions: [edit, issue]
   page-footer: 
     left: |
       R for Epidemiology
     right: |
-      This book was built with <a href="https://quarto.org/">Quarto</a>.
+      This book was built with <a href="https://Quarto/.org/">Quarto/</a>.
   
   # Book options
   search: true
-  downloads: [pdf] # https://quarto.org/docs/books/book-output.html#sidebar-tools
+  downloads: [pdf] # https://quarto/.org/docs/books/book-output.html#sidebar-tools
   sharing: [twitter, facebook, linkedin]
-  page-navigation: true # Haven't played with this much yet. https://quarto.org/docs/books/book-structure.html#page-navigation
+  page-navigation: true # Haven't played with this much yet. https://quarto/.org/docs/books/book-structure.html#page-navigation
 
   # Chapter sturcture
-  # https://quarto.org/docs/books/book-structure.html
+  # https://quarto/.org/docs/books/book-structure.html
   chapters:
     # Index is the landing page for the HTML version of the book.
     - index.qmd
@@ -82,7 +82,7 @@ book:
       - chapters/file_paths/file_paths.qmd
       - chapters/importing_plain_text/importing_plain_text.qmd
       - chapters/importing_binary_files/importing_binary_files.qmd
-        
+      - chapters/rstudio_import_tool/rstudio_import_tool.qmd
       
          
     - part: "Collaboration"
