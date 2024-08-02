@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R 4 Epidemiology - Contributing</title>
+<title>R 4 Epidemiology - 17&nbsp; Exporting Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/about_the_authors/about_the_authors.html" rel="next">
-<link href="../../chapters/introduction.html" rel="prev">
+<link href="../../chapters/intro_git_github/intro_git_github.html" rel="next">
+<link href="../../chapters/rstudio_import_tool/rstudio_import_tool.html" rel="prev">
 <link href="../../r4epi_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/contributing/contributing.html">Contributing</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/data_transfer/data_transfer.html">Data Transfer</a></li><li class="breadcrumb-item"><a href="../../chapters/exporting_data_to_disk/exporting_data_to_disk.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exporting Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -148,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/contributing/contributing.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/contributing/contributing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Contributing</span></a>
   </div>
 </li>
@@ -287,7 +321,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/exporting_data_to_disk/exporting_data_to_disk.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/exporting_data_to_disk/exporting_data_to_disk.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exporting Data</span></span></a>
   </div>
 </li>
@@ -360,18 +394,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#typos" id="toc-typos" class="nav-link active" data-scroll-target="#typos">Typos</a></li>
-  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues">Issues</a></li>
-  <li><a href="#license-information" id="toc-license-information" class="nav-link" data-scroll-target="#license-information">License Information</a></li>
+  <li><a href="#plain-text-files" id="toc-plain-text-files" class="nav-link active" data-scroll-target="#plain-text-files"><span class="header-section-number">17.1</span> Plain text files</a></li>
+  <li><a href="#r-binary-files" id="toc-r-binary-files" class="nav-link" data-scroll-target="#r-binary-files"><span class="header-section-number">17.2</span> R binary files</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/contributing/contributing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/exporting_data_to_disk/exporting_data_to_disk.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/data_transfer/data_transfer.html">Data Transfer</a></li><li class="breadcrumb-item"><a href="../../chapters/exporting_data_to_disk/exporting_data_to_disk.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exporting Data</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Contributing</h1>
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Exporting Data</span></h1>
 </div>
 
 
@@ -388,156 +421,82 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Over the years, we have learned so much from our students and colleagues, and we anticipate that there is much more we can learn from you – our readers. Therefore, we welcome and appreciate all constructive contributions to R4Epi!</p>
-<section id="typos" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="typos">Typos</h2>
-<p>The easiest way for you to contribute is to help us clean up the little typos and grammatical errors that inevitably sneak into the text.</p>
-<p>If you spot a typo, you can offer a correction directly in GitHub. You will first need to create a free GitHub account: <a href="https://github.com/join">sign-up at github.com</a>. Later in the book, we will cover using GitHub in greater depth in see <a href="chapters/using_git_github/using_git_github.qmd">Using-git-and-Github</a>. Here, we’re just going to walk you through how to fix a typo without much explanation of how GitHub works.</p>
-<p>Let’s say you spot a typo while reading along.</p>
+<!-- 
+Exporting data for others (csv)
+Exporting data for use in R (Rds)
+We may also want to briefly touch on the difference between memory and disk.
+-->
+<p>The data frames we’ve created so far don’t currently live in our global environment from one programming session to the next because we haven’t yet learned how to efficiently store our data long-term. This limitation makes it difficult to share our data with others or even to come back later to modify or analyze our data ourselves. In this chapter, you will learn to <strong>export</strong> data from R’s memory to a file on your hard drive so that you may efficiently store it or share it with others. In the examples that follow, we’re going to use this simulated data.</p>
 <div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="typo_on_screen.png" class="img-fluid figure-img"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>demo <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">id  =</span> <span class="fu">c</span>(<span class="st">"001"</span>, <span class="st">"002"</span>, <span class="st">"003"</span>, <span class="st">"004"</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">67</span>, <span class="dv">52</span>, <span class="dv">56</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">edu =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">2</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-<p>Next, click the edit button in the toolbar as shown in the screenshot below.</p>
+<p>👆 <strong>Here’s what we did above:</strong></p>
+<ul>
+<li><p>We created a data frame that is meant to simulate some demographic information about 4 hypothetical study participants.</p></li>
+<li><p>The first variable (<code>id</code>) is the participant’s study id.</p></li>
+<li><p>The second variable (<code>age</code>) is the participant’s age at enrollment in the study.</p></li>
+<li><p>The third variable (<code>edu</code>) is the highest level of formal education the participant completed. Where:</p>
+<ul>
+<li><p>1 = Less than high school</p></li>
+<li><p>2 = High school graduate</p></li>
+<li><p>3 = Some college</p></li>
+<li><p>4 = College graduate</p></li>
+</ul></li>
+</ul>
+<section id="plain-text-files" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="plain-text-files"><span class="header-section-number">17.1</span> Plain text files</h2>
+<p>Most of <code>readr</code>’s <code>read_</code> functions that were introduced in the <a href="../../chapters/importing_plain_text/importing_plain_text.html">importing plain text files</a> chapter have a <code>write_</code> counterpart that allow you to export data from R into a plain text file.</p>
+<p>Additionally, all of <code>haven</code>s <code>read_</code> functions that were introduced in the <a href="../../chapters/importing_binary_files/importing_binary_files.html">importing binary files</a> chapter have a <code>write_</code> counterpart that allow you to export data from R into SAS, Stata, and SPSS binary file formats.</p>
+<p>Interestingly, <code>readxl</code> does not have a <code>write_excel()</code> function for exporting R data frames as .xls or .xlsx files. However, the importance of this is mitigated by the fact that Excel can open .csv files and <code>readr</code> contains a function (<code>write_csv()</code>)for exporting data frames in the .csv file format. If you absolutely have to export your data frame as a <code>.xls</code> or <code>.xlsx</code> file, there are other R packages capable of doing so (e.g., <code>xlsx</code>).</p>
+<p>So, with all these options what format should you choose? our answer to this sort of depends on the answers to two questions. First, will this data be shared with anyone else? Second, will we need any of the metadata that would be lost if we export this data to a plain text file?</p>
+<p>Unless you have a compelling reason to do otherwise, we’re going to suggest that you always export your R data frames as csv files if you plan to share your data with others. The reason is simple. They just work. we can think of many times when someone sent me a SAS or Stata data set and we wasn’t able to import it for some reason or the data didn’t import in the way that we expected it to. we don’t recall ever having that experience with a csv file. Further, every operating system and statistical analysis software application that we’re aware of is able to accept csv files. Perhaps for that reason, they have become the closest thing to a standard for data sharing that exists – at least that we’re aware of.</p>
+<p>Exporting an R data frame to a csv file is really easy. The example below shows how to export our simulated demographic data to a csv file on our computer’s desktop:</p>
 <div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="edit_button.png" class="img-fluid figure-img"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(demo, <span class="st">"demo.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-<p>The first time you click the icon, you will be taken to the R4Epi repository on GitHub and asked to fork it. For our purposes, you can think of a GitHub repository as being similar to a shared folder on Dropbox or Google Drive.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="fork_button.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>“Forking the repository” basically just means “make a copy of the repository” on your GitHub account. In other words, copy all of the files that make up the R4Epi textbook to your GitHub account. Then, you can fix the typos you found in your <em>copy</em> of the files that make up the book instead of directly editing the <em>actual</em> files that make up the book. This is a safeguard to prevent people from accidentally making changes that shouldn’t be made.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Forking the R4Epi repository does not cost any money or add any files to your computer.</p>
-</div>
-</div>
-<p>After you fork the repository, you will see a text editor on your screen.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="text_editor.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>The text editor will display the contents of the file used to make the chapter you were looking at when you clicked the <code>edit</code> button. In this example, it was a file named <code>contributing.qmd</code>. The <code>.qmd</code> file extension means that the file is a Quarto/file. We will learn more about <a href="../chapters/quarto_files/quarto_files.qmd">Quarto files</a>, but for now just know that Quarto/ files can be used to create web pages and other documents that contain a mix of R code, text, and images.</p>
-<p>Next, scroll down through the text until you find the typo and fix it. In this case, line 11 contains the word “typoo”. To fix it, you just need to click in the editor window and begin typing. In this case, you would click next to the word “typoo” and delete the second “o”.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="fix_typo.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Now, the only thing left to do is propose your typo fix to the authors. To do so, click the green <code>Commit changes...</code> button on the right side of the screen above the text editor (surrounded with a red box in the screenshot above). When you click it, a new <code>Propose changes</code> box will appear on your screen. Type a brief (i.e., 72 characters or less) summary of the change you made in the <code>Commit message</code> box. There is also an <code>Extended description</code> box where you can add a more detailed description of what you did. In the screenshot below, shows an example commit message and extended description that will make it easy for the author to quickly figure out exactly what changes are being proposed.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="propose_changes.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Next, click the <code>Propose changes</code> button. That will take you to another screen where you will be able to create a pull request. This screen is kind of busy, but try not to let it overwhelm you.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="create_pull_request_1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>For now, we will focus on the three different sections of the screen that are highlighted with a red outline. We will start at the bottom and work our way up. The red box that is closest to the bottom of the screenshot shows us that the change that made was on line 11. The word “typoo” (highlighted in red) was replaced with the word “typo” (highlighted in green). The red box in the middle of the screenshot shows us the brief description that was written for our proposed change – “Fix a typo in contributing.qmd”. Finally, the red box closest to the top of the screenshot is surrounding the <code>Create pull request</code> button. You will click it to move on with your pull request.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="create_pull_request_2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>After doing so, you will get one final chance to amend the description of your proposed changes. If you are happy with the commit message and description, then click the <code>Create pull request</code> button one more time. At this point, your job is done! It is now up to the authors to review the changes you’ve proposed and “pull” them into the file in their repository.</p>
-<p>In case you are curious, here is what the process looks like on the authors’ end. First, when we open the R4Epi repository page on GitHub, we will see that there is a new pull request.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="create_pull_request_3.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>When we open the pull request, we can see the proposed changes to the file.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="create_pull_request_4.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Then, all we have to do is click the <code>Merge pull request button</code> and the fixed file is “pulled in” to replace the file with the typo.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="create_pull_request_5.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>👆<strong>Here’s what we did above:</strong></p>
+<ul>
+<li><p>We used <code>readr</code>’s <code>write_csv()</code> function to export a data frame called <code>demo</code> in our global environment to a csv file on our desktop called <code>demo.csv</code>.</p></li>
+<li><p>You can type <code>?write_csv</code> into your R console to view the help documentation for this function and follow along with the explanation below.</p></li>
+<li><p>The first argument to the <code>write_csv()</code> function is the <code>x</code> argument. The value passed to the <code>x</code> argument should be a data frame that is currently in our global environment.</p></li>
+<li><p>The second argument to the <code>write_csv()</code> function is the <code>path</code> argument. The value passed to the <code>path</code> should be a file path telling R where to create the new csv file.</p>
+<ul>
+<li><p>You name the csv file directly in the file path. Whatever name you write after the final slash in the file path is what the csv file will be named.</p></li>
+<li><p>As always, make sure you remember to include the file extension in the file path.</p></li>
+</ul></li>
+</ul>
+<p>Even if you don’t plan on sharing your data, there is another benefit to saving your data as a csv file. That is, it’s easy to open the file and take a quick peek if you need to for some reason. You don’t have to open R and load the file. You can just find the file on your computer, double-click it, and quickly view it in your text editor or spreadsheet application of choice.</p>
+<p>However, there is a downside to saving your data frames to a csv file. In general, csv files don’t store any metadata, which can sometimes be a problem (or a least a pain). For example, if you’ve coerced several variables to factors, that information would not be preserved in the csv file. Instead, the factors will be converted to character strings. If you need to preserve metadata, then you may want to save you data frames in a binary format.</p>
 </section>
-<section id="issues" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="issues">Issues</h2>
-<p>There may be times when you see a problem that you don’t know how to fix, but you still want to make the authors aware of. In that case, you can create an <a href="../../chapters/appendices/glossary.html#glossary-issue">issue</a> in the R4Epi repository. To do so, navigate to the issue tracker using this link: <a href="https://github.com/brad-cannell/r4epi/issues" class="uri">https://github.com/brad-cannell/r4epi/issues</a>.</p>
+<section id="r-binary-files" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="r-binary-files"><span class="header-section-number">17.2</span> R binary files</h2>
+<p>In the chapter on <a href="../../chapters/importing_binary_files/importing_binary_files.html">importing binary files</a> we mentioned that most statistical analysis software allows you to save your data in a binary file format. The primary advantage to doing so is that potentially useful metadata is stored alongside your analysis data. We were first introduced to factor vectors in [Let’s Get Programming] chapter. There, we saw how coercing some of your variables to factors can be useful. However, doing so requires R to store metadata along with the analysis data. That metadata would be lost if you were to export your data frame to a plain text file. This is an example of a time when we may want to consider exporting our data to a binary file format.</p>
+<p>R actually allows you to save your data in multiple different binary file formats. The two most popular are the .Rdata format and the .Rds format. we’re going to suggest that you use the .Rds format to save your R data frames. Exporting to this format is really easy with the <code>readr</code> package.</p>
+<p>The example below shows how to export our simulated demographic data to an .Rds file on our computer’s desktop:</p>
 <div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="issue_tracker.png" class="img-fluid figure-img"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_rds</span>(demo, <span class="st">"demo.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>👆<strong>Here’s what we did above:</strong></p>
+<ul>
+<li><p>We used <code>readr</code>’s <code>write_rds()</code> function to export a data frame called <code>demo</code> in our globabl environment to an .Rds file on our desktop called <code>demo.rds</code>.</p></li>
+<li><p>You can type <code>?write_rds</code> into your R console to view the help documentation for this function and follow along with the explanation below.</p></li>
+<li><p>The first argument to the <code>write_rds()</code> function is the <code>x</code> argument. The value passed to the <code>x</code> argument should be a data frame that is currently in our global environment.</p></li>
+<li><p>The second argument to the <code>write_csv()</code> function is the <code>path</code> argument. The value passed to the <code>path</code> should be a file path telling R where to create the new .Rds file.</p>
+<ul>
+<li><p>You name the .Rds file directly in the file path. Whatever name you write after the final slash in the file path is what the .Rds file will be named.</p></li>
+<li><p>As always, make sure you remember to include the file extension in the file path.</p></li>
+</ul></li>
+</ul>
+<p>To load the .Rds data back into your global environment, simply pass the path to the .Rds file to <code>readr</code>s <code>read_rds()</code> function:</p>
+<!-- No need to cache the code chunk below. It has the eval=FALSE option. -->
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>demo <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_rds</span>(<span class="st">"demo.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<p>Once there, you can check to see if someone has already raised the issue you are concerned about. If not, you can click the green “New issue” button to raise it yourself.</p>
-<p>Please note that R4Epi uses a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this book, you agree to abide by its terms.</p>
-</section>
-<section id="license-information" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="license-information">License Information</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"></a><br>This book was created by Brad Cannell and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+<p>There is a final thought we want to share on exporting data frames. When we got to the end of this chapter, it occurred to me that the way we wrote it may give the impression that that you must choose to export data frames as plain text files <em>or</em> binary files, but not <em>both</em>. That isn’t the case. we frequently export our data as a csv file that we can easily open and view and/or share with others, but <em>also</em> export it to an .Rds file that retains useful metadata we might need the next time we return to our analysis. we suppose there could be times that your files are so large that this is not an efficient strategy, but that is generally not the case in our projects.</p>
 
 
 </section>
@@ -954,13 +913,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/introduction.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="../../chapters/rstudio_import_tool/rstudio_import_tool.html" class="pagination-link" aria-label="RStudio's Data Import Tool">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">RStudio’s Data Import Tool</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/about_the_authors/about_the_authors.html" class="pagination-link" aria-label="About the Authors">
-        <span class="nav-page-text">About the Authors</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/intro_git_github/intro_git_github.html" class="pagination-link" aria-label="Introduction to git and GitHub">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -972,7 +931,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/contributing/contributing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/exporting_data_to_disk/exporting_data_to_disk.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://Quarto/.org/">Quarto/</a>.</p>
 </div>
