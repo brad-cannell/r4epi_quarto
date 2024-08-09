@@ -1,4 +1,4 @@
-# Using git and GitHub {#sec-using-git-and-github}
+# Using git and GitHub
 <!--
 Hidden comments placeholder
 ---------------------------
@@ -19,7 +19,7 @@ bookdown::preview_chapter("using_git_github/using_git_github.qmd")
 knitr::include_graphics("logos.png")
 ```
 
-[In the previous chapter](../chapters/intro_git_github/intro_git_github.qmd), we discussed _why_ we should consider learning to use git and GitHub as part of our workflow when our projects include data and/or coding. In this chapter, we will begin to talk about _how_ to use git and GitHub. We will also introduce a third tool, GitKraken, that makes it easier for us to use git and GitHub.
+[In the previous chapter](../intro_git_github/intro_git_github.qmd), we discussed _why_ we should consider learning to use git and GitHub as part of our workflow when our projects include data and/or coding. In this chapter, we will begin to talk about _how_ to use git and GitHub. We will also introduce a third tool, GitKraken, that makes it easier for us to use git and GitHub.
 
 ## Install git
 
@@ -38,7 +38,7 @@ knitr::include_graphics("terminal_git_version.png")
 
 ## Sign up for a GitHub account
 
-We have already alluded to the fact that git and GitHub are not the same thing. You can use git locally on your computer without ever using GitHub. Conversely, you can browse GitHub, and even do some limited contributing to code, without ever installing git on your computer (e.g., see [Contributing to R4Epi](#contributing-to-r4epi). However, git and GitHub work best when used together. You don’t need to download anything to start using GitHub, but you will need to sign up for a free GitHub account. To do so, just navigate to <https://github.com/> 
+We have already alluded to the fact that git and GitHub are not the same thing. You can use git locally on your computer without ever using GitHub. Conversely, you can browse GitHub, and even do some limited contributing to code, without ever installing git on your computer (e.g., see [Contributing to R4Epi](../contributing/contributing.qmd). However, git and GitHub work best when used together. You don’t need to download anything to start using GitHub, but you will need to sign up for a free GitHub account. To do so, just navigate to <https://github.com/> 
 
 ```{r}
 #| label: github_01_home
@@ -113,11 +113,11 @@ Once you have installed Git and GitKraken, and you’ve created your GitHub acco
 
 ## Example 1: Contribute to R4Epi 
 
-If you haven't already done so, please read the [contributing to R4Epi portion of the book's welcome page](contributing-to-r4epi_Quarto). This will give you a gentle introduction to using GitHub, for a very practical purpose, without even needing to use git or GitKraken. 
+If you haven't already done so, please read the [contributing to R4Epi portion of the book's welcome page](../contributing/contributing.qmd). This will give you a gentle introduction to using GitHub, for a very practical purpose, without even needing to use git or GitKraken. 
 
 ## Example 2: Create a repository for a research project
 
-In this example, we will learn how to create our very own git and GitHub repositories from scratch. We can immediately begin using the lessons from this example for our research projects -- even if we aren't collaborating with others on them. Remember, [there are at least four overarching reasons why you should consider learning to use git and GitHub as part of your workflow for your projects](../intro_git_github/intro_git_github.qmd), and collaboration is only one of them. Not to mention the fact that it is often useful to think of our future selves as other collaborators, which we have mentioned and/or alluded to many times in this book. 
+In this example, we will learn how to create our very own git and GitHub repositories from scratch. We can immediately begin using the lessons from this example for our research projects -- even if we aren't collaborating with others on them. Remember, [there are at least four overarching reasons](../intro_git_github/intro_git_github.qmd) why you should consider learning to use git and GitHub as part of your workflow for your projects, and collaboration is only one of them. Not to mention the fact that it is often useful to think of our future selves as other collaborators, which we have mentioned and/or alluded to many times in this book. 
 
 There are many possible ways we could set up our project to take advantage of all that git and GitHub have to offer. We're going to show you one possible sequence of steps in this example, but you may decide that you prefer a different sequence as you get more experience, and that's totally fine!
 
@@ -217,7 +217,7 @@ Okay, celebration complete. Now, what does he do with this new GitHub repository
 3. Doing so will help to make his research more **reproducible**.    
 4. And make it easier for him to **collaborate** with others -- including his future self.      
 
-Let's start by taking a look at versioning in GitHub. As we discussed in the [Versioning](INSERT INTRO TO GIT) section of the [Introduction to git and GitHub](../intro_git_github/intro_git_github.qmd) chapter, GitHub uses the word **commit** to refer to taking a snapshot of the state of our project, similar to how we might typically think about saving a version of a document we are working on. We saw how we could view the version history of our Google Doc by clicking `File` then `Version history` then `See version history`. In GitHub, we can similarly view the version history (also called the commit history) of our repository. To do so, we navigate to our repository's homepage, and click on the word `commit` in the top right corner of the files section (outlined in red below).
+Let's start by taking a look at versioning in GitHub. As we discussed in the [Versioning](../intro_git_github/intro_git_github.qmd) section of the [Introduction to git and GitHub](../intro_git_github/intro_git_github.qmd) chapter, GitHub uses the word **commit** to refer to taking a snapshot of the state of our project, similar to how we might typically think about saving a version of a document we are working on. We saw how we could view the version history of our Google Doc by clicking `File` then `Version history` then `See version history`. In GitHub, we can similarly view the version history (also called the commit history) of our repository. To do so, we navigate to our repository's homepage, and click on the word `commit` in the top right corner of the files section (outlined in red below).
 
 ```{r}
 #| label: new_repository_06_commit
@@ -734,7 +734,7 @@ knitr::include_graphics("new_repository_17_commit_data_01_import.gif")
 ```
 :::
 
-Arthur can continue adding files to his local repository and then pushing them to GitHub in this fashion for the remainder of the time he is working on this project, and the [introduction to git and GitHub chapter](../chapters/intro_git_github/intro_git_github.qmd) discusses _why_ he should consider doing so.
+Arthur can continue adding files to his local repository and then pushing them to GitHub in this fashion for the remainder of the time he is working on this project, and the [introduction to git and GitHub chapter](../intro_git_github/intro_git_github.qmd) discusses _why_ he should consider doing so.
 
 After going through this example, many students have three lingering questions: 
 
@@ -822,7 +822,7 @@ knitr::include_graphics("forking_05.png")
 Because Brad is the owner of this repository, he can clone it to his local computer, work on it, and push changes up to GitHub in exactly the same way that Arthur did in the [example above][Step 2: Clone the repository to your computer]. Just to be clear, the changes that Brad pushes to _his_ GitHub repository will have no effect on Arthur's GitHub repository.
 
 ::: callout-note
-🗒**Side Note:** As we've pointed out multiple times in this chapter, we generally do not want to upload research data to GitHub. Why? Because it isn't typically considered private or secure. However, in order for Brad to do work on this project, he will need to access the data somehow. This will require Arthur to share to data with Brad through some means other than GitHub. Different organizations have different rules about what is considered secure. For example, it may be an encrypted email or it may be a link to a shared drive on a secure server. However the data is shared, it is important for Brad to **create the same file structure on his computer** that Arthur has on his computer. Otherwise, the R code will not work on both computers. Remember from the example above that Arthur created a `data/` folder in his local repository and he moved the `form_20.xlsx` data to that folder. Then, in the `data_01_import` Quartofile, he imports the data using the relative path `data/form_20.xlsx`. In the chapter on [file paths](../chapters/file_paths/file_paths.qmd) we discussed the advantages of using relative file paths when working collaboratively. Just remember, in order for this relative file path to work identically on Arthur's computer and Brad's computer, the folder structure and file names must also be _identical_. So, if Brad put the `form_20.xlsx` data in a folder in his local repository called `data sets/` instead of `data/`, then the code in the `data_01_import` Quartofile would throw an error.
+🗒**Side Note:** As we've pointed out multiple times in this chapter, we generally do not want to upload research data to GitHub. Why? Because it isn't typically considered private or secure. However, in order for Brad to do work on this project, he will need to access the data somehow. This will require Arthur to share to data with Brad through some means other than GitHub. Different organizations have different rules about what is considered secure. For example, it may be an encrypted email or it may be a link to a shared drive on a secure server. However the data is shared, it is important for Brad to **create the same file structure on his computer** that Arthur has on his computer. Otherwise, the R code will not work on both computers. Remember from the example above that Arthur created a `data/` folder in his local repository and he moved the `form_20.xlsx` data to that folder. Then, in the `data_01_import` Quartofile, he imports the data using the relative path `data/form_20.xlsx`. In the chapter on [file paths](../file_paths/file_paths.qmd) we discussed the advantages of using relative file paths when working collaboratively. Just remember, in order for this relative file path to work identically on Arthur's computer and Brad's computer, the folder structure and file names must also be _identical_. So, if Brad put the `form_20.xlsx` data in a folder in his local repository called `data sets/` instead of `data/`, then the code in the `data_01_import` Quartofile would throw an error.
 :::
 
 ```{r}
