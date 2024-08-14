@@ -9,10 +9,10 @@ library(dplyr)
 
 So, we have all this data that tells us all this information about different traits or characteristics of the people for whom the data was collected. For example, if we collected data about the students in this course, we may have information about how tall you are, about what kind of insurance you have, and about what your favorite color is.
 
-```{r}
+
+```{r} 
 #| echo: FALSE
 #| warning: FALSE
-
 set.seed(123)
 df <- tibble(
   student_id = c(1001, 1002, 1003),
@@ -20,16 +20,26 @@ df <- tibble(
   insurance = c("private", "other", "none"),
   color = c("blue", "yellow", "red")
 ) 
-
-knitr::kable(df, format = "html", align = "c") |> 
-  kableExtra::kable_styling() |> 
-  kableExtra::row_spec(row = 2, background = "yellow")
 ```
+
+::: {.content-visible when-format="html"}
+```{r}
+#| echo: FALSE
+df|>
+  knitr:: kable (
+    alight = 'c'
+  ) |>
+  kableExtra::kable_styling() |>
+  kableExtra::row_spec(
+    row = 2,
+    background = "yellow"
+  )
+```
+:::
 
 But, unless you’re a celebrity, or under investigation for some reason, it’s unlikely that many people outside of your friends and family care to know any of this information about you, _per se_. Usually they want to know this information about the typical person in the population, or subpopulation, to which you belong. Or, they want to know more about the _relationship_ between people who are like you in some way and some outcome that they are interested in.
 
-For example: We typically aren't interested in knowing that student 1002 (above) is 67.93 inches tall. We are typically more interested in knowing things like the average height of the class -- [`r 
-mean(height_in) |> round(2)`].
+For example: We typically aren't interested in knowing that student 1002 (above) is 67.93 inches tall. We are typically more interested in knowing things like the average height of the class -- ['r mean(height_in) |> round(2)].
 
 Before we can make any inferences or draw any conclusions, we must (or at least should) begin by conducting descriptive analysis of our data. This is also sometimes referred to as exploratory analysis. There are at least three reasons why we want to start with a descriptive analysis:
 

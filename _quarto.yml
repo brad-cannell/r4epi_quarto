@@ -86,6 +86,10 @@ book:
       - chapters/exporting_data_to_disk/exporting_data_to_disk.qmd
       
     - part: "Descriptive Analysis"
+      chapters: 
+      - chapters/intro_descriptive_analysis/intro_descriptive_analysis.qmd
+      - chapters/categorical_variables/categorical_variables.qmd
+      
       
          
     - part: "Collaboration"
