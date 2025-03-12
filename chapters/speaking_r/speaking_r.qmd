@@ -21,7 +21,7 @@ seq(from = 2, to = 100, by = 2)
 ```
 
 ::: callout-note
-🗒**Side Note:** The gray boxes you see above are called R code chunks and we created them (and this entire book) using something called [Quarto files](https://quarto.org/). Can you believe that you can write an entire book with R and RStudio? How cool is that? You will learn to use Quarto files later in this book. Quarto is great because it allows you to mix R code with narrative text and multimedia content as we've done throughout the page you're currently looking at. This makes it really easy for us to add context and aesthetic appeal to our results.
+🗒**Side Note:** The gray boxes you see above are called R code chunks and we created them (and this entire book) using something called [Quarto files](https://Quarto.org/). Can you believe that you can write an entire book with R and RStudio? How cool is that? You will learn to use Quarto files later in this book. Quarto is great because it allows you to mix R code with narrative text and multimedia content as we've done throughout the page you're currently looking at. This makes it really easy for us to add context and aesthetic appeal to our results.
 :::
 
 ## The R interpreter

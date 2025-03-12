@@ -4,13 +4,13 @@
 
 ## Links
 
-1. [Test Quarto Book](https://brad-cannell.github.io/test_quarto_book/)
+1. [Test Quarto Book](https://brad-cannell.github.io/test_Quarto_book/)
   - For guidance on using Quarto.
 
-2. [R4Epi Quarto Book Repo](https://github.com/brad-cannell/r4epi_quarto)
+2. [R4Epi Quarto Book Repo](https://github.com/brad-cannell/r4epi_Quarto)
   - For guidance on rendering and publishing.
 
-3. [R4Epi Quarto Book Wiki](https://github.com/brad-cannell/r4epi_quarto/wiki)
+3. [R4Epi Quarto Book Wiki](https://github.com/brad-cannell/r4epi_Quarto/wiki)
   - For guidance on authoring chapters.
 
 ## Instructions

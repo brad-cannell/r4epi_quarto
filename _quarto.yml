@@ -22,7 +22,7 @@ editor: source
 
 # To make sure that R, Python, and Julia code is only executed locally, 
 # configure your project to use Quarto’s freeze feature by adding this to your 
-# _quarto.yml. (https://quarto.org/docs/publishing/netlify.html)
+# _quarto/.yml. (https://quarto.org/docs/publishing/netlify.html)
 execute:
   freeze: auto
 
@@ -33,22 +33,22 @@ book:
   date: today
   favicon: r4epi_favicon.png
   site-url: https://brad-cannell.github.io/r4epi_quarto/
-  repo-url: https://github.com/brad-cannell/r4epi_quarto
+  repo-url: https://github.com/brad-cannell/r4epi_quarto/ 
   repo-actions: [edit, issue]
   page-footer: 
     left: |
       R for Epidemiology
     right: |
-      This book was built with <a href="https://quarto.org/">Quarto</a>.
+      This book was built with <a href="https://Quarto/.org/">Quarto/</a>.
   
   # Book options
   search: true
-  downloads: [pdf] # https://quarto.org/docs/books/book-output.html#sidebar-tools
+  downloads: [pdf] # https://quarto/.org/docs/books/book-output.html#sidebar-tools
   sharing: [twitter, facebook, linkedin]
-  page-navigation: true # Haven't played with this much yet. https://quarto.org/docs/books/book-structure.html#page-navigation
+  page-navigation: true # Haven't played with this much yet. https://quarto/.org/docs/books/book-structure.html#page-navigation
 
   # Chapter sturcture
-  # https://quarto.org/docs/books/book-structure.html
+  # https://quarto/.org/docs/books/book-structure.html
   chapters:
     # Index is the landing page for the HTML version of the book.
     - index.qmd
@@ -72,10 +72,39 @@ book:
       chapters:
         - chapters/r_scripts/r_scripts.qmd
         - chapters/quarto_files/quarto_files.qmd
+        - chapters/r_projects/projects.qmd
+        - chapters/best_practices/best_practices.qmd
+        - chapters/using_pipes/using_pipes.qmd
         
+    - part: "Data Transfer"
+      chapters: 
+      - chapters/data_transfer/data_transfer.qmd
+      - chapters/file_paths/file_paths.qmd
+      - chapters/importing_plain_text/importing_plain_text.qmd
+      - chapters/importing_binary_files/importing_binary_files.qmd
+      - chapters/rstudio_import_tool/rstudio_import_tool.qmd
+      - chapters/exporting_data_to_disk/exporting_data_to_disk.qmd
+      
+    - part: "Descriptive Analysis"
+      chapters: 
+      - chapters/intro_descriptive_analysis/intro_descriptive_analysis.qmd
+      - chapters/categorical_variables/categorical_variables.qmd
+      
+      
+         
     - part: "Collaboration"
-      chapters:
-        - chapters/using_git_github/using_git_github.qmd
+      chapters: 
+      - chapters/intro_git_github/intro_git_github.qmd
+      - chapters/using_git_github/using_git_github.qmd
+    
+    - part: "Presenting Results"
+    
+    - part: "Epi Foundations"
+    
+    - part: "Regression"
+    
+    - part: "Causal Inference"
+    
     
     - part: "References"
       chapters:

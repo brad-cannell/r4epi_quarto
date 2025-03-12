@@ -79,7 +79,7 @@ Whether you realize it or not, we've covered some important programming terms wh
 
 ## The environment pane
 
-The second pane we are going to talk about is the environment/history/connections pane. @fig-environment-pane However, we will mostly refer to it as the environment pane and we will mostly ignore the history and connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible. 
+The second pane we are going to talk about is the environment/history/connections pane in @fig-environment-pane. However, we will mostly refer to it as the environment pane and we will mostly ignore the history and connections tab. We aren’t ignoring them because they aren’t useful; rather, we are ignoring them because using them isn’t essential for anything we will discuss anytime soon, and we want to keep things as simple as possible. 
 
 ```{r}
 #| label: fig-environment-pane
@@ -114,7 +114,7 @@ In many other languages you would write that as `x = 2`. But, for whatever reaso
 Second, you can see that our Global Environment now includes the object `x`, which has a value of 2. In this case, we would say that `x` is a **numeric vector** of length 1 (i.e., it has one value stored in it). We will talk more about vectors and vector types soon. For now, just notice that objects that you can manipulate or analyze in R will appear in your Global Environment.
 
 ::: callout-warning
-⚠️**Warning:** R is a **case sensitive** language. That means that uppercase x (X) and lowercase x (x) are different things to R. So, if you assign 2 to lower case x (`x <- 2`). And then later ask R to tell what number you stored in uppercase X, you will get an error (`Error: object 'X' not found`).
+R is a **case sensitive** language. That means that uppercase x (X) and lowercase x (x) are different things to R. So, if you assign 2 to lower case x (`x <- 2`). And then later ask R to tell what number you stored in uppercase X, you will get an error (`Error: object 'X' not found`).
 :::
 
 ## The files pane

@@ -6,7 +6,7 @@ Over the years, we have learned so much from our students and colleagues, and we
 
 The easiest way for you to contribute is to help us clean up the little typos and grammatical errors that inevitably sneak into the text. 
 
-If you spot a typo, you can offer a correction directly in GitHub. You will first need to create a free GitHub account: [sign-up at github.com](https://github.com/join). Later in the book, we will cover using GitHub in greater depth (See @sec-using-git-and-github). Here, we're just going to walk you through how to fix a typo without much explanation of how GitHub works.
+If you spot a typo, you can offer a correction directly in GitHub. You will first need to create a free GitHub account: [sign-up at github.com](https://github.com/join). Later in the book, we will cover using GitHub in greater depth in see [Using-git-and-Github](../using_git_github/using_git_github.qmd). Here, we're just going to walk you through how to fix a typo without much explanation of how GitHub works.
 
 Let's say you spot a typo while reading along.
 
@@ -50,7 +50,7 @@ After you fork the repository, you will see a text editor on your screen.
 knitr::include_graphics("text_editor.png")
 ```
 
-The text editor will display the contents of the file used to make the chapter you were looking at when you clicked the `edit` button. In this example, it was a file named `contributing.qmd`. The `.qmd` file extension means that the file is a Quarto file. We will learn more about Quarto files in @sec-quarto-files, but for now just know that Quarto files can be used to create web pages and other documents that contain a mix of R code, text, and images.
+The text editor will display the contents of the file used to make the chapter you were looking at when you clicked the `edit` button. In this example, it was a file named `contributing.qmd`. The `.qmd` file extension means that the file is a Quarto/file. We will learn more about [Quarto files](../quarto_files/quarto_files.qmd), but for now just know that Quarto/ files can be used to create web pages and other documents that contain a mix of R code, text, and images.
 
 Next, scroll down through the text until you find the typo and fix it. In this case, line 11 contains the word "typoo". To fix it, you just need to click in the editor window and begin typing. In this case, you would click next to the word "typoo" and delete the second "o".
 
@@ -119,7 +119,7 @@ knitr::include_graphics("create_pull_request_5.png")
 
 ## Issues {.unnumbered}
 
-There may be times when you see a problem that you don't know how to fix, but you still want to make the authors aware of. In that case, you can create an [issue](../appendices/glossary.qmd#glossary-issue) in the R4Epi repository. To do so, navigate to the issue tracker using this link: https://github.com/brad-cannell/r4epi/issues. 
+There may be times when you see a problem that you don't know how to fix, but you still want to make the authors aware of. In that case, you can create an [issue](../appendices/glossary.qmd#glossary-issue) in the R4Epi repository. To do so, navigate to the issue tracker using this link: <https://github.com/brad-cannell/r4epi/issues>. 
 
 ```{r}
 #| label: contributing_issues
