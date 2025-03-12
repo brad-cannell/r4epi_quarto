@@ -11,8 +11,6 @@ format:
   pdf:
     documentclass: scrreprt
     
-  
-    
 # Bibliography and citation options
 bibliography: references.bib
 csl: ama.csl
@@ -89,22 +87,11 @@ book:
       chapters: 
       - chapters/intro_descriptive_analysis/intro_descriptive_analysis.qmd
       - chapters/categorical_variables/categorical_variables.qmd
-      
-      
          
     - part: "Collaboration"
       chapters: 
       - chapters/intro_git_github/intro_git_github.qmd
       - chapters/using_git_github/using_git_github.qmd
-    
-    - part: "Presenting Results"
-    
-    - part: "Epi Foundations"
-    
-    - part: "Regression"
-    
-    - part: "Causal Inference"
-    
     
     - part: "References"
       chapters:
