@@ -89,27 +89,40 @@ book:
       chapters: 
       - chapters/intro_descriptive_analysis/intro_descriptive_analysis.qmd
       - chapters/categorical_variables/categorical_variables.qmd
+      - chapters/central_tendency/central_tendency.qmd
+      - chapters/dispersion/dispersion.qmd
+      - chapters/cont_out_cont_pred/cont_out_cont_pred.qmd
+      - chapters/cont_out_cat_pred/cont_out_cat_pred.qmd
+      - chapters/cat_out_cat_pred/cat_out_cat_pred.qmd
       
+    - part: "Data Management"
       
-         
+    - part: "Repeated Operations"
+      chapters:
+      - chapters/intro_repeated_operations/intro_repeated_operations.qmd
+      - chapters/writing_functions/writing_functions.qmd
+      - chapters/dplyr_column_wise/dplyr_column_wise.qmd
+      - chapters/writing_for_loops/writing_for_loops.qmd
+      - chapters/using_purrr/using_purrr.qmd
+
     - part: "Collaboration"
-      chapters: 
+      chapters:
       - chapters/intro_git_github/intro_git_github.qmd
       - chapters/using_git_github/using_git_github.qmd
-    
+
     - part: "Presenting Results"
-    
+
     - part: "Epi Foundations"
-    
+
     - part: "Regression"
-    
+
     - part: "Causal Inference"
-    
-    
+
+
     - part: "References"
       chapters:
         - references.qmd
-  
-  # We can also add appendices and track them separately from other book parts.  
+
+  # We can also add appendices and track them separately from other book parts.
   appendices:
     - chapters/appendices/glossary.qmd

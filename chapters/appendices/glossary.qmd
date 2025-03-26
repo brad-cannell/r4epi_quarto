@@ -1,10 +1,27 @@
 # Glossary {#sec-glossary}
 
+[Bivariate]{#glossary-bivariate}
+
+:  Involving two variables.
+
+[Complete case analysis]{#glossary-complete-case-analysis}
+
+:  A summary containing the count and percent of non-missing values for a categorical variable.
+
 [Console]{#glossary-console}
 
 :  The console is located in RStudio's bottom-right pane by default. The R console is an interactive programming environment where we can enter and execute R commands. It's the the most basic interface for interacting with R, providing immediate feedback and results from the code we enter. The R console is useful for testing small pieces of code and interactive data exploration. However, we recommend using R scripts or Quarto/ files for all but the simplest programming or data analysis tasks.
 
 **Data frame**. For our purposes, data frames are just R's term for data set or data table. Data frames are made up of columns (variables) and rows (observations). In R, all columns of a data frame must have the same length.
+
+[For loop]{#glossary-for-loop}
+
+:  A for loop is a programming statement that can execute a block of code repeatedly while systematically iterating over a predefined range, sequence, or collection of values.
+
+[Frequency count]{#glossary-frequency-count}
+
+:  The frequency count may also be referred to as simply the **frequency**, the **count**, or the **n**. It is a summary of data by the number of distinct occurrences of an event or observation.
+
 
 **Functions**. Coming soon.
 
@@ -26,11 +43,55 @@
 
 :  GitHub's documentation says issues are "items you can create in a repository to plan, discuss and track work. Issues are simple to create and flexible to suit a variety of scenarios. You can use issues to track work, give or receive feedback, collaborate on ideas or tasks, and efficiently communicate with others."@GitHub2024-im
 
+[Iteratively]{#glossary-iteratively}
+
+:  A method of solving a problem by repeatedly executing a set of instructions in a step-by-step manner, often using loops. This approach can improve efficiency and help prevent errors. 
+
+[Lexical scoping rules]{#glossary-lexical-scoping-rules}
+
+:  Lexical scoping rules define an object's accessibility based on where it is declared in the code's structure rather than how or when it's called. 
+
+[Marginal totals]{#glossary-marginal-totals}
+
+:  In a contingency table, marginal totals are the sums of observations for each row (found in the last column) and each column (found in the last row). The overall total, found in the bottom-right cell, represents the sum of all observations in the table.
+
+[Mean]{#glossary-mean}
+
+:  The arithmetic mean is a measure of central tendency that represents the average value of a numeric variable calculated by taking the sum of the values of the variable and then dividing this sum by the total number of values. It is often referred to as $\bar{x}$.
+
+[Median]{#glossary-median}
+
+:  The median is a measure of central tendency that represents the middle number in a list of numbers that has been sorted in order of magnitude. If the list of numbers has an odd number of values, the median is the middle number; if it has an even number, the median is the average of the two middle numbers. Compared to the mean, it is relatively resistant to extreme values.
+
+[Mode]{#glossary-mode}
+
+:  The mode is a measure of central tendency that represents the value that is most often observed in a set of data. A dataset may have one mode (unimodal), multiple modes (multimodal), or no mode (if the frequency of each value is the same).
+
 **Objects**. Coming soon.
+
+[Outcome variable]{#glossary-outcome-variable} 
+
+:  The outcome variable is the variable whose value we are attempting to predict, estimate, or determine. It is also known as the dependent variable or the response variable.
+
+[Percentage]{#glossary-percentage} 
+
+:  A percentage is the relative frequency of an event or observation within a data set expressed as a percentage. It is calculated by dividing the number of distinct occurrences of the event or observation by the total number of observations and then multiplying it by 100.
+
+[Predictor variable]{#glossary-predictor-variable} 
+
+:  The predictor variable is the variable that is used to explain or help predict the value of the outcome variable. It is also known as the **independent variable** or the **explanatory variable**.
+
+[Proportion]{#glossary-proportion} 
+
+:  A proportion is the relative frequency of an event or observation within a data set which can be expressed as a fraction or percentage. It is calculated by dividing the number of distinct occurrences of the event or observation by the total number of observations.
 
 [R]{#glossary-r} 
 
 :  R's documentation says "R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues."@R_Core_Team2024-sk R is open source, and you can download it for free from The Comprehensive R Archive Network (CRAN) at https://cran.r-project.org/.
+
+[Range]{#glossary-range} 
+
+:  The range is a measure of the spread of a data set, calculated as the difference between the maximum and minimum values.
   
 [Repository]{#glossary-repository} 
 
@@ -39,3 +100,25 @@
 [RStudio]{#glossary-rstudio} 
 
 :  RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. RStudio is available in open source and commercial editions and runs on the desktop (Windows, Mac, and Linux) or in a browser connected to RStudio Server or RStudio Server Pro (Debian/Ubuntu, Red Hat/CentOS, and SUSE Linux). @RStudio2020-fe
+
+[Split - Apply - Combine]{#glossary-split-apply-combine}
+
+:  This is a data analysis strategy that involves splitting data up into smaller components, applying a calculation separately to each smaller component, and then combining the individual results back together as a single result. `dplyr`'s `group_by()` function uses this strategy.
+
+[Standard deviation]{#glossary-standard-deviation}
+
+:  Standard deviation is a measure of the spread of a data set, calculated as the square root of the variance, which is the average of the squared differences between each value and the mean.
+
+[Two-way frequency table]{#glossary-two-way-frequency-table}
+
+:  A two-way frequency table is a table used to summarize the relationship between two categorical variables by displaying the observed frequencies for their combinations. It is also known as a **crosstab** or **contingency table**.
+
+[Univariate]{#glossary-univariate}
+
+:  Involving a single numerical or a single categorical variable.
+
+[Variance]{#glossary-variance}
+
+:  Variance is a measure of the spread of a data set, calculated as the average of the squared differences between each value and the mean.
+
+
