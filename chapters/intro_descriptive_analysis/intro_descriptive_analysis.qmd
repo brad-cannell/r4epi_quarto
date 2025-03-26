@@ -54,6 +54,7 @@ When conducting descriptive analysis, the method you choose will depend on the _
 ```{r}
 #| label: flowchart_num_and_cat
 #| echo: FALSE
+
 knitr::include_graphics("flowchart_num_and_cat.png")
 ```
 
@@ -62,6 +63,8 @@ Numeric variables can then be further divided into continuous and discrete - the
 ```{r}
 #| label: flowchart_num_only
 #| echo: FALSE
+
+
 knitr::include_graphics("flowchart_num_only.png")
 ```
 
@@ -70,6 +73,7 @@ Categorical variables can be subdivided into ordinal or nominal variables - depe
 ```{r}
 #| label: flowchart_cat_only
 #| echo: FALSE
+
 knitr::include_graphics("flowchart_cat_only.png")
 ```
 
