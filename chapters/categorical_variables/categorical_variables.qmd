@@ -5,6 +5,7 @@ We’ll begin our discussion of descriptive statistics in the categorical half o
 ```{r}
 #| label: flowchart_cat_numerical
 #| echo: FALSE
+#| fig-cap: Numerical variable descriptive analysis flowchart. 
 knitr::include_graphics("flowchart_cat_numerical.png")
 ```
 
@@ -13,6 +14,7 @@ Some examples of categorical variables commonly seen in public health data are: 
 ```{r}
 #| label: categorical_variables_01
 #| echo: FALSE
+#| fig-cap: Examples of categorical variables.
 knitr::include_graphics("categorical_variables_01.jpeg")
 ```
 
@@ -21,14 +23,16 @@ Notice that there is no inherent numeric value to any of these categories. Havin
 ```{r}
 #| label: categorical_variables_02
 #| echo: FALSE
+#| fig-cap: Examples of categorical variables with assigned numeric values.
 knitr::include_graphics("categorical_variables_02.jpeg")
 ```
 
-The two most common numerical descriptions of categorical variables are probably the **frequency count** (you will often hear this referred to as simply the **frequency**, the **count**, or the **n**) and the **proportion** or **percentage** (the percentage is just the proportion multiplied by 100).
+The two most common numerical descriptions of categorical variables are probably the [frequency count](../appendices/glossary.qmd#glossary-frequency-count) (you will often hear this referred to as simply the [frequency](../appendices/glossary.qmd#glossary-frequency-count), the [count](../appendices/glossary.qmd#glossary-frequency-count), or the [n](../appendices/glossary.qmd#glossary-frequency-count)) and the [proportion](../appendices/glossary.qmd#glossary-proportion) or [percentage](../appendices/glossary.qmd#glossary-percentage) (the percentage is just the proportion multiplied by 100).
 
 ```{r}
 #| label: categorical_variables_03
 #| echo: FALSE
+#| fig-cap: Frequency and count - common numeric descriptions of categorical variables.
 knitr::include_graphics("categorical_variables_03.jpeg")
 ```
 
@@ -42,7 +46,8 @@ The remainder of this chapter is devoted to learning how to calculate frequency 
 
 We first learned about factors in the [Let’s Get Programming](../lets_get_programming/lets_get_programming.qmd) chapter. Before moving on to calculating frequency counts and percentages, we will discuss factors in slightly greater depth here. As a reminder, factors can be useful for representing categorical data in R. To demonstrate, let's simulate a simple little data frame. 
 
-```{r message=FALSE}
+```{r}
+#| message: FALSE
 # Load dplyr for tibble()
 library(dplyr)
 ```
@@ -111,7 +116,8 @@ At this point, we're going to show you how to coerce a variable to a factor in y
 
 The code below shows one method for coercing a numeric vector into a factor.
 
-```{r message=FALSE}
+```{r}
+#|  message: FALSE
 # Load dplyr for pipes and mutate()
 library(dplyr)
 ```
@@ -134,7 +140,7 @@ demo
 
 👆**Here's what we did above:**
 
-* We used `dplyr`'s `mutate()` function to create a new variable (`edu_f`) in the data frame called `demo`. The purpose of the `mutate()` function is to add new variables to data frames. We will discuss `mutate()` in greater detail in the [later in the book][creating and modifying columns].
+* We used `dplyr`'s `mutate()` function to create a new variable (`edu_f`) in the data frame called `demo`. The purpose of the `mutate()` function is to add new variables to data frames. We will discuss `mutate()` in greater detail [later in the book][creating-modifying-columns].🔴
 
   - You can type `?mutate` into your R console to view the help documentation for this function and follow along with the explanation below.
 
@@ -259,13 +265,15 @@ Now that we know how to use factors, let's return to our discussion of describin
 
 Below, we're going to learn to do descriptive analysis in R by experimenting with some simulated data that contains several people's sex, height, and weight. You can follow along with this lesson by copying and pasting the code chunks below in your R session.
 
-```{r message=FALSE}
+```{r}
+#| message: FALSE
 # Load the dplyr package. We will need several of dplyr's functions in the 
 # code below.
 library(dplyr)
 ```
 
-```{r error=TRUE}
+```{r}
+#| error: TRUE
 # Simulate some data
 height_and_weight_20 <- tibble(
   id = c(
@@ -304,12 +312,13 @@ height_and_weight_20
 ```{r}
 #| label: next_button
 #| echo: FALSE
+#| fig-cap: The "Next" button in RStudio.
 knitr::include_graphics("next_button.png")
 ```
 
 ## Calculating frequencies
 
-Now that we’re able to easily view our data, let’s return to the original purpose of this demonstration – calculating frequencies and proportions. At this point, we suspect that few of you would have any trouble telling me that the frequency of females in this data is 12 and the frequency of males in this data is 8. It's pretty easy to just count the number of females and males in this small data set with only 20 rows. Further, if we asked you what proportion of this sample is female, most of you would still be able to easily tell me `12/20 = 0.6`, or 60%. But, what if we had 100 observations or 1,000,000 observations? You’d get sick of counting pretty quickly. Fortunately, you don’t have to! Let R do it for you! As is almost always the case with R, there are multiple ways we can calculate the statistics that we're interested in. 
+Now that we’re able to easily view our data, let’s return to the original purpose of this demonstration – calculating frequencies and proportions. At this point, we suspect that few of you would have any trouble saying that the frequency of females in this data is 12 and the frequency of males in this data is 8. It's pretty easy to just count the number of females and males in this small data set with only 20 rows. Further, if we asked you what proportion of this sample is female, most of you would still be able to easily say `12/20 = 0.6`, or 60%. But, what if we had 100 observations or 1,000,000 observations? You’d get sick of counting pretty quickly. Fortunately, you don’t have to! Let R do it for you! As is almost always the case with R, there are multiple ways we can calculate the statistics that we're interested in. 
 
 ### The base R table function
 
@@ -333,7 +342,7 @@ gmodels::CrossTable(height_and_weight_20$sex)
 The final way we're going to discuss here is the `tidyverse` way, which is our preference. We will have to write a little additional code, but the end result will be more flexible, more readable, and will return our statistics to us in a data frame that we can save and use for further analysis. Let's walk through this step by step...
 
 :::callout-note
-🗒**Side Note:** You should already be familiar with the pipe operator (`|>`), but if it doesn't look familiar to you, you can learn more about it in [Using pipes]. Don't forget, if you are using RStudio, you can use the keyboard shortcut `shift + command + m` (Mac) or `shift + control + m` (Windows) to insert the pipe operator.
+You should already be familiar with the pipe operator (`|>`), but if it doesn't look familiar to you, you can learn more about it in [Using pipes][]🔴. Don't forget, if you are using RStudio, you can use the keyboard shortcut `shift + command + m` (Mac) or `shift + control + m` (Windows) to insert the pipe operator.
 :::
 
 First, we don't want to view the individual values in our data frame. Instead, we want to condense those values into summary statistics. This is a job for the [summarise()](https://dplyr.tidyverse.org/reference/summarise.html) function. 
@@ -358,7 +367,8 @@ height_and_weight_20 |>
 
 This is a great start. However, we really want to count the number of rows that have the value "Female" for sex_f, and then separately count the number of rows that have the value "Male" for sex_f. Said another way, we want to break our data frame up into smaller data frames -- one for each value of `sex_f` -- and then count the rows. This is exactly what `dplyr`'s [group_by()](https://dplyr.tidyverse.org/reference/group_by.html) function does.
 
-```{r message=FALSE}
+```{r}
+#| message: FALSE
 height_and_weight_20 |>
   group_by(sex_f) |> 
   summarise(n())
@@ -367,7 +377,7 @@ height_and_weight_20 |>
 And, that's what we want.
 
 :::callout-note
-🗒**Side Note:** `dplyr`'s `group_by()` function operationalizes the **Split - Apply - Combine** strategy for data analysis. That sounds sort of fancy, but all it really means is that we split our data frame up into smaller data frames, apply our calculation separately to each smaller data frame, and then combine those individual results back together as a single result. So, in the example above, the `height_and_weight_20` data frame was split into two separate little data frames (i.e., one for females and one for males), then the `summarise()` and `n()` functions counted the number of rows in each of the two smaller data frames (i.e., 12 and 8 respectively), and finally combined those individual results into a single data frame, which was printed to the screen for us to view.
+`dplyr`'s `group_by()` function operationalizes the [Split - Apply - Combine](../appendices/glossary.qmd#glossary-split-apply-combine) strategy for data analysis. That sounds sort of fancy, but all it really means is that we split our data frame up into smaller data frames, apply our calculation separately to each smaller data frame, and then combine those individual results back together as a single result. So, in the example above, the `height_and_weight_20` data frame was split into two separate little data frames (i.e., one for females and one for males), then the `summarise()` and `n()` functions counted the number of rows in each of the two smaller data frames (i.e., 12 and 8 respectively), and finally combined those individual results into a single data frame, which was printed to the screen for us to view.
 :::
 
 However, it will be awkward to work with a variable named `n()` (i.e., with parentheses) in the future. Let's go ahead and assign it a different name. We can assign it any valid name we want. Some names that might make sense are `n`, `frequency`, or `count`. We're going to go ahead and just name it `n` without the parentheses.
@@ -458,7 +468,7 @@ height_and_weight_20 |>
   mutate(percent = n / sum(n) * 100)
 ```
 
-As you can see, we are now treating missing as if it were a category of sex_f. Sometimes this will be the result you want. However, often you will want the n and percent of _non-missing_ values for your categorical variable. This is sometimes referred to as a **complete case analysis**. There's a couple of different ways we can handle this. We will simply filter out rows with a missing value for sex_f with `dplyr`'s [filter()](https://dplyr.tidyverse.org/reference/filter.html) function.
+As you can see, we are now treating missing as if it were a category of sex_f. Sometimes this will be the result you want. However, often you will want the n and percent of _non-missing_ values for your categorical variable. This is sometimes referred to as a [complete case analysis](../appendices/glossary.qmd#glossary-complete-case-analysis). There's a couple of different ways we can handle this. We will simply filter out rows with a missing value for sex_f with `dplyr`'s [filter()](https://dplyr.tidyverse.org/reference/filter.html) function.
 
 ```{r}
 height_and_weight_20 |> 
@@ -502,11 +512,12 @@ height_and_weight_20 |>
 
 In the sections above, we learned how to use `dplyr` functions to calculate the frequency and percentage of observations that take on each value of a categorical variable. However, there can be a fair amount of code writing involved when using those methods. The more we have to repeatedly type code, the more tedious and error-prone it becomes. This is an idea we will return to many times in this book. Luckily, the R programming language allows us to write our own functions, which solves both of those problems.
 
-Later in this book, we will show you [how to write your own functions][writing functions]. For the time being, We're going to suggest that you install and use a package we created called [freqtables](https://github.com/brad-cannell/freqtables). The `freqtables` package is basically an enhanced version of the code we wrote in the sections above. We designed it to help us quickly make tables of descriptive statistics (i.e., counts, percentages, confidence intervals) for categorical variables, and it's specifically designed to work in a `dplyr` pipeline.
+Later in this book, we will show you [how to write your own functions](../writing_functions/writing_functions.qmd). For the time being, We're going to suggest that you install and use a package we created called [freqtables](https://github.com/brad-cannell/freqtables). The `freqtables` package is basically an enhanced version of the code we wrote in the sections above. We designed it to help us quickly make tables of descriptive statistics (i.e., counts, percentages, confidence intervals) for categorical variables, and it's specifically designed to work in a `dplyr` pipeline.
 
 Like all packages, you need to first install it...
 
-```{r eval=FALSE}
+```{r}
+#| eval: FALSE
 # You may be asked if you want to update other packages on your computer that
 # freqtables uses. Go ahead and do so.
 install.packages("freqtables")
