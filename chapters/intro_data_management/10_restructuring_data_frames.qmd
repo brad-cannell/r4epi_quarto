@@ -129,6 +129,7 @@ library(ggplot2)
 In epidemiology, it's common for data that we analyze to be measured on multiple occasions. It's also common for repeated measures data to be entered into a spreadsheet or database in such a way that each new measure is a new column. We saw an example of this above: 
 
 ```{r}
+#| label: 810_intro_data_management_wide1_chunk
 #| echo: false
 #| fig-cap: Baby weights at 3, 6, 9, and 12 months
 knitr::include_graphics("/chapters/intro_data_management/wide1.png")

@@ -22,7 +22,7 @@ library(stringr) # All stringr functions begin with "str_"
 ```
 
 ```{r}
-#| label: read-in-ehr-rds
+#| label: 502_intro_data_management_chunk
 #| echo: false
 #| cache: true
 ehr <- read_rds("data/ehr.Rds")
