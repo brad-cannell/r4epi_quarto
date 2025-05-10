@@ -63,7 +63,7 @@ Finally, the contents of each cell are called **values**.
 knitr::include_graphics("table_values.png")
 ```
 
-You should now be up to speed on some basic terminology used by R, as well as other analytic, database, and spreadsheet programs. These terms will be used repeatedly throughout the course.
+We should now be up to speed on some basic terminology used by R, as well as other analytic, database, and spreadsheet programs. These terms will be used repeatedly throughout the book.
 
 ## What is R?
 
@@ -73,7 +73,7 @@ You should now be up to speed on some basic terminology used by R, as well as ot
 knitr::include_graphics("r_logo.png")
 ```
 
-So, what is R? Well, R is an **open source** statistical programming language that was created in the 1990’s specifically for data analysis. We will talk more about what open source means later, but for now, just think of R as an easy (relatively 😂) way to ask your computer to do math and statistics for you. More specifically, by the end of this book you will be able to independently use R to transfer data, manage data, analyze data, and present the results of your analysis. Let’s quickly take a closer look at each of these.
+So, what is R? Well, R is an **open source** statistical programming language that was created in the 1990’s specifically for data analysis. We will talk more about what open source means later, but for now, just think of R as an easy (relatively 😂) way to ask our computer to do math and statistics for us. More specifically, by the end of this book we will be able to independently use R to transfer data, manage data, analyze data, and present the results of our analysis. Let’s quickly take a closer look at each of these.
 
 ```{r}
 #| label: what_is_r_competencies_overview
@@ -89,7 +89,7 @@ knitr::include_graphics("competencies_overview.png")
 knitr::include_graphics("competencies_transfer.png")
 ```
 
-So, what do we mean by “transfer data”? Well, individuals and organizations store their data using different computer programs that use different file types. Some common examples that you may come across in epidemiology are database files, spreadsheets, raw data files, and SAS data sets. No matter how the data is stored, you can’t do anything with it until you can get it into R, in a form that R can use, and in a location that you can reach. In other words, transferring your data. Therefore, among our first tasks in this course will be to transfer data.
+So, what do we mean by “transfer data”? Well, individuals and organizations store their data using different computer programs that use different file types. Some common examples that we may come across in epidemiology are database files, spreadsheets, raw data files, and SAS data sets. No matter how the data is stored, we can’t do anything with it until we can get it into R, in a form that R can use, and in a location that R can access.
 
 ### Managing data
 
@@ -99,18 +99,18 @@ So, what do we mean by “transfer data”? Well, individuals and organizations 
 knitr::include_graphics("competencies_manage.png")
 ```
 
-This isn’t very specific, but managing data is all the things you may have to do to your data to get it ready for analysis. You may also hear people refer to this process as data wrangling or data munging. Some specific examples of data management tasks include:
+This isn’t very specific, but managing data is all the things we may have to do to our data to get it ready for analysis. Some people also refer to this process as "data wrangling" or "data munging." Some specific examples of data management tasks include:
 
 * <span class="underline">Validating and cleaning data</span>. In other words, dealing with potential errors in the data.   
-* <span class="underline">Subsetting data</span>. For example, using only some of the columns or some of the rows.    
-* <span class="underline">Creating new variables</span>. For example, creating a BMI variable in a data frame that was sent to you with height and weight columns.    
-* <span class="underline">Combining data frames</span>. For example, combining sociodemographic data about study participants with data collected in the field during an intervention.    
+* <span class="underline">Subsetting data</span> -- using only some of the columns or some of the rows.    
+* <span class="underline">Creating new variables</span>. For example, we might want to create a new `BMI` variable from existing `height` and `weight` variables.    
+* <span class="underline">Combining data frames</span>. For example, we might want to combine a data frame containing sociodemographic data about study participants with a data frame containing intervention outcomes data about those same participants.    
 
-You may sometimes hear people refer to the 80/20 rule in reference to data management. This “rule” says that in a typical data analysis project, roughly 80% of your time will be spent on data management and only 20% will be spent on the analysis itself. We can’t provide you with any empirical evidence (i.e., data) to back this claim up. But, as people who have been involved in many projects that involve the collection and analysis of data, we can tell you anecdotally that this ”rule” is probably pretty close to being accurate in most cases. 
+We may sometimes hear people refer to the 80/20 rule about data management. This “rule” says that in a typical data analysis project, roughly 80% of our time will be spent on data management, while only 20% will be spent on the analysis itself. We can’t provide you with any empirical evidence (i.e., data) to back this claim up. But as people who have been involved in many projects that involve the collection and analysis of data, we can tell you anecdotally that this ”rule” is probably pretty close to being accurate in most cases. 
 
-Additionally, it’s been our experience that most students of epidemiology are required to take one or more classes that emphasize methods for analyzing data; however, almost none of them have taken a course that emphasizes data management! 
+Additionally, it’s been our experience that most students of epidemiology are required to take one or more courses that emphasize methods for analyzing data; however, almost none of them have taken a course that emphasizes data management.
 
-Therefore, because data management is such a large component of most projects that involve the collection and analysis of data, and because most readers will have already been exposed to data analysis to a much greater extent than data management, this course will heavily emphasize the latter.
+Therefore, because data management is such a large component of most projects that involve the collection and analysis of data, and because most readers will have already been exposed to data analysis to a much greater extent than data management, this book will start by heavily emphasizing the latter.
 
 ### Analyzing data
 
@@ -120,7 +120,7 @@ Therefore, because data management is such a large component of most projects th
 knitr::include_graphics("competencies_analysis.png")
 ```
 
-As just discussed, this is probably the capability you most closely associate with R, and there is no doubt that R is a powerful tool for analyzing data. However, in this book we won’t go beyond using R to calculate basic descriptive statistics. For our purposes, descriptive statistics include:    
+As discussed above, this is probably the capability most people most closely associate with R, and there is no doubt that R is a powerful tool for analyzing data. However, in this book we won’t go beyond using R to calculate basic descriptive statistics. For our purposes, descriptive statistics include:    
 
 * <span class="underline">Measures of central tendency</span>. For example, mean, median, and mode.   
 * <span class="underline">Measures of dispersion</span>. For example, variance and standard error.   
@@ -135,9 +135,9 @@ As just discussed, this is probably the capability you most closely associate wi
 knitr::include_graphics("competencies_present.png")
 ```
 
-And finally, the ultimate goal is typically to present your findings in some form or another. For example, a report, a website, or a journal article. With R you can present your results in many different formats with relative ease. In fact, this is one of our favorite things about R and RStudio. In this class you will learn how to take your text, tabular, or graphical results and then publish them in many different formats including Microsoft Word, html files that can be viewed in web browsers, and pdf documents. Let’s take a look at some examples.
+And finally, the ultimate goal is typically to present our findings in some form or another. For example, a report, a website, or a journal article. With R we can present our results in many different formats with relative ease. In fact, this is one of our favorite things about R and RStudio. In this book we will learn how to publish our text, tabular, or graphical results in many different formats including Microsoft Word documents, html files that can be viewed in web browsers, and pdf documents. Let’s take a look at some examples.
 
-1. **Microsoft Word documents**. [Click here](https://www.dropbox.com/s/6l1ikp6wbyue9bd/chap_2_example_word_docI.docx?dl=0) to view an example report created for one of our research projects in Microsoft Word.   
-2. **PDF documents**. [Click here](https://www.dropbox.com/s/hheuyv5qcabf197/chap_2_example_pdf.pdf?dl=0) to view a data dictionary we created in PDF format.   
-3. **HTML files**. Hypertext Markup Language (HTML) files are what you are looking at whenever you view a webpage. You can use R to create HTML files that others can view in their web browser. You can email them these files to view in their web browser, or you can make them available for others to view online just like any other website. [Click here](https://brad-cannell.github.io/detect_recruitment_dashboard/) to view an example dashboard we created for one of our research projects.    
-4. **Web applications**. You can even use R to create full-fledged web applications. View the [RStudio website](https://shiny.rstudio.com/gallery/) to see some examples.
+1. **Microsoft Word documents**. [Click here](https://www.dropbox.com/s/6l1ikp6wbyue9bd/chap_2_example_word_docI.docx?dl=0) to view an example report created for a research project in Microsoft Word.   
+2. **PDF documents**. [Click here](https://www.dropbox.com/s/hheuyv5qcabf197/chap_2_example_pdf.pdf?dl=0) to view a data dictionary created in PDF format.   
+3. **HTML files**. Hypertext Markup Language (HTML) files are what we are looking at whenever we view a webpage. We can use R to create HTML files that others can view in their web browser. We can email them these files to view in their web browser, or we can make them available for others to view online just like any other website. [Click here](https://rstudio.github.io/flexdashboard/articles/examples.html) to view an gallery of data dashboards created with R.    
+4. **Web applications**. We can even use R to create full-fledged web applications. View the [RStudio website](https://shiny.rstudio.com/gallery/) to see some examples.
