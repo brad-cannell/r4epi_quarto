@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R 4 Epidemiology – 20&nbsp; Introduction to git and GitHub</title>
+<title>30&nbsp; Introduction to git and GitHub – R 4 Epidemiology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,17 +50,17 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../chapters/using_git_github/using_git_github.html" rel="next">
-<link href="../../chapters/categorical_variables/categorical_variables.html" rel="prev">
+<link href="../../chapters/using_purrr/using_purrr.html" rel="prev">
 <link href="../../r4epi_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -101,7 +101,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -333,12 +333,42 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Numerical Descriptions of Categorical Variables</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/central_tendency/central_tendency.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Measures of Central Tendency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dispersion/dispersion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/cont_out_cont_pred/cont_out_cont_pred.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Describing the Relationship Between a Continuous Outcome and a Continuous Predictor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/cont_out_cat_pred/cont_out_cat_pred.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Describing the Relationship Between a Continuous Outcome and a Categorical Predictor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/cat_out_cat_pred/cat_out_cat_pred.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Describing the Relationship Between a Categorical Outcome and a Categorical Predictor</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Repeated Operations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -346,14 +376,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
   </div>
 </li>
       </ul>
@@ -361,7 +409,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -369,8 +417,14 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -378,12 +432,29 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link">
@@ -402,20 +473,20 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#versioning" id="toc-versioning" class="nav-link active" data-scroll-target="#versioning"><span class="header-section-number">20.1</span> Versioning</a></li>
-  <li><a href="#preservation" id="toc-preservation" class="nav-link" data-scroll-target="#preservation"><span class="header-section-number">20.2</span> Preservation</a></li>
-  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">20.3</span> Reproducibility</a></li>
-  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration"><span class="header-section-number">20.4</span> Collaboration</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">20.5</span> Summary</a></li>
+  <li><a href="#versioning" id="toc-versioning" class="nav-link active" data-scroll-target="#versioning"><span class="header-section-number">30.1</span> Versioning</a></li>
+  <li><a href="#preservation" id="toc-preservation" class="nav-link" data-scroll-target="#preservation"><span class="header-section-number">30.2</span> Preservation</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">30.3</span> Reproducibility</a></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration"><span class="header-section-number">30.4</span> Collaboration</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">30.5</span> Summary</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/intro_git_github/intro_git_github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html">Collaboration</a></li><li class="breadcrumb-item"><a href="../../chapters/intro_git_github/intro_git_github.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></h1>
+<h1 class="title"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></h1>
 </div>
 
 
@@ -463,8 +534,8 @@ bookdown::preview_chapter("chapters/08_part_collaboration/01_intro_git_github.Rm
 <li>Collaboration</li>
 </ol>
 <p>We’ll elaborate on what each of these means to us below. Then, we will introduce you to git and GitHub, and explain why they are some of the best tools currently available to help you with versioning and collaborating. We’ll go ahead and warn you now — git and GitHub can be hard to wrap your mind around at first. In fact, using git and GitHub still frequently causes us confusion and frustration at times. However, we still believe that the payoff is ultimately worth the upfront investment in time and frustration. Additionally, we will do our best to make this introduction as gentle, comprehensible, and practically applicable as possible.</p>
-<section id="versioning" class="level2" data-number="20.1">
-<h2 data-number="20.1" class="anchored" data-anchor-id="versioning"><span class="header-section-number">20.1</span> Versioning</h2>
+<section id="versioning" class="level2" data-number="30.1">
+<h2 data-number="30.1" class="anchored" data-anchor-id="versioning"><span class="header-section-number">30.1</span> Versioning</h2>
 <p>Have you ever worked on a paper or report and had a folder on your computer that looked something like this?</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -486,7 +557,7 @@ bookdown::preview_chapter("chapters/08_part_collaboration/01_intro_git_github.Rm
 <img src="google_doc_01.gif" class="img-fluid figure-img" alt="A gif about text in Google Docs.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.1: A gif about text in Google Docs.
+Figure&nbsp;30.1: A gif about text in Google Docs.
 </figcaption>
 </figure>
 </div>
@@ -501,7 +572,7 @@ Figure&nbsp;20.1: A gif about text in Google Docs.
 <img src="google_doc_02.gif" class="img-fluid figure-img" alt="A gif about text change in Google Docs.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.2: A gif about text change in Google Docs.
+Figure&nbsp;30.2: A gif about text change in Google Docs.
 </figcaption>
 </figure>
 </div>
@@ -516,7 +587,7 @@ Figure&nbsp;20.2: A gif about text change in Google Docs.
 <img src="google_doc_03.gif" class="img-fluid figure-img" alt="A gif about version history in Google Docs.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.3: A gif about version history in Google Docs.
+Figure&nbsp;30.3: A gif about version history in Google Docs.
 </figcaption>
 </figure>
 </div>
@@ -532,7 +603,7 @@ Figure&nbsp;20.3: A gif about version history in Google Docs.
 <img src="google_doc_04.gif" class="img-fluid figure-img" alt="A gif about restoring versions in Google Docs.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.4: A gif about restoring versions in Google Docs.
+Figure&nbsp;30.4: A gif about restoring versions in Google Docs.
 </figcaption>
 </figure>
 </div>
@@ -548,7 +619,7 @@ Figure&nbsp;20.4: A gif about restoring versions in Google Docs.
 <img src="google_doc_05.gif" class="img-fluid figure-img" alt="A gif about naming current Google Doc versions.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-google-doc-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.5: A gif about naming current Google Doc versions.
+Figure&nbsp;30.5: A gif about naming current Google Doc versions.
 </figcaption>
 </figure>
 </div>
@@ -578,12 +649,12 @@ Figure&nbsp;20.5: A gif about naming current Google Doc versions.
 </div>
 </div>
 </section>
-<section id="preservation" class="level2" data-number="20.2">
-<h2 data-number="20.2" class="anchored" data-anchor-id="preservation"><span class="header-section-number">20.2</span> Preservation</h2>
+<section id="preservation" class="level2" data-number="30.2">
+<h2 data-number="30.2" class="anchored" data-anchor-id="preservation"><span class="header-section-number">30.2</span> Preservation</h2>
 <p>In addition to versioning, the ability to preserve all of your code and related project files in the cloud is another great reason to consider using GitHub. In other words, you don’t have to worry about losing your code if your computer is lost, damaged, or replaced. All of your project files can easily be retrieved and restored from GitHub. Although the same is true for other cloud-based file storage services like Dropbox, Google Drive, and OneDrive, remember that GitHub has special built-in tools that those services do not provide.</p>
 </section>
-<section id="reproducibility" class="level2" data-number="20.3">
-<h2 data-number="20.3" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">20.3</span> Reproducibility</h2>
+<section id="reproducibility" class="level2" data-number="30.3">
+<h2 data-number="30.3" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">30.3</span> Reproducibility</h2>
 <p>Reproducibility, or more precisely, <strong>reproducible research</strong>, is a term that may be unfamiliar to many of you. Peng and Hichs (2021) give a nice introduction to reproducible research:<span class="citation" data-cites="Peng2021-xk"><sup><a href="../../references.html#ref-Peng2021-xk" role="doc-biblioref">1</a></sup></span></p>
 <blockquote class="blockquote">
 <p>Scientific progress has long depended on the ability of scientists to communicate to others the details of their investigations… In the past, it might have sufficed to describe the data collection and analysis using a few key words and high-level language. However, with today’s computing-intensive research, the lack of details about the data analysis in particular can make it impossible to recreate any of the results presented in a paper. Compounding these difficulties is the impracticality of describing these myriad details in traditional journal publications using natural language. To address this communication problem, a concept has emerged known as reproducible research, which aims to provide for others far more precise descriptions of an investigator’s work. As such, reproducible research is an extension of the usual communications practices of scientists, adapted to the modern era.</p>
@@ -594,8 +665,8 @@ Figure&nbsp;20.5: A gif about naming current Google Doc versions.
 </blockquote>
 <p>We will not delve deeper into the general importance and challenges of reproducible research in this book; however, we encourage readers who are interested in learning more about reproducible research to take a look at both of the articles cited above. Additionally, we believe it’s important to highlight that GitHub is a great tool for making our research more reproducible. Specifically, it provides a platform where others can easily download the data (when we are allowed to make it available), computer code, and documentation needed to recreate our research results. This is a great asset for scientific progress, but only if researchers like us use it effectively.</p>
 </section>
-<section id="collaboration" class="level2" data-number="20.4">
-<h2 data-number="20.4" class="anchored" data-anchor-id="collaboration"><span class="header-section-number">20.4</span> Collaboration</h2>
+<section id="collaboration" class="level2" data-number="30.4">
+<h2 data-number="30.4" class="anchored" data-anchor-id="collaboration"><span class="header-section-number">30.4</span> Collaboration</h2>
 <p>In the sections above, we discussed the ways in which git and GitHub are tools we can use for versioning, preserving our code in the cloud, and making our research more reproducible. All of these are important benefits of using git and GitHub even if we don’t routinely collaborate with others to complete our projects. However, the power of GitHub is even greater when we think about using it as a tool for collaboration — including collaboration with our future selves.</p>
 <p>For example, one research project that we (the authors) both work on is the Detection of Elder abuse Through Emergency Care Technicians (DETECT) project. Let’s say that we would like to start collaborating with you on DETECT. Perhaps we need your help preprocessing some of the DETECT data and conducting an analysis. So, how do we get started?</p>
 <p>Because we created a <strong>repository</strong> on GitHub for the DETECT project, all of the files and documentation you need to get started are easily accessible to you. In fact, you don’t even have to reach out to us first for access. They are freely available to anyone who is interested. Please go ahead and use the following URL to view the DETECT repository now: <a href="https://github.com/brad-cannell/detect_pilot_test_5w" class="uri">https://github.com/brad-cannell/detect_pilot_test_5w</a>. GitHub repositories may look a little confusing at first, but you will get used to them with practice.</p>
@@ -614,8 +685,8 @@ Note
 </div>
 <p>We could have emailed the files back and forth, but what if we accidentally forget to send you one? What if one of the files is too large to email? What if two people are working on the same file at the same time and send out their revisions via email? Which version should we use? In the chapters that follow, we will show you how using GitHub to share project files gets around these, and other, collaboration issues.</p>
 </section>
-<section id="summary" class="level2" data-number="20.5">
-<h2 data-number="20.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">20.5</span> Summary</h2>
+<section id="summary" class="level2" data-number="30.5">
+<h2 data-number="30.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">30.5</span> Summary</h2>
 <p>In summary, git and GitHub are awesome tools to use when our projects involve research and/or data analysis. They allow us to store all of our files in the cloud with the added benefit of versioning and many other collaboration tools. The primary disadvantage of using GitHub instead of just emailing code files or using general-purpose cloud storage services is its learning curve. But, in the following chapters, we hope to give you enough knowledge to make GitHub immediately useful to you. Over time, you can continue to hone your GitHub skills and really take advantage of everything it has to offer. We think if you make this initial investment, it is unlikely that you will ever look back.</p>
 
 
@@ -712,8 +783,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -824,7 +893,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1052,13 +1120,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/categorical_variables/categorical_variables.html" class="pagination-link" aria-label="Numerical Descriptions of Categorical Variables">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Numerical Descriptions of Categorical Variables</span></span>
+      <a href="../../chapters/using_purrr/using_purrr.html" class="pagination-link" aria-label="Using the purrr Package">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/using_git_github/using_git_github.html" class="pagination-link" aria-label="Using git and GitHub">
-        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

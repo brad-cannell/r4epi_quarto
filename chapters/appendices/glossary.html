@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R 4 Epidemiology – Appendix A — Glossary</title>
+<title>Appendix A — Glossary – R 4 Epidemiology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -56,10 +56,10 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -88,6 +88,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -332,12 +361,42 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Numerical Descriptions of Categorical Variables</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/central_tendency/central_tendency.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Measures of Central Tendency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dispersion/dispersion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Measures of Dispersion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/cont_out_cont_pred/cont_out_cont_pred.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Describing the Relationship Between a Continuous Outcome and a Continuous Predictor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/cont_out_cat_pred/cont_out_cat_pred.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Describing the Relationship Between a Continuous Outcome and a Categorical Predictor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/cat_out_cat_pred/cat_out_cat_pred.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Describing the Relationship Between a Categorical Outcome and a Categorical Predictor</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Repeated Operations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -345,14 +404,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
   </div>
 </li>
       </ul>
@@ -360,7 +437,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -368,8 +445,14 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -377,12 +460,29 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link active">
@@ -422,12 +522,30 @@ div.csl-indent {
 
 
 <dl>
+<dt><span id="glossary-bivariate">Bivariate</span></dt>
+<dd>
+<p>Involving two variables.</p>
+</dd>
+<dt><span id="glossary-complete-case-analysis">Complete case analysis</span></dt>
+<dd>
+<p>A summary containing the count and percent of non-missing values for a categorical variable.</p>
+</dd>
 <dt><span id="glossary-console">Console</span></dt>
 <dd>
 <p>The console is located in RStudio’s bottom-right pane by default. The R console is an interactive programming environment where we can enter and execute R commands. It’s the the most basic interface for interacting with R, providing immediate feedback and results from the code we enter. The R console is useful for testing small pieces of code and interactive data exploration. However, we recommend using R scripts or Quarto/ files for all but the simplest programming or data analysis tasks.</p>
 </dd>
 </dl>
 <p><strong>Data frame</strong>. For our purposes, data frames are just R’s term for data set or data table. Data frames are made up of columns (variables) and rows (observations). In R, all columns of a data frame must have the same length.</p>
+<dl>
+<dt><span id="glossary-for-loop">For loop</span></dt>
+<dd>
+<p>A for loop is a programming statement that can execute a block of code repeatedly while systematically iterating over a predefined range, sequence, or collection of values.</p>
+</dd>
+<dt><span id="glossary-frequency-count">Frequency count</span></dt>
+<dd>
+<p>The frequency count may also be referred to as simply the <strong>frequency</strong>, the <strong>count</strong>, or the <strong>n</strong>. It is a summary of data by the number of distinct occurrences of an event or observation.</p>
+</dd>
+</dl>
 <p><strong>Functions</strong>. Coming soon.</p>
 <ul>
 <li><dl>
@@ -455,12 +573,56 @@ div.csl-indent {
 <dd>
 <p>GitHub’s documentation says issues are “items you can create in a repository to plan, discuss and track work. Issues are simple to create and flexible to suit a variety of scenarios. You can use issues to track work, give or receive feedback, collaborate on ideas or tasks, and efficiently communicate with others.”<span class="citation" data-cites="GitHub2024-im"><sup><a href="../../references.html#ref-GitHub2024-im" role="doc-biblioref">1</a></sup></span></p>
 </dd>
+<dt><span id="glossary-iteratively">Iteratively</span></dt>
+<dd>
+<p>A method of solving a problem by repeatedly executing a set of instructions in a step-by-step manner, often using loops. This approach can improve efficiency and help prevent errors.</p>
+</dd>
+<dt><span id="glossary-lexical-scoping-rules">Lexical scoping rules</span></dt>
+<dd>
+<p>Lexical scoping rules define an object’s accessibility based on where it is declared in the code’s structure rather than how or when it’s called.</p>
+</dd>
+<dt><span id="glossary-marginal-totals">Marginal totals</span></dt>
+<dd>
+<p>In a contingency table, marginal totals are the sums of observations for each row (found in the last column) and each column (found in the last row). The overall total, found in the bottom-right cell, represents the sum of all observations in the table.</p>
+</dd>
+<dt><span id="glossary-mean">Mean</span></dt>
+<dd>
+<p>The arithmetic mean is a measure of central tendency that represents the average value of a numeric variable calculated by taking the sum of the values of the variable and then dividing this sum by the total number of values. It is often referred to as <span class="math inline">\(\bar{x}\)</span>.</p>
+</dd>
+<dt><span id="glossary-median">Median</span></dt>
+<dd>
+<p>The median is a measure of central tendency that represents the middle number in a list of numbers that has been sorted in order of magnitude. If the list of numbers has an odd number of values, the median is the middle number; if it has an even number, the median is the average of the two middle numbers. Compared to the mean, it is relatively resistant to extreme values.</p>
+</dd>
+<dt><span id="glossary-mode">Mode</span></dt>
+<dd>
+<p>The mode is a measure of central tendency that represents the value that is most often observed in a set of data. A dataset may have one mode (unimodal), multiple modes (multimodal), or no mode (if the frequency of each value is the same).</p>
+</dd>
 </dl>
 <p><strong>Objects</strong>. Coming soon.</p>
 <dl>
+<dt><span id="glossary-outcome-variable">Outcome variable</span></dt>
+<dd>
+<p>The outcome variable is the variable whose value we are attempting to predict, estimate, or determine. It is also known as the dependent variable or the response variable.</p>
+</dd>
+<dt><span id="glossary-percentage">Percentage</span></dt>
+<dd>
+<p>A percentage is the relative frequency of an event or observation within a data set expressed as a percentage. It is calculated by dividing the number of distinct occurrences of the event or observation by the total number of observations and then multiplying it by 100.</p>
+</dd>
+<dt><span id="glossary-predictor-variable">Predictor variable</span></dt>
+<dd>
+<p>The predictor variable is the variable that is used to explain or help predict the value of the outcome variable. It is also known as the <strong>independent variable</strong> or the <strong>explanatory variable</strong>.</p>
+</dd>
+<dt><span id="glossary-proportion">Proportion</span></dt>
+<dd>
+<p>A proportion is the relative frequency of an event or observation within a data set which can be expressed as a fraction or percentage. It is calculated by dividing the number of distinct occurrences of the event or observation by the total number of observations.</p>
+</dd>
 <dt><span id="glossary-r">R</span></dt>
 <dd>
 <p>R’s documentation says “R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&amp;T, now Lucent Technologies) by John Chambers and colleagues.”<span class="citation" data-cites="R_Core_Team2024-sk"><sup><a href="../../references.html#ref-R_Core_Team2024-sk" role="doc-biblioref">2</a></sup></span> R is open source, and you can download it for free from The Comprehensive R Archive Network (CRAN) at https://cran.r-project.org/.</p>
+</dd>
+<dt><span id="glossary-range">Range</span></dt>
+<dd>
+<p>The range is a measure of the spread of a data set, calculated as the difference between the maximum and minimum values.</p>
 </dd>
 <dt><span id="glossary-repository">Repository</span></dt>
 <dd>
@@ -469,6 +631,26 @@ div.csl-indent {
 <dt><span id="glossary-rstudio">RStudio</span></dt>
 <dd>
 <p>RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. RStudio is available in open source and commercial editions and runs on the desktop (Windows, Mac, and Linux) or in a browser connected to RStudio Server or RStudio Server Pro (Debian/Ubuntu, Red Hat/CentOS, and SUSE Linux).<span class="citation" data-cites="RStudio2020-fe"><sup><a href="../../references.html#ref-RStudio2020-fe" role="doc-biblioref">4</a></sup></span></p>
+</dd>
+<dt><span id="glossary-split-apply-combine">Split - Apply - Combine</span></dt>
+<dd>
+<p>This is a data analysis strategy that involves splitting data up into smaller components, applying a calculation separately to each smaller component, and then combining the individual results back together as a single result. <code>dplyr</code>’s <code>group_by()</code> function uses this strategy.</p>
+</dd>
+<dt><span id="glossary-standard-deviation">Standard deviation</span></dt>
+<dd>
+<p>Standard deviation is a measure of the spread of a data set, calculated as the square root of the variance, which is the average of the squared differences between each value and the mean.</p>
+</dd>
+<dt><span id="glossary-two-way-frequency-table">Two-way frequency table</span></dt>
+<dd>
+<p>A two-way frequency table is a table used to summarize the relationship between two categorical variables by displaying the observed frequencies for their combinations. It is also known as a <strong>crosstab</strong> or <strong>contingency table</strong>.</p>
+</dd>
+<dt><span id="glossary-univariate">Univariate</span></dt>
+<dd>
+<p>Involving a single numerical or a single categorical variable.</p>
+</dd>
+<dt><span id="glossary-variance">Variance</span></dt>
+<dd>
+<p>Variance is a measure of the spread of a data set, calculated as the average of the squared differences between each value and the mean.</p>
 </dd>
 </dl>
 
@@ -571,8 +753,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -683,7 +863,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -912,7 +1091,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../references.html" class="pagination-link" aria-label="References">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">References</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
