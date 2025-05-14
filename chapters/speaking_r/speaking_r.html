@@ -582,23 +582,24 @@ Note
 </section>
 <section id="the-r-interpreter" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="the-r-interpreter"><span class="header-section-number">4.2</span> The R interpreter</h2>
-<p>Question: We keep talking about “speaking” to R, but when you speak to R using the R language, who are you actually speaking to?</p>
-<p>Well, you are speaking to something called the <strong>R interpreter</strong>. The R interpreter takes the commands we’ve written in the R language, sends them to our computer to do the actual work (e.g., get the mean of a set of numbers), and then translates the results of that work back to us in a form that we humans can understand (e.g., the mean is 25.5). At this stage, one of the key concepts for you to understand about the R language is that is <strong>extremely literal!</strong> Understanding the literal nature of R is important because it will be the underlying cause of a lot of errors in our R code.</p>
+<p>Question: We keep talking about “speaking” to R, but when we speak to R using the R language, who are we actually speaking to?</p>
+<p>Well, we are speaking to something called the <strong>R interpreter</strong>. The R interpreter takes the commands we’ve written in the R language, sends them to our computer to do the actual work (e.g., get the mean of a set of numbers), and then translates the results of that work back to us in a form that we humans can understand (e.g., the mean is 25.5). At this stage, one of the key concepts for us to understand about the R language is that it is <strong>extremely literal!</strong> Understanding the literal nature of R is important because it will be the underlying cause of a lot of the errors in our R code.</p>
 </section>
 <section id="errors" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="errors"><span class="header-section-number">4.3</span> Errors</h2>
-<p>No matter what we write next, you are going to get errors in your R code. We still get errors in our R code every single time we write R code. However, our hope is that this section will help you begin to understand <em>why</em> you are getting errors when you get them and provide us with a common language for discussing errors.</p>
-<p>So, what exactly do we mean when we say that the R interpreter is extremely literal? Well, in the Navigating RStudio chapter, we already told you that R is a <strong>case sensitive</strong> language. Again, that means that uppercase x (X) and lowercase x (x) are different things to R. So, if you assign 2 to lowercase x (<code>x &lt;- 2</code>). And then later ask R to tell what number you stored in upper case X; you will get an error (<code>Error: object 'X' not found</code>).</p>
+<p>It’s inevitable: errors will happen in your R code. Even experienced programmers who have been working with R for many years get errors when they write code. The goal of this section is to help us begin to understand <em>why</em> errors happen, and to give us a shared language for talking about them.</p>
+<p>So, what exactly do we mean when we say that the R interpreter is extremely literal? In the previous lesson, we learned that R is a <strong>case-sensitive</strong> language. That means that uppercase <code>X</code> and lowercase <code>x</code> are treated as two completely different objects.</p>
+<p>For example, if we assign the value <code>2</code> to lowercase <code>x</code> using <code>x &lt;- 2</code>, and then later ask R to show us the contents of uppercase <code>X</code>, we’ll get an error (<code>Error: object 'X' not found</code>):</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">2</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>X</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
-<pre><code>Error in eval(expr, envir, enclos): object 'X' not found</code></pre>
+<pre><code>Error: object 'X' not found</code></pre>
 </div>
 </div>
-<p>Specifically, this is an example of a <a href="../../chapters/appendices/glossary.html#glossary-logic-error">logic error</a>. Meaning, R understands what you are <em>asking</em> it to do – you want it to print the contents of the uppercase X object to the screen. However, it can’t complete your request because you are asking it to do something that doesn’t logically make sense – print the contents of a thing that doesn’t exist. Remember, R is literal and it will not try to guess that you actually <em>meant</em> to ask it to print the contents of lowercase x.</p>
-<p>Another general type of error is known as a <strong>syntax error</strong>. In programming languages, <a href="../../chapters/appendices/glossary.html#glossary-syntax">syntax</a> refers to the rules of the language. You can sort of think of this as the grammar of the language. In English, we could say something like, “giving dog water drink.” This sentence is grammatically completely incorrect; however, most of you would roughly be able to figure out what we’re asking you to do based on your life experience and knowledge of the situational context. The R interpreter, as awesome as it is, would not be able to make an assumption about what we want it to do. In this case, the R interpreter would say, “I don’t know what you’re asking me to do.” When the R interpreter says, “I don’t know what you’re asking me to do,” we’ve made a syntax error.</p>
-<p>Throughout the rest of the book, we will try to point out situations where R programmers often encounter errors and how you may be able to address them. The remainder of this chapter will discuss some key components of R’s syntax and the data structures (i.e., ways of storing data) that the R syntax interacts with.</p>
+<p>Specifically, this is an example of a <a href="../../chapters/appendices/glossary.html#glossary-logic-error">logic error</a>. Meaning, R understands what we are <em>asking</em> it to do – we want it to print the contents of the uppercase <code>X</code> object to the screen. However, it can’t complete our request because we are asking it to do something that doesn’t logically make sense – print the contents of a thing that doesn’t exist. Remember, R is literal and it will not try to guess that we actually <em>meant</em> to ask it to print the contents of lowercase <code>x</code>.</p>
+<p>Another general type of error is known as a <strong>syntax error</strong>. In programming languages, <a href="../../chapters/appendices/glossary.html#glossary-syntax">syntax</a> refers to the rules of the language. We can sort of think of syntax as the grammar of the language. In English, we could say something like, “giving dog water drink.” This sentence is grammatically incorrect; however, many people would roughly be able to figure out what’s being asked based on their life experience and knowledge of the situational context. The R interpreter, as awesome as it is, would not be able to make an assumption about what we want it to do. In this case, the R interpreter would say, “I don’t know what you’re asking me to do.” When the R interpreter says, “I don’t know what you’re asking me to do,” we’ve made a syntax error.</p>
+<p>Throughout the rest of the book, we will try to point out situations where R programmers often encounter errors and how we may be able to address them. The remainder of this chapter will discuss some key components of R’s syntax and the data structures (i.e., ways of storing data) that the R syntax interacts with.</p>
 </section>
 <section id="functions" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="functions"><span class="header-section-number">4.4</span> Functions</h2>
@@ -607,7 +608,7 @@ Note
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="factory1.png" class="img-fluid figure-img"></p>
+<p><img src="factory1.png" class="img-fluid figure-img" width="900"></p>
 <figcaption>A factory making bicycles.</figcaption>
 </figure>
 </div>
@@ -618,7 +619,7 @@ Note
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="factory2.png" class="img-fluid figure-img"></p>
+<p><img src="factory2.png" class="img-fluid figure-img" width="900"></p>
 <figcaption>A function factory making numbers.</figcaption>
 </figure>
 </div>
@@ -652,7 +653,7 @@ Note
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="help.png" class="img-fluid figure-img"></p>
+<p><img src="help.png" class="img-fluid figure-img" width="900"></p>
 <figcaption>The help tab.</figcaption>
 </figure>
 </div>
@@ -714,7 +715,7 @@ Note
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="objects.png" class="img-fluid figure-img"></p>
+<p><img src="objects.png" class="img-fluid figure-img" width="900"></p>
 <figcaption>Creating the x object.</figcaption>
 </figure>
 </div>
@@ -726,7 +727,7 @@ Note
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="language.png" class="img-fluid figure-img"></p>
+<p><img src="language.png" class="img-fluid figure-img" width="900"></p>
 </figure>
 </div>
 </div>
