@@ -121,4 +121,74 @@
 
 :  Variance is a measure of the spread of a data set, calculated as the average of the squared differences between each value and the mean.
 
+[Non-standard Evaluation]{#glossary-non-standard-evaluation}
 
+:  In R, **non-standard evaluation (NSE)** is a set of language features that allow functions to capture, inspect, and manipulate the _expressions_ that users write, rather than the values those expressions evaluate to. NSE powers the concise, “bare-variable-name” syntax in packages like **dplyr** (`filter(df, age > 30)`) and tidy-evaluation (`{{ }}`, `.data[[ ]]`) tools that let you combine NSE with standard evaluation in a controlled way.
+
+[Conditional Operations]{#glossary-conditional-operations}
+
+:  Programming steps that execute different code paths depending on whether a logical test is **TRUE** or **FALSE**. In R this includes the `if` / `else` family, vectorised helpers such as `ifelse()`, and the `case_when()` and `dplyr::recode()` functions.
+
+[Vectorization]{#glossary-vectorization}
+
+:  A programming technique in which operations are applied to entire **vectors** (or matrices/data frames) in a single step rather than iterating through elements one by one. Vectorized code in R (e.g., `x * 2` or `mean(x)`) is typically clearer and much faster because heavy computation occurs in compiled C/C++ or Fortran under the hood.
+
+[Data Checks]{#glossary-data-checks}
+
+:  Procedures used to confirm that the contents, structure, and metadata of a data set meet expected standards _before_ analysis. Examples include type checks (numeric vs. character), range checks (no ages below 0), completeness checks (missing–value rates), and cross-field consistency checks (start ≤ end dates).
+
+[MDL]{#glossary-mdl}
+
+:  **Minimum Description Length (MDL) principle** — an information-theoretic model-selection rule stating that the best explanation of data is the one that yields the shortest total code length required to describe _both_ the model and the data given that model. MDL provides a formal way to balance goodness-of-fit against model complexity.
+
+[List-wise Deletion]{#glossary-list-wise-deletion}
+
+:  A missing-data handling method in which any observation (row) that contains _at least one_ missing value on variables of interest is completely removed from the analysis, leaving only “complete cases.”
+
+[Regular Expressions]{#glossary-regular-expressions}
+
+:  Compact strings that describe search patterns for text. Regular expressions (regexes) are used for tasks such as finding, extracting, replacing, or validating character data (`stringr`, `grepl()`, `gsub()`, etc.).
+
+[Token]{#glossary-token}
+
+:  The smallest meaningful unit in a regular expression or in parsed text. In regex syntax, tokens include literal characters (`a`), metacharacters (`\d`), or entire character classes (`[A-Z]`).
+
+[Quantifier]{#glossary-quantifier}
+
+:  A regex symbol that specifies _how many_ times the preceding token should occur. Common quantifiers include `*` (0 +), `+` (1 +), `?` (0 – 1), and `{m,n}` (between _m_ and _n_ times).
+
+[Anchor]{#glossary-anchor}
+
+:  A regex metacharacter that pins a match to a position rather than characters: `^` matches the start of a string or line, and `$` matches the end.
+
+[Collapse]{#glossary-collapse}
+
+:  To reduce a data set to a smaller, summarised form by grouping and aggregating. In **dplyr**, `summarise()` collapses multiple rows per group into a single summary row.
+
+[Merge]{#glossary-merging}
+
+:  A base-R term (function `merge()`) for combining two data frames by matching rows on one or more _key_ variables. Rows that do not match can be kept, dropped, or cause missing values depending on the arguments.
+
+[Join]{#glossary-join}
+
+:  In **dplyr** and SQL, an operation that brings together two tables based on shared key columns. Variants include `inner_join()` (rows must match), `left_join()` (keep all rows from the left table), `full_join()`, etc.
+
+[Key]{#glossary-key}
+
+:  One or more variables whose combined values uniquely identify a record (row) within a data set and enable accurate merges/joins with other tables.
+
+[Person-level]{#glossary-person-level}
+
+:  A data structure in which each row represents exactly _one person_, often containing time-invariant attributes (e.g., date of birth, sex) or pre-aggregated summaries.
+
+[Wide]{#glossary-wide}
+
+:  A format where repeated measures or related observations are stored in **separate columns**. For example, test scores across three terms might appear as `score_T1`, `score_T2`, `score_T3` in the same row.
+
+[Person-period]{#glossary-person-period}
+
+:  A panel/longitudinal data layout where each row corresponds to a unique combination of a person **and** a time period (e.g., person × year or person × visit), holding variables that can change over time.
+
+[Long]{#glossary-long}
+
+:  A tidy-data format where repeated measures are stacked **down rows** rather than across columns: one column stores the _measurement_ (value), another records the _variable_ or _occasion_ label, and each row corresponds to one observation at one time point for one entity.
