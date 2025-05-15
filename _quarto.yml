@@ -90,8 +90,8 @@ book:
         - chapters/subsetting_data_frames/03_subsetting_data_frames.qmd
         - chapters/working_with_dates/04_working_with_dates.qmd
         - chapters/working_with_character_strings/05_working_with_character_strings.qmd
-        - chapters/conditional_operations/06_conditional_operation.qmd
-        - chapters/multiple_data_frames/06_multiple_data_frames.qmd
+        - chapters/conditional_operations/06_conditional_operations.qmd
+        - chapters/multiple_data_frames/08_multiple_data_frames.qmd
         - chapters/restructuring_data_frames/10_restructuring_data_frames.qmd
       
     - part: "Descriptive Analysis"
