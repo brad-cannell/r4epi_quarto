@@ -9,6 +9,11 @@ I start with dollar sign and bracket because they were exposed to those before
 mutate already in the book.
 -->
 
+```{r}
+#| echo: false
+library(dplyr, warn.conflicts = FALSE)
+```
+
 Two of the most fundamental data management tasks are to create new columns in your data frame and to modify existing columns in your data frame. In fact, we've already talked about creating and modifying columns at a few different places in the book. 
 
 In this book, we are actually going to learn 4 different methods for creating and modifying columns of a data frame. They are:

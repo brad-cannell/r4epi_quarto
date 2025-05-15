@@ -82,6 +82,16 @@ book:
       - chapters/importing_binary_files/importing_binary_files.qmd
       - chapters/rstudio_import_tool/rstudio_import_tool.qmd
       - chapters/exporting_data_to_disk/exporting_data_to_disk.qmd
+      
+    - part: "Descriptive Analysis"
+      chapters: 
+      - chapters/intro_descriptive_analysis/intro_descriptive_analysis.qmd
+      - chapters/categorical_variables/categorical_variables.qmd
+      - chapters/central_tendency/central_tendency.qmd
+      - chapters/dispersion/dispersion.qmd
+      - chapters/cont_out_cont_pred/cont_out_cont_pred.qmd
+      - chapters/cont_out_cat_pred/cont_out_cat_pred.qmd
+      - chapters/cat_out_cat_pred/cat_out_cat_pred.qmd
 
     - part: "Data Management"
       chapters: 
@@ -93,16 +103,6 @@ book:
         - chapters/conditional_operations/06_conditional_operations.qmd
         - chapters/multiple_data_frames/08_multiple_data_frames.qmd
         - chapters/restructuring_data_frames/10_restructuring_data_frames.qmd
-      
-    - part: "Descriptive Analysis"
-      chapters: 
-      - chapters/intro_descriptive_analysis/intro_descriptive_analysis.qmd
-      - chapters/categorical_variables/categorical_variables.qmd
-      - chapters/central_tendency/central_tendency.qmd
-      - chapters/dispersion/dispersion.qmd
-      - chapters/cont_out_cont_pred/cont_out_cont_pred.qmd
-      - chapters/cont_out_cat_pred/cont_out_cat_pred.qmd
-      - chapters/cat_out_cat_pred/cat_out_cat_pred.qmd
       
     - part: "Repeated Operations"
       chapters:

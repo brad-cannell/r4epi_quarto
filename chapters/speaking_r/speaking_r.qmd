@@ -26,15 +26,17 @@ seq(from = 2, to = 100, by = 2)
 
 ## The R interpreter
 
-Question: We keep talking about "speaking" to R, but when you speak to R using the R language, who are you actually speaking to?
+Question: We keep talking about "speaking" to R, but when we speak to R using the R language, who are we actually speaking to?
 
-Well, you are speaking to something called the **R interpreter**. The R interpreter takes the commands we've written in the R language, sends them to our computer to do the actual work (e.g., get the mean of a set of numbers), and then translates the results of that work back to us in a form that we humans can understand (e.g., the mean is 25.5). At this stage, one of the key concepts for you to understand about the R language is that is **extremely literal!** Understanding the literal nature of R is important because it will be the underlying cause of a lot of errors in our R code. 
+Well, we are speaking to something called the **R interpreter**. The R interpreter takes the commands we've written in the R language, sends them to our computer to do the actual work (e.g., get the mean of a set of numbers), and then translates the results of that work back to us in a form that we humans can understand (e.g., the mean is 25.5). At this stage, one of the key concepts for us to understand about the R language is that it is **extremely literal!** Understanding the literal nature of R is important because it will be the underlying cause of a lot of the errors in our R code. 
 
 ## Errors
 
-No matter what we write next, you are going to get errors in your R code. We still get errors in our R code every single time we write R code. However, our hope is that this section will help you begin to understand _why_ you are getting errors when you get them and provide us with a common language for discussing errors.
+It’s inevitable: errors will happen in your R code. Even experienced programmers who have been working with R for many years get errors when they write code. The goal of this section is to help us begin to understand _why_ errors happen, and to give us a shared language for talking about them.
 
-So, what exactly do we mean when we say that the R interpreter is extremely literal? Well, in the Navigating RStudio chapter, we already told you that R is a **case sensitive** language. Again, that means that uppercase x (X) and lowercase x (x) are different things to R. So, if you assign 2 to lowercase x (`x <- 2`). And then later ask R to tell what number you stored in upper case X; you will get an error (`Error: object 'X' not found`).
+So, what exactly do we mean when we say that the R interpreter is extremely literal? In the previous lesson, we learned that R is a **case-sensitive** language. That means that uppercase `X` and lowercase `x` are treated as two completely different objects.
+
+For example, if we assign the value `2` to lowercase `x` using `x <- 2`, and then later ask R to show us the contents of uppercase `X`, we’ll get an error (`Error: object 'X' not found`):
 
 ```{r}
 #| error=TRUE
@@ -42,11 +44,11 @@ x <- 2
 X
 ```
 
-Specifically, this is an example of a [logic error](../appendices/glossary.qmd#glossary-logic-error). Meaning, R understands what you are _asking_ it to do -- you want it to print the contents of the uppercase X object to the screen. However, it can't complete your request because you are asking it to do something that doesn't logically make sense -- print the contents of a thing that doesn't exist. Remember, R is literal and it will not try to guess that you actually _meant_ to ask it to print the contents of lowercase x.
+Specifically, this is an example of a [logic error](../appendices/glossary.qmd#glossary-logic-error). Meaning, R understands what we are _asking_ it to do -- we want it to print the contents of the uppercase `X` object to the screen. However, it can't complete our request because we are asking it to do something that doesn't logically make sense -- print the contents of a thing that doesn't exist. Remember, R is literal and it will not try to guess that we actually _meant_ to ask it to print the contents of lowercase `x`.
 
-Another general type of error is known as a **syntax error**. In programming languages, [syntax](../appendices/glossary.qmd#glossary-syntax) refers to the rules of the language. You can sort of think of this as the grammar of the language. In English, we could say something like, "giving dog water drink." This sentence is grammatically completely incorrect; however, most of you would roughly be able to figure out what we're asking you to do based on your life experience and knowledge of the situational context. The R interpreter, as awesome as it is, would not be able to make an assumption about what we want it to do. In this case, the R interpreter would say, "I don't know what you're asking me to do." When the R interpreter says, "I don't know what you're asking me to do," we've made a syntax error.
+Another general type of error is known as a **syntax error**. In programming languages, [syntax](../appendices/glossary.qmd#glossary-syntax) refers to the rules of the language. We can sort of think of syntax as the grammar of the language. In English, we could say something like, "giving dog water drink." This sentence is grammatically incorrect; however, many people would roughly be able to figure out what's being asked based on their life experience and knowledge of the situational context. The R interpreter, as awesome as it is, would not be able to make an assumption about what we want it to do. In this case, the R interpreter would say, "I don't know what you're asking me to do." When the R interpreter says, "I don't know what you're asking me to do," we've made a syntax error.
 
-Throughout the rest of the book, we will try to point out situations where R programmers often encounter errors and how you may be able to address them. The remainder of this chapter will discuss some key components of R's syntax and the data structures (i.e., ways of storing data) that the R syntax interacts with.
+Throughout the rest of the book, we will try to point out situations where R programmers often encounter errors and how we may be able to address them. The remainder of this chapter will discuss some key components of R's syntax and the data structures (i.e., ways of storing data) that the R syntax interacts with.
 
 ## Functions
 
