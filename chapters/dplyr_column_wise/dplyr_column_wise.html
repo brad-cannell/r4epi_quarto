@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.5.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>27&nbsp; Column-wise Operations in dplyr – R 4 Epidemiology</title>
+<title>R 4 Epidemiology – 35&nbsp; Column-wise Operations in dplyr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,10 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -383,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Repeated Operations</span></a>
+ <span class="menu-text">Data Management</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -391,32 +391,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
+  <a href="../../chapters/intro_data_management/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Data Management</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  <a href="../../chapters/creating_and_modifying_columns/creating_and_modifying_columns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Creating and Modifying Columns</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  <a href="../../chapters/subsetting_data_frames/subsetting_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Subsetting Data Frames</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  <a href="../../chapters/working_with_dates/working_with_dates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Working with Dates</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
+  <a href="../../chapters/working_with_character_strings/working_with_character_strings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Working with Character Strings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/conditional_operations/conditional_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Conditional Operations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/multiple_data_frames/multiple_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Working with Multiple Data Frames</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/restructuring_data_frames/restructuring_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Restructuring Data frames</span></span></a>
   </div>
 </li>
       </ul>
@@ -424,7 +442,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Repeated Operations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -432,14 +450,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
   </div>
 </li>
       </ul>
@@ -447,7 +483,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -455,8 +491,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -464,12 +506,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link">
@@ -488,20 +547,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-across-function" id="toc-the-across-function" class="nav-link active" data-scroll-target="#the-across-function"><span class="header-section-number">27.1</span> The across() function</a></li>
-  <li><a href="#across-with-mutate" id="toc-across-with-mutate" class="nav-link" data-scroll-target="#across-with-mutate"><span class="header-section-number">27.2</span> Across with mutate</a></li>
-  <li><a href="#across-with-summarise" id="toc-across-with-summarise" class="nav-link" data-scroll-target="#across-with-summarise"><span class="header-section-number">27.3</span> Across with summarise</a></li>
-  <li><a href="#across-with-filter" id="toc-across-with-filter" class="nav-link" data-scroll-target="#across-with-filter"><span class="header-section-number">27.4</span> Across with filter</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">27.5</span> Summary</a></li>
+  <li><a href="#the-across-function" id="toc-the-across-function" class="nav-link active" data-scroll-target="#the-across-function"><span class="header-section-number">35.1</span> The across() function</a></li>
+  <li><a href="#across-with-mutate" id="toc-across-with-mutate" class="nav-link" data-scroll-target="#across-with-mutate"><span class="header-section-number">35.2</span> Across with mutate</a></li>
+  <li><a href="#across-with-summarise" id="toc-across-with-summarise" class="nav-link" data-scroll-target="#across-with-summarise"><span class="header-section-number">35.3</span> Across with summarise</a></li>
+  <li><a href="#across-with-filter" id="toc-across-with-filter" class="nav-link" data-scroll-target="#across-with-filter"><span class="header-section-number">35.4</span> Across with filter</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">35.5</span> Summary</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/dplyr_column_wise/dplyr_column_wise.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></h1>
+<h1 class="title"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></h1>
 </div>
 
 
@@ -609,8 +668,8 @@ Copy and paste:
 <p>Now, you might ask why this is a better approach. Fair question.</p>
 <p>In this case, using <code>across()</code> doesn’t actually reduce the number of lines of code we wrote. In fact, we wrote two additional lines when we used the <code>across()</code> function. However, imagine if we added 20 additional columns to our data frame. Using the first approach, we would have to write 20 additional lines of code inside the <code>summarise()</code> function. Using the <code>across()</code> approach, we wouldn’t have to add any additional code at all. We would simply update the value we pass to the <code>.cols</code> argument.</p>
 <p>Perhaps <em>more importantly</em>, did you notice that we “accidentally” forgot to replace <code>y</code> with <code>z</code> when we copied and pasted <code>z_mean = mean(y)</code> in the code chunk for the first approach? If not, go back and take a look. That mistake is fairly easy to catch and fix in this very simple example. But, in real-world projects, mistakes like this are easy to make, and not always so easy to catch. We are much less likely to make similar mistakes when we use <code>across()</code>.</p>
-<section id="the-across-function" class="level2" data-number="27.1">
-<h2 data-number="27.1" class="anchored" data-anchor-id="the-across-function"><span class="header-section-number">27.1</span> The across() function</h2>
+<section id="the-across-function" class="level2" data-number="35.1">
+<h2 data-number="35.1" class="anchored" data-anchor-id="the-across-function"><span class="header-section-number">35.1</span> The across() function</h2>
 <p>The <code>across()</code> function is part of the <code>dplyr</code> package. We will always use <code>across()</code> <em>inside</em> of one of the <code>dplyr</code> verbs we’ve been learning about. Specifically, <code>mutate()</code>, and <code>summarise()</code>. We will not use <code>across()</code> <em>outside</em> of the <code>dplyr</code> verbs. Additionally, we will always use <code>across()</code> within the context of a data frame (as opposed to a vector, matrix, or some other data structure).</p>
 <p>To view the help documentation for <code>across()</code>, you can copy and paste <code>?dplyr::across</code> into your R console. If you do, you will see that <code>across()</code> has four arguments. They are:</p>
 <p>1️⃣<code>.cols</code>. The value we pass to this argument should be columns of the data frame we want to operate on. We can once again use tidy-select argument modifiers here. In the example above, we used <code>c(x:z)</code> to tell R that we wanted to operate on columns x through z (inclusive). If we had also wanted the mean of the <code>row</code> column for some reason, we could have used the <code>everything()</code> tidy-select modifier to tell R that we wanted to operate on all of the columns in the data frame.</p>
@@ -846,8 +905,8 @@ Caused by error:
 </div>
 <p>The purrr-style lambda always begins with the tilde symbol (~). Then we type out a function call behind the tilde symbol. We place the special <code>.x</code> symbol inside the function call where we would normally want to type the name of the column we want the function to operate on. The <code>across()</code> function will then substitute each column name we passed to the <code>.cols</code> argument for <code>.x</code> sequentially. In the example above, there isn’t really any good reason to use this syntax. However, this syntax can be useful at times. We will see some examples below.</p>
 </section>
-<section id="across-with-mutate" class="level2" data-number="27.2">
-<h2 data-number="27.2" class="anchored" data-anchor-id="across-with-mutate"><span class="header-section-number">27.2</span> Across with mutate</h2>
+<section id="across-with-mutate" class="level2" data-number="35.2">
+<h2 data-number="35.2" class="anchored" data-anchor-id="across-with-mutate"><span class="header-section-number">35.2</span> Across with mutate</h2>
 <p>We’ve already seen a number of examples of manipulating columns of our data frames using the <code>mutate()</code> function. In this section, we are going to take a look at two examples where using the <code>across()</code> function inside <code>mutate()</code> will allow us to apply the same manipulation to multiple columns in our data frame at once.</p>
 <p>Let’s go ahead and simulate the same <code>demographics</code> data frame we simulated for the <a href="#recode-missing">recoding missing</a> section of the conditional operations chapter. Let’s also add two new columns: a four-category education column and a six-category income column. For all columns except <code>id</code> and <code>age</code>, a value of <code>7</code> represents “Don’t know” and a value of <code>9</code> represents “refused.”</p>
 <div class="cell">
@@ -1019,8 +1078,8 @@ Caused by error:
 <li><p>We used the <code>.names</code> argument to add an “_f” to the end of the new column names.</p></li>
 </ul>
 </section>
-<section id="across-with-summarise" class="level2" data-number="27.3">
-<h2 data-number="27.3" class="anchored" data-anchor-id="across-with-summarise"><span class="header-section-number">27.3</span> Across with summarise</h2>
+<section id="across-with-summarise" class="level2" data-number="35.3">
+<h2 data-number="35.3" class="anchored" data-anchor-id="across-with-summarise"><span class="header-section-number">35.3</span> Across with summarise</h2>
 <p>Let’s return to the <code>ehr</code> data frame we used in the chapter on working with character strings for our first example of using <code>across()</code> inside of <code>summarise</code>.</p>
 <p><a href="https://github.com/brad-cannell/r4epi/blob/master/data/ehr.Rds">You may click here to download this file to your computer</a>.</p>
 <div class="cell">
@@ -1462,8 +1521,8 @@ FALSE  TRUE
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(study, summary_stats, continuous_stats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="across-with-filter" class="level2" data-number="27.4">
-<h2 data-number="27.4" class="anchored" data-anchor-id="across-with-filter"><span class="header-section-number">27.4</span> Across with filter</h2>
+<section id="across-with-filter" class="level2" data-number="35.4">
+<h2 data-number="35.4" class="anchored" data-anchor-id="across-with-filter"><span class="header-section-number">35.4</span> Across with filter</h2>
 <p>We’ve already discussed <a href="../../chapters/appendices/glossary.html#glossary-complete-case-analysis">complete case analysis</a> multiple times in this book. That is, including only the rows from our data frame that don’t have any missing values in our analysis. Additionally, we’ve already seen how we can use the <code>filter()</code> function to remove the rows of a <em>single</em> column where the data are missing. For example:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>df_xyz <span class="sc">%&gt;%</span> </span>
@@ -1671,8 +1730,8 @@ FALSE  TRUE
 </div>
 <p>Because this is a small, simple example, using <code>if_all()</code> doesn’t actually reduce the number of lines of code we wrote. But again, try to imagine if we added 20 additional columns to our data frame. We would only need to update the value we pass to the <code>.cols</code> argument. This makes our code more concise, easier to maintain, and less error-prone.</p>
 </section>
-<section id="summary" class="level2" data-number="27.5">
-<h2 data-number="27.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">27.5</span> Summary</h2>
+<section id="summary" class="level2" data-number="35.5">
+<h2 data-number="35.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">35.5</span> Summary</h2>
 <p>We are big fans of using <code>across()</code>, <code>if_any()</code>, and <code>if_all()</code> in conjunction with the <code>dplyr</code> verbs. They allows us to remove a lot of the unnecessary repetition from our code in a way that integrates pretty seamlessly with the tools we are already using. Perhaps you will see value in using these functions as well. In the next chapter, we will learn about using <a href="../../chapters/appendices/glossary.html#glossary-for-loops">for loops</a> to remove unnecessary repetition from our code.</p>
 
 
@@ -1761,6 +1820,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1871,6 +1932,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -2099,12 +2161,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../chapters/writing_functions/writing_functions.html" class="pagination-link" aria-label="Writing Functions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="pagination-link" aria-label="Writing For Loops">
-        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

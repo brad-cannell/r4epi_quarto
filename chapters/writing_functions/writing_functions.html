@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.5.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>26&nbsp; Writing Functions – R 4 Epidemiology</title>
+<title>R 4 Epidemiology – 34&nbsp; Writing Functions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,10 +91,10 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -135,7 +135,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_functions/writing_functions.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_functions/writing_functions.html"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -402,7 +402,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Repeated Operations</span></a>
+ <span class="menu-text">Data Management</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -410,32 +410,50 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
+  <a href="../../chapters/intro_data_management/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Data Management</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  <a href="../../chapters/creating_and_modifying_columns/creating_and_modifying_columns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Creating and Modifying Columns</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  <a href="../../chapters/subsetting_data_frames/subsetting_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Subsetting Data Frames</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  <a href="../../chapters/working_with_dates/working_with_dates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Working with Dates</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
+  <a href="../../chapters/working_with_character_strings/working_with_character_strings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Working with Character Strings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/conditional_operations/conditional_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Conditional Operations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/multiple_data_frames/multiple_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Working with Multiple Data Frames</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/restructuring_data_frames/restructuring_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Restructuring Data frames</span></span></a>
   </div>
 </li>
       </ul>
@@ -443,7 +461,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Repeated Operations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -451,14 +469,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
   </div>
 </li>
       </ul>
@@ -466,7 +502,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -474,8 +510,14 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -483,12 +525,29 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link">
@@ -507,25 +566,25 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#when-to-write-functions" id="toc-when-to-write-functions" class="nav-link active" data-scroll-target="#when-to-write-functions"><span class="header-section-number">26.1</span> When to write functions</a></li>
-  <li><a href="#how-to-write-functions" id="toc-how-to-write-functions" class="nav-link" data-scroll-target="#how-to-write-functions"><span class="header-section-number">26.2</span> How to write functions</a>
+  <li><a href="#when-to-write-functions" id="toc-when-to-write-functions" class="nav-link active" data-scroll-target="#when-to-write-functions"><span class="header-section-number">34.1</span> When to write functions</a></li>
+  <li><a href="#how-to-write-functions" id="toc-how-to-write-functions" class="nav-link" data-scroll-target="#how-to-write-functions"><span class="header-section-number">34.2</span> How to write functions</a>
   <ul class="collapse">
-  <li><a href="#the-function-function" id="toc-the-function-function" class="nav-link" data-scroll-target="#the-function-function"><span class="header-section-number">26.2.1</span> The function() function</a></li>
-  <li><a href="#the-function-writing-process" id="toc-the-function-writing-process" class="nav-link" data-scroll-target="#the-function-writing-process"><span class="header-section-number">26.2.2</span> The function writing process</a></li>
+  <li><a href="#the-function-function" id="toc-the-function-function" class="nav-link" data-scroll-target="#the-function-function"><span class="header-section-number">34.2.1</span> The function() function</a></li>
+  <li><a href="#the-function-writing-process" id="toc-the-function-writing-process" class="nav-link" data-scroll-target="#the-function-writing-process"><span class="header-section-number">34.2.2</span> The function writing process</a></li>
   </ul></li>
-  <li><a href="#giving-your-function-arguments-default-values" id="toc-giving-your-function-arguments-default-values" class="nav-link" data-scroll-target="#giving-your-function-arguments-default-values"><span class="header-section-number">26.3</span> Giving your function arguments default values</a></li>
-  <li><a href="#the-values-your-functions-return" id="toc-the-values-your-functions-return" class="nav-link" data-scroll-target="#the-values-your-functions-return"><span class="header-section-number">26.4</span> The values your functions return</a></li>
-  <li><a href="#lexical-scoping-and-functions" id="toc-lexical-scoping-and-functions" class="nav-link" data-scroll-target="#lexical-scoping-and-functions"><span class="header-section-number">26.5</span> Lexical scoping and functions</a></li>
-  <li><a href="#tidy-evaluation" id="toc-tidy-evaluation" class="nav-link" data-scroll-target="#tidy-evaluation"><span class="header-section-number">26.6</span> Tidy evaluation</a></li>
+  <li><a href="#giving-your-function-arguments-default-values" id="toc-giving-your-function-arguments-default-values" class="nav-link" data-scroll-target="#giving-your-function-arguments-default-values"><span class="header-section-number">34.3</span> Giving your function arguments default values</a></li>
+  <li><a href="#the-values-your-functions-return" id="toc-the-values-your-functions-return" class="nav-link" data-scroll-target="#the-values-your-functions-return"><span class="header-section-number">34.4</span> The values your functions return</a></li>
+  <li><a href="#lexical-scoping-and-functions" id="toc-lexical-scoping-and-functions" class="nav-link" data-scroll-target="#lexical-scoping-and-functions"><span class="header-section-number">34.5</span> Lexical scoping and functions</a></li>
+  <li><a href="#tidy-evaluation" id="toc-tidy-evaluation" class="nav-link" data-scroll-target="#tidy-evaluation"><span class="header-section-number">34.6</span> Tidy evaluation</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/writing_functions/writing_functions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_functions/writing_functions.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_functions/writing_functions.html"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></h1>
+<h1 class="title"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></h1>
 </div>
 
 
@@ -742,15 +801,15 @@ Copy and paste:
 </div>
 <p>Pretty cool, right? We reduced 32 lines of code to 13 lines of code! Additionally, it’s very easy to quickly scan our code and see that the only thing changing from chunk-to-chunk is the name of the variable that we are passing to our function and ensure that it is <em>actually</em> changing. As an added bonus, because we’ve strategically given our function an informative name, the intent behind what we are trying to accomplish is clearer now – we are calculating summary statistics about our continuous variables.</p>
 <p>Hopefully, this little demonstration has left you feeling like writing your own functions can be really useful, and maybe even kind of fun. We’re going to get into the nuts and bolts of <em>how</em> to write your own functions shortly, but first let’s briefly discuss <em>when</em> to write your own functions.</p>
-<section id="when-to-write-functions" class="level2" data-number="26.1">
-<h2 data-number="26.1" class="anchored" data-anchor-id="when-to-write-functions"><span class="header-section-number">26.1</span> When to write functions</h2>
+<section id="when-to-write-functions" class="level2" data-number="34.1">
+<h2 data-number="34.1" class="anchored" data-anchor-id="when-to-write-functions"><span class="header-section-number">34.1</span> When to write functions</h2>
 <p>Hadley Wickham, prolific R developer and teacher says, “You should consider writing a function whenever you’ve copied and pasted a block of code more than twice (i.e.&nbsp;you now have three copies of the same code).”<span class="citation" data-cites="Grolemund2017-qp"><sup><a href="../../references.html#ref-Grolemund2017-qp" role="doc-biblioref">1</a></sup></span> We completely agree with this general sentiment. We’ll only amend our advice to you slightly. Specifically, you should consider using an appropriate method for repeating operations whenever you’ve copied and pasted a block of code more than twice. In other words, <em>writing a function</em> is not the <em>only</em> option available to us when we notice ourselves copying and pasting code.</p>
 </section>
-<section id="how-to-write-functions" class="level2" data-number="26.2">
-<h2 data-number="26.2" class="anchored" data-anchor-id="how-to-write-functions"><span class="header-section-number">26.2</span> How to write functions</h2>
+<section id="how-to-write-functions" class="level2" data-number="34.2">
+<h2 data-number="34.2" class="anchored" data-anchor-id="how-to-write-functions"><span class="header-section-number">34.2</span> How to write functions</h2>
 <p>Now, the fun part – writing our own functions. Writing functions can seem intimidating to many people at first. However, the basics are actually pretty simple.</p>
-<section id="the-function-function" class="level3" data-number="26.2.1">
-<h3 data-number="26.2.1" class="anchored" data-anchor-id="the-function-function"><span class="header-section-number">26.2.1</span> The function() function</h3>
+<section id="the-function-function" class="level3" data-number="34.2.1">
+<h3 data-number="34.2.1" class="anchored" data-anchor-id="the-function-function"><span class="header-section-number">34.2.1</span> The function() function</h3>
 <p>It all starts with the <code>function()</code> function. This is how you tell R that you are about to write your own function.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -828,8 +887,8 @@ Copy and paste:
 </div>
 </div>
 </section>
-<section id="the-function-writing-process" class="level3" data-number="26.2.2">
-<h3 data-number="26.2.2" class="anchored" data-anchor-id="the-function-writing-process"><span class="header-section-number">26.2.2</span> The function writing process</h3>
+<section id="the-function-writing-process" class="level3" data-number="34.2.2">
+<h3 data-number="34.2.2" class="anchored" data-anchor-id="the-function-writing-process"><span class="header-section-number">34.2.2</span> The function writing process</h3>
 <p>So, we have some idea about <em>why</em> writing our own functions can be a good idea. We have some idea about <em>when</em> to write functions (i.e., don’t repeat yourself… more than twice). And, we now know what the basic components of functions are. They are the <code>function()</code> function, the function body (wrapped in curly braces), the function argument(s), and the function name. But, if this is your first time being exposed to functions, then you may still be feeling like you aren’t quite sure how to get started with writing your own. So, here’s a little example of how a function writing workflow could go.</p>
 <p>First, let’s simulate some new data for this example. Let’s say we have two data frames that contain first and last names:</p>
 <div class="cell">
@@ -945,8 +1004,8 @@ Copy and paste:
 </div>
 </div>
 <p>Let’s take a moment to review the results we got. In row 1 we see that “Easton” and “Easton” match, and the value for <code>name_first_match</code> is <code>TRUE</code>. So far, so good. In row 2, we see that “Elias” and “Ela” do not match, and the value for <code>name_first_match</code> is <code>FALSE</code>. That is also the result we wanted. In row 3, we see that “Colton” and “NA” do not match; however, the value in <code>name_first_match</code> is <code>NA</code>. In this case, this is not the result we want. We have a problem. That brings us to the first step in this workflow.</p>
-<section id="spotting-a-need-for-a-function" class="level4" data-number="26.2.2.1">
-<h4 data-number="26.2.2.1" class="anchored" data-anchor-id="spotting-a-need-for-a-function"><span class="header-section-number">26.2.2.1</span> Spotting a need for a function</h4>
+<section id="spotting-a-need-for-a-function" class="level4" data-number="34.2.2.1">
+<h4 data-number="34.2.2.1" class="anchored" data-anchor-id="spotting-a-need-for-a-function"><span class="header-section-number">34.2.2.1</span> Spotting a need for a function</h4>
 <p>In some cases, the need is purely repetitive code – like the example at the beginning of this chapter. In other cases, like this one, a built-in R function is not giving the the desired result.</p>
 <p>Here is the basic problem in this particular case:</p>
 <div class="cell">
@@ -981,8 +1040,8 @@ Copy and paste:
 </div>
 <p>The equality operator (<code>==</code>) always returns <code>NA</code> when one, or both, of the values being tested is <code>NA</code>. Often, that is exactly the result we want. In this case, however, it is not. Fortunately, we can get the result we want by writing our own function. That brings us to step 2 in the workflow.</p>
 </section>
-<section id="making-the-code-work-for-one-specific-case" class="level4" data-number="26.2.2.2">
-<h4 data-number="26.2.2.2" class="anchored" data-anchor-id="making-the-code-work-for-one-specific-case"><span class="header-section-number">26.2.2.2</span> Making the code work for one specific case</h4>
+<section id="making-the-code-work-for-one-specific-case" class="level4" data-number="34.2.2.2">
+<h4 data-number="34.2.2.2" class="anchored" data-anchor-id="making-the-code-work-for-one-specific-case"><span class="header-section-number">34.2.2.2</span> Making the code work for one specific case</h4>
 <p>Don’t try to solve the entire problem for every case right out of the gate. Instead, solve one problem for a specific case, and then build on that win! Let’s start by trying to figure out how to get the result we want for <code>name_first_match</code> in row 3 of our example data.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Colton"</span> <span class="sc">==</span> <span class="cn">NA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1009,8 +1068,8 @@ Copy and paste:
 </div>
 <p>Alright! This worked! At least, it worked for this case. That brings us to step 3 in the workflow.</p>
 </section>
-<section id="making-the-solution-into-a-function" class="level4" data-number="26.2.2.3">
-<h4 data-number="26.2.2.3" class="anchored" data-anchor-id="making-the-solution-into-a-function"><span class="header-section-number">26.2.2.3</span> Making the solution into a “function”</h4>
+<section id="making-the-solution-into-a-function" class="level4" data-number="34.2.2.3">
+<h4 data-number="34.2.2.3" class="anchored" data-anchor-id="making-the-solution-into-a-function"><span class="header-section-number">34.2.2.3</span> Making the solution into a “function”</h4>
 <p>How can this be done? Well, first we start with a skeleton of the function components we discussed above. They are the <code>function()</code> function, the function body (wrapped in curly braces), and the function name. At the moment, we don’t have any arguments. We’ll explain why soon.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>is_match <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
@@ -1098,8 +1157,8 @@ Copy and paste:
 <p>It looks as though the arguments we are adding don’t have any effect on our returned value. That’s because they don’t. We oversimplified how function arguments work just a little bit in our factory analogy earlier. When we add arguments to function our definition (i.e., when we create the function) it’s really more like adding a loading dock to our factory. It’s a place where our factory can <em>receive</em> raw materials. However, there still needs to be equipment inside the factory that can <em>use</em> those raw materials. If we drop off a load of rubber at our bicycle factory, but there’s no machine inside our bicycle factory that uses rubber, then we wouldn’t expect dropping off the rubber to have any effect on the outputs coming out of the factory.</p>
 <p>We have similar situation above. We dropped the name “Easton” off at our <code>is_match()</code> function, but nothing <em>inside</em> our <code>is_match()</code> function can <em>use</em> the name “Easton”. There’s no machinery to plug that name into. That brings us to step 4 in the workflow.</p>
 </section>
-<section id="start-generalizing-the-function" class="level4" data-number="26.2.2.4">
-<h4 data-number="26.2.2.4" class="anchored" data-anchor-id="start-generalizing-the-function"><span class="header-section-number">26.2.2.4</span> Start generalizing the function</h4>
+<section id="start-generalizing-the-function" class="level4" data-number="34.2.2.4">
+<h4 data-number="34.2.2.4" class="anchored" data-anchor-id="start-generalizing-the-function"><span class="header-section-number">34.2.2.4</span> Start generalizing the function</h4>
 <p>As it stands right now, our <code>is_match()</code> function can’t accept any new names. The only result we will ever get from the current version of our <code>is_match()</code> function is the result of testing the equality between the values “Colton” and NA, and then converting that value to <code>FALSE</code>. This isn’t a problem if the only values we care about comparing are “Colton” and NA, but of course, that isn’t the case. We need a way to make our function work for other values too. Said another way, we need to make our function more general.</p>
 <p>As you may have guessed already, that will require us creating an argument to receive input values <em>and</em> a place to use those input values in the function body. Let’s start by adding a <code>first_name</code> argument:</p>
 <div class="cell">
@@ -1216,8 +1275,8 @@ Copy and paste:
 </section>
 </section>
 </section>
-<section id="giving-your-function-arguments-default-values" class="level2" data-number="26.3">
-<h2 data-number="26.3" class="anchored" data-anchor-id="giving-your-function-arguments-default-values"><span class="header-section-number">26.3</span> Giving your function arguments default values</h2>
+<section id="giving-your-function-arguments-default-values" class="level2" data-number="34.3">
+<h2 data-number="34.3" class="anchored" data-anchor-id="giving-your-function-arguments-default-values"><span class="header-section-number">34.3</span> Giving your function arguments default values</h2>
 <p>We’ve been introducing new functions to you all throughout the book so far. Each time, we try to discuss some, or all, of the function’s arguments – including the default values that are passed to the arguments. Most of you have probably developed some sort of intuitive understanding of just what it meant for the argument to have a default value. However, this seems like an appropriate point in the book to talk about default arguments a little more explicitly and show you how to add them to the functions you write.</p>
 <p>Let’s say that we want to write a function that will increase the value of a number, or set of numbers, incrementally. We may start with something like this:</p>
 <div class="cell">
@@ -1306,8 +1365,8 @@ Copy and paste:
 </div>
 </div>
 </section>
-<section id="the-values-your-functions-return" class="level2" data-number="26.4">
-<h2 data-number="26.4" class="anchored" data-anchor-id="the-values-your-functions-return"><span class="header-section-number">26.4</span> The values your functions return</h2>
+<section id="the-values-your-functions-return" class="level2" data-number="34.4">
+<h2 data-number="34.4" class="anchored" data-anchor-id="the-values-your-functions-return"><span class="header-section-number">34.4</span> The values your functions return</h2>
 <p>When we run our functions, they typically execute each line of code in the function body, one after another, starting with the first line and ending at the last line. Therefore, the value that your function <em>returns</em> (i.e., the thing that comes out of the factory) is typically dictated by the last line of code in your function body.</p>
 <p>To explain this further, let’s take another look at our <code>is_match()</code> function:</p>
 <div class="cell">
@@ -1449,8 +1508,8 @@ Copy and paste:
 </div>
 </div>
 </section>
-<section id="lexical-scoping-and-functions" class="level2" data-number="26.5">
-<h2 data-number="26.5" class="anchored" data-anchor-id="lexical-scoping-and-functions"><span class="header-section-number">26.5</span> Lexical scoping and functions</h2>
+<section id="lexical-scoping-and-functions" class="level2" data-number="34.5">
+<h2 data-number="34.5" class="anchored" data-anchor-id="lexical-scoping-and-functions"><span class="header-section-number">34.5</span> Lexical scoping and functions</h2>
 <p>If you have been following along with the code above on your computer, you may have noticed that the objects we create inside our functions do not appear in our global environment. If you haven’t been following along, you may want to jump on your computer really quickly for this section (or just take our word for it).</p>
 <p>The reason the objects we created inside our functions do not appear in our global environment is that R actually has <em>multiple</em> environments were objects can live. Additionally, R uses something called <a href="../../chapters/appendices/glossary.html#glossary-lexical-scoping-rules">lexical scoping rules</a> to look for the objects you refer to in your R code. The vast majority of the time, we won’t need to concern ourselves much with any of these other environments or the lexical scoping rules. However, function writing does require us to have some minimal understanding of these concepts. At the very least, you should be aware of the following when writing your own functions:</p>
 <p>1️⃣ Objects we create inside of functions don’t live in our global environment and we can’t do anything with them outside of the function we created them in.</p>
@@ -1532,8 +1591,8 @@ Copy and paste:
 </div>
 <p>Again, this aspect of the lexical scoping rules is something to be aware of, but generally isn’t a problem in practice.</p>
 </section>
-<section id="tidy-evaluation" class="level2" data-number="26.6">
-<h2 data-number="26.6" class="anchored" data-anchor-id="tidy-evaluation"><span class="header-section-number">26.6</span> Tidy evaluation</h2>
+<section id="tidy-evaluation" class="level2" data-number="34.6">
+<h2 data-number="34.6" class="anchored" data-anchor-id="tidy-evaluation"><span class="header-section-number">34.6</span> Tidy evaluation</h2>
 <p>Now that you have all the basics of function writing under your belt, let’s take look at what happens when we try to write functions that use <code>tidyverse</code> package functions in the function body.</p>
 <p>For this section, let’s return to our study data we used for the first example in this chapter. As a reminder, here’s what the data looks like:</p>
 <div class="cell">
@@ -1879,6 +1938,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1989,6 +2050,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -2217,12 +2279,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="pagination-link" aria-label="Introduction to Repeated Operations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="pagination-link" aria-label="Column-wise Operations in dplyr">
-        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

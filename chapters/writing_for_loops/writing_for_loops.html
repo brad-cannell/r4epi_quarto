@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.5.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>28&nbsp; Writing For Loops – R 4 Epidemiology</title>
+<title>R 4 Epidemiology – 36&nbsp; Writing For Loops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,10 +91,10 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -135,7 +135,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_for_loops/writing_for_loops.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_for_loops/writing_for_loops.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -402,7 +402,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Repeated Operations</span></a>
+ <span class="menu-text">Data Management</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -410,32 +410,50 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
+  <a href="../../chapters/intro_data_management/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Data Management</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  <a href="../../chapters/creating_and_modifying_columns/creating_and_modifying_columns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Creating and Modifying Columns</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  <a href="../../chapters/subsetting_data_frames/subsetting_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Subsetting Data Frames</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  <a href="../../chapters/working_with_dates/working_with_dates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Working with Dates</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
+  <a href="../../chapters/working_with_character_strings/working_with_character_strings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Working with Character Strings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/conditional_operations/conditional_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Conditional Operations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/multiple_data_frames/multiple_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Working with Multiple Data Frames</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/restructuring_data_frames/restructuring_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Restructuring Data frames</span></span></a>
   </div>
 </li>
       </ul>
@@ -443,7 +461,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Repeated Operations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -451,14 +469,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
   </div>
 </li>
       </ul>
@@ -466,7 +502,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -474,8 +510,14 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -483,12 +525,29 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link">
@@ -507,23 +566,23 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#how-to-write-for-loops" id="toc-how-to-write-for-loops" class="nav-link active" data-scroll-target="#how-to-write-for-loops"><span class="header-section-number">28.1</span> How to write for loops</a>
+  <li><a href="#how-to-write-for-loops" id="toc-how-to-write-for-loops" class="nav-link active" data-scroll-target="#how-to-write-for-loops"><span class="header-section-number">36.1</span> How to write for loops</a>
   <ul class="collapse">
-  <li><a href="#the-for-loop-body" id="toc-the-for-loop-body" class="nav-link" data-scroll-target="#the-for-loop-body"><span class="header-section-number">28.1.1</span> The for loop body</a></li>
-  <li><a href="#the-for-function" id="toc-the-for-function" class="nav-link" data-scroll-target="#the-for-function"><span class="header-section-number">28.1.2</span> The for() function</a></li>
+  <li><a href="#the-for-loop-body" id="toc-the-for-loop-body" class="nav-link" data-scroll-target="#the-for-loop-body"><span class="header-section-number">36.1.1</span> The for loop body</a></li>
+  <li><a href="#the-for-function" id="toc-the-for-function" class="nav-link" data-scroll-target="#the-for-function"><span class="header-section-number">36.1.2</span> The for() function</a></li>
   </ul></li>
-  <li><a href="#using-for-loops-for-data-transfer" id="toc-using-for-loops-for-data-transfer" class="nav-link" data-scroll-target="#using-for-loops-for-data-transfer"><span class="header-section-number">28.2</span> Using for loops for data transfer</a></li>
-  <li><a href="#using-for-loops-for-data-management" id="toc-using-for-loops-for-data-management" class="nav-link" data-scroll-target="#using-for-loops-for-data-management"><span class="header-section-number">28.3</span> Using for loops for data management</a></li>
-  <li><a href="#using-for-loops-for-analysis" id="toc-using-for-loops-for-analysis" class="nav-link" data-scroll-target="#using-for-loops-for-analysis"><span class="header-section-number">28.4</span> Using for loops for analysis</a></li>
+  <li><a href="#using-for-loops-for-data-transfer" id="toc-using-for-loops-for-data-transfer" class="nav-link" data-scroll-target="#using-for-loops-for-data-transfer"><span class="header-section-number">36.2</span> Using for loops for data transfer</a></li>
+  <li><a href="#using-for-loops-for-data-management" id="toc-using-for-loops-for-data-management" class="nav-link" data-scroll-target="#using-for-loops-for-data-management"><span class="header-section-number">36.3</span> Using for loops for data management</a></li>
+  <li><a href="#using-for-loops-for-analysis" id="toc-using-for-loops-for-analysis" class="nav-link" data-scroll-target="#using-for-loops-for-analysis"><span class="header-section-number">36.4</span> Using for loops for analysis</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/writing_for_loops/writing_for_loops.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_for_loops/writing_for_loops.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/writing_for_loops/writing_for_loops.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></h1>
+<h1 class="title"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></h1>
 </div>
 
 
@@ -643,8 +702,8 @@ Copy and paste:
 <p>Most people would agree that the for loop code is a little more complicated looking, and it’s a little bit harder to quickly glance at it and figure out what’s going on. It may even be a little bit intimidating for some of you.</p>
 <p>Also, note that the result from the code that uses the <code>across()</code> function is a data frame with three columns and one row. The result from the code that uses a for loop is a character vector with three elements.</p>
 <p>For the particular case above, we prefer to use the <code>across()</code> function instead of a for loop. However, as we will see below, there are some challenges that can be overcome with for loops that cannot currently be overcome with the <code>across()</code> function. But, before we jump into more examples, let’s take a look at the basic structure of the for loop.</p>
-<section id="how-to-write-for-loops" class="level2" data-number="28.1">
-<h2 data-number="28.1" class="anchored" data-anchor-id="how-to-write-for-loops"><span class="header-section-number">28.1</span> How to write for loops</h2>
+<section id="how-to-write-for-loops" class="level2" data-number="36.1">
+<h2 data-number="36.1" class="anchored" data-anchor-id="how-to-write-for-loops"><span class="header-section-number">36.1</span> How to write for loops</h2>
 <p>For starters, <em>using</em> for loops in practice will generally require us to write code for two separate structures: An object to contain the results of our for loop and the for loop itself.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -657,8 +716,8 @@ Copy and paste:
 </div>
 </div>
 <p>In practice, we will generally write the code for structure 1 before writing the code for structure 2. However, it will be easier to understand why we need structure 1 if we first learn about the components of the for loop, and how they work together. Further, it will likely be easiest to understand the components of the for loop if we start on the inside and work our way out. Therefore, the first component of for loops that we are going to discuss is the body.</p>
-<section id="the-for-loop-body" class="level3" data-number="28.1.1">
-<h3 data-number="28.1.1" class="anchored" data-anchor-id="the-for-loop-body"><span class="header-section-number">28.1.1</span> The for loop body</h3>
+<section id="the-for-loop-body" class="level3" data-number="36.1.1">
+<h3 data-number="36.1.1" class="anchored" data-anchor-id="the-for-loop-body"><span class="header-section-number">36.1.1</span> The for loop body</h3>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -717,8 +776,8 @@ Copy and paste:
 <p>For reasons that will become clearer later, this will actually be the syntax we want to use inside of our for loop.</p>
 <p>Notice, however, the we copied the same code more than twice above. For all of the reasons we’ve already discussed, we would like to just type <code>mean(df_xyz[[ # ]]</code> once and have R fill in the number inside the double brackets for us, one after the other. As you’ve probably guessed, that’s exactly what the for loop does.</p>
 </section>
-<section id="the-for-function" class="level3" data-number="28.1.2">
-<h3 data-number="28.1.2" class="anchored" data-anchor-id="the-for-function"><span class="header-section-number">28.1.2</span> The for() function</h3>
+<section id="the-for-function" class="level3" data-number="36.1.2">
+<h3 data-number="36.1.2" class="anchored" data-anchor-id="the-for-function"><span class="header-section-number">36.1.2</span> The for() function</h3>
 <p>All for loops start with the <code>for()</code> function. This is how you tell R that you are about to write a for loop.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -1321,8 +1380,8 @@ Copy and paste:
 </div>
 </section>
 </section>
-<section id="using-for-loops-for-data-transfer" class="level2" data-number="28.2">
-<h2 data-number="28.2" class="anchored" data-anchor-id="using-for-loops-for-data-transfer"><span class="header-section-number">28.2</span> Using for loops for data transfer</h2>
+<section id="using-for-loops-for-data-transfer" class="level2" data-number="36.2">
+<h2 data-number="36.2" class="anchored" data-anchor-id="using-for-loops-for-data-transfer"><span class="header-section-number">36.2</span> Using for loops for data transfer</h2>
 <p>In the previous section, we used an example that wasn’t really all that realistic, but it was useful (hopefully) for learning the mechanics of for loops. As mentioned at the beginning of the chapter, rather than using a for loop for the analysis above, using <code>across()</code> with <code>summarise()</code> might be preferable.</p>
 <p>However, keep in mind that <code>across()</code> is designed specifically for repeatedly applying functions column-wise (i.e., across columns) of a <em>single</em> data frame in conjunction with <code>dplyr</code> verbs. By definition, if we are repeating code outside of <code>dplyr</code>, or if we are applying code across <em>multiple data frames</em>, then we probably aren’t going to be able to use <code>across()</code> to complete our coding task.</p>
 <p>For example, let’s say that we have data stored across multiple sheets of an Excel workbook. This simulated data contains some demographic information about three different cities: Houston, Atlanta, and Charlotte. We need to import each sheet, clean the data, and combine them into a single data frame in order to complete our analysis. First, we will load the <code>readxl</code>package:</p>
@@ -1501,8 +1560,8 @@ Copy and paste:
 </ul>
 <p>For loops can often be helpful for data transfer tasks. In the code above, we looped over sheets of a single Excel workbook. However, we could have similarly looped over file paths to import multiple different Excel workbooks instead. We could have even used nested for loops to import multiple sheets from multiple Excel workbooks. The code would not have looked drastically different.</p>
 </section>
-<section id="using-for-loops-for-data-management" class="level2" data-number="28.3">
-<h2 data-number="28.3" class="anchored" data-anchor-id="using-for-loops-for-data-management"><span class="header-section-number">28.3</span> Using for loops for data management</h2>
+<section id="using-for-loops-for-data-management" class="level2" data-number="36.3">
+<h2 data-number="36.3" class="anchored" data-anchor-id="using-for-loops-for-data-management"><span class="header-section-number">36.3</span> Using for loops for data management</h2>
 <p>In the <a href="../writing_functions/writing_functions.html#the-function-writing-process">chapter on writing functions</a>, we created an <code>is_match()</code> function. In that scenario, we wanted to see if first name, last name, and street name matched at each ID between our data frames. More specifically, we wanted to combine the two data frames into a single data frame and create three new dummy variables that indicated whether first name, last name, and address matched respectively.</p>
 <p>Here are the data frames we simulated and combined:</p>
 <div class="cell">
@@ -1742,8 +1801,8 @@ Copy and paste:
 </div>
 <p>In the code above, we used roughly the same amount of code to complete the task with a loop that we used to complete it without a loop. However, this code still has some advantages. We only typed “name_first”, “name_last”, and “street” once at the beginning of the code chunk. Therefore, we didn’t have to worry about forgetting to change a column name after copying and pasting code. Additionally, if we later decide that we also want to compare other columns (e.g., middle name, birth date, city, state, zip code), we only have to update the code in one place – where we create the <code>cols</code> vector.</p>
 </section>
-<section id="using-for-loops-for-analysis" class="level2" data-number="28.4">
-<h2 data-number="28.4" class="anchored" data-anchor-id="using-for-loops-for-analysis"><span class="header-section-number">28.4</span> Using for loops for analysis</h2>
+<section id="using-for-loops-for-analysis" class="level2" data-number="36.4">
+<h2 data-number="36.4" class="anchored" data-anchor-id="using-for-loops-for-analysis"><span class="header-section-number">36.4</span> Using for loops for analysis</h2>
 <p>For our final example of this chapter, let’s return to the final example from the <a href="../dplyr_column_wise/dplyr_column_wise.html#across-with-summarise">column-wise operations chapter</a>. We started with some simulated study data:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a>study <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
@@ -2143,7 +2202,7 @@ Caused by error in `UseMethod()`:
 3 &lt;NA&gt;                1 age_group</code></pre>
 </div>
 </div>
-<p>Now, we have all the variables we wanted for our final results table. Keep in mind, however, that we will eventually be stacking similar results from our other variables (i.e., <code>gender</code> and <code>bmi_3cat</code>) below these results using <code>bind_rows()</code>. You may remember from the <a href="#combining-data-frames-vertically-adding-rows">chapter on working with multiple data frames</a> that the <code>bind_rows()</code> function matches columns together by <em>name</em>, not by position. So, we need to change the <code>age_group</code> column name to <code>category</code>. If we don’t, we will end up with something that looks like this:</p>
+<p>Now, we have all the variables we wanted for our final results table. Keep in mind, however, that we will eventually be stacking similar results from our other variables (i.e., <code>gender</code> and <code>bmi_3cat</code>) below these results using <code>bind_rows()</code>. You may remember from the <a href="../multiple_data_frames/multiple_data_frames.html#combining-data-frames-vertically-adding-rows">chapter on working with multiple data frames</a> that the <code>bind_rows()</code> function matches columns together by <em>name</em>, not by position. So, we need to change the <code>age_group</code> column name to <code>category</code>. If we don’t, we will end up with something that looks like this:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb200"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb200-1"><a href="#cb200-1" aria-hidden="true" tabindex="-1"></a>study <span class="sc">%&gt;%</span> </span>
 <span id="cb200-2"><a href="#cb200-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(age_group) <span class="sc">%&gt;%</span> </span>
@@ -2626,6 +2685,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -2736,6 +2797,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -2964,12 +3026,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="pagination-link" aria-label="Column-wise Operations in dplyr">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/using_purrr/using_purrr.html" class="pagination-link" aria-label="Using the purrr Package">
-        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

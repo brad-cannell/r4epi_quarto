@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.5.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>29&nbsp; Using the purrr Package – R 4 Epidemiology</title>
+<title>R 4 Epidemiology – 37&nbsp; Using the purrr Package</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,10 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/using_purrr/using_purrr.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/using_purrr/using_purrr.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -383,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Repeated Operations</span></a>
+ <span class="menu-text">Data Management</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -391,32 +391,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
+  <a href="../../chapters/intro_data_management/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduction to Data Management</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  <a href="../../chapters/creating_and_modifying_columns/creating_and_modifying_columns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Creating and Modifying Columns</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  <a href="../../chapters/subsetting_data_frames/subsetting_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Subsetting Data Frames</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  <a href="../../chapters/working_with_dates/working_with_dates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Working with Dates</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
+  <a href="../../chapters/working_with_character_strings/working_with_character_strings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Working with Character Strings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/conditional_operations/conditional_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Conditional Operations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/multiple_data_frames/multiple_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Working with Multiple Data Frames</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/restructuring_data_frames/restructuring_data_frames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Restructuring Data frames</span></span></a>
   </div>
 </li>
       </ul>
@@ -424,7 +442,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Collaboration</span></a>
+ <span class="menu-text">Repeated Operations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -432,14 +450,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Introduction to Repeated Operations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
+  <a href="../../chapters/writing_functions/writing_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/dplyr_column_wise/dplyr_column_wise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Column-wise Operations in dplyr</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_purrr/using_purrr.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></span></a>
   </div>
 </li>
       </ul>
@@ -447,7 +483,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -455,8 +491,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/intro_git_github/intro_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/using_git_github/using_git_github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Using git and GitHub</span></span></a>
   </div>
 </li>
       </ul>
@@ -464,12 +506,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link">
@@ -488,22 +547,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#comparing-for-loops-and-the-map-functions" id="toc-comparing-for-loops-and-the-map-functions" class="nav-link active" data-scroll-target="#comparing-for-loops-and-the-map-functions"><span class="header-section-number">29.1</span> Comparing for loops and the map functions</a></li>
-  <li><a href="#using-purrr-for-data-transfer" id="toc-using-purrr-for-data-transfer" class="nav-link" data-scroll-target="#using-purrr-for-data-transfer"><span class="header-section-number">29.2</span> Using purrr for data transfer</a>
+  <li><a href="#comparing-for-loops-and-the-map-functions" id="toc-comparing-for-loops-and-the-map-functions" class="nav-link active" data-scroll-target="#comparing-for-loops-and-the-map-functions"><span class="header-section-number">37.1</span> Comparing for loops and the map functions</a></li>
+  <li><a href="#using-purrr-for-data-transfer" id="toc-using-purrr-for-data-transfer" class="nav-link" data-scroll-target="#using-purrr-for-data-transfer"><span class="header-section-number">37.2</span> Using purrr for data transfer</a>
   <ul class="collapse">
-  <li><a href="#example-1-importing-multiple-sheets-from-an-excel-workbook" id="toc-example-1-importing-multiple-sheets-from-an-excel-workbook" class="nav-link" data-scroll-target="#example-1-importing-multiple-sheets-from-an-excel-workbook"><span class="header-section-number">29.2.1</span> Example 1: Importing multiple sheets from an Excel workbook</a></li>
-  <li><a href="#why-walk-instead-of-map" id="toc-why-walk-instead-of-map" class="nav-link" data-scroll-target="#why-walk-instead-of-map"><span class="header-section-number">29.2.2</span> Why walk instead of map?</a></li>
-  <li><a href="#why-we-didnt-assign-the-return-value-of-walk-to-an-object" id="toc-why-we-didnt-assign-the-return-value-of-walk-to-an-object" class="nav-link" data-scroll-target="#why-we-didnt-assign-the-return-value-of-walk-to-an-object"><span class="header-section-number">29.2.3</span> why we didn’t assign the return value of <code>walk()</code> to an object?</a></li>
+  <li><a href="#example-1-importing-multiple-sheets-from-an-excel-workbook" id="toc-example-1-importing-multiple-sheets-from-an-excel-workbook" class="nav-link" data-scroll-target="#example-1-importing-multiple-sheets-from-an-excel-workbook"><span class="header-section-number">37.2.1</span> Example 1: Importing multiple sheets from an Excel workbook</a></li>
+  <li><a href="#why-walk-instead-of-map" id="toc-why-walk-instead-of-map" class="nav-link" data-scroll-target="#why-walk-instead-of-map"><span class="header-section-number">37.2.2</span> Why walk instead of map?</a></li>
+  <li><a href="#why-we-didnt-assign-the-return-value-of-walk-to-an-object" id="toc-why-we-didnt-assign-the-return-value-of-walk-to-an-object" class="nav-link" data-scroll-target="#why-we-didnt-assign-the-return-value-of-walk-to-an-object"><span class="header-section-number">37.2.3</span> why we didn’t assign the return value of <code>walk()</code> to an object?</a></li>
   </ul></li>
-  <li><a href="#using-purrr-for-data-management" id="toc-using-purrr-for-data-management" class="nav-link" data-scroll-target="#using-purrr-for-data-management"><span class="header-section-number">29.3</span> Using purrr for data management</a>
+  <li><a href="#using-purrr-for-data-management" id="toc-using-purrr-for-data-management" class="nav-link" data-scroll-target="#using-purrr-for-data-management"><span class="header-section-number">37.3</span> Using purrr for data management</a>
   <ul class="collapse">
-  <li><a href="#example-1-adding-na-at-multiple-positions" id="toc-example-1-adding-na-at-multiple-positions" class="nav-link" data-scroll-target="#example-1-adding-na-at-multiple-positions"><span class="header-section-number">29.3.1</span> Example 1: Adding NA at multiple positions</a></li>
-  <li><a href="#example-2.-detecting-matching-values-by-position" id="toc-example-2.-detecting-matching-values-by-position" class="nav-link" data-scroll-target="#example-2.-detecting-matching-values-by-position"><span class="header-section-number">29.3.2</span> Example 2. Detecting matching values by position</a></li>
+  <li><a href="#example-1-adding-na-at-multiple-positions" id="toc-example-1-adding-na-at-multiple-positions" class="nav-link" data-scroll-target="#example-1-adding-na-at-multiple-positions"><span class="header-section-number">37.3.1</span> Example 1: Adding NA at multiple positions</a></li>
+  <li><a href="#example-2.-detecting-matching-values-by-position" id="toc-example-2.-detecting-matching-values-by-position" class="nav-link" data-scroll-target="#example-2.-detecting-matching-values-by-position"><span class="header-section-number">37.3.2</span> Example 2. Detecting matching values by position</a></li>
   </ul></li>
-  <li><a href="#using-purrr-for-analysis" id="toc-using-purrr-for-analysis" class="nav-link" data-scroll-target="#using-purrr-for-analysis"><span class="header-section-number">29.4</span> Using purrr for analysis</a>
+  <li><a href="#using-purrr-for-analysis" id="toc-using-purrr-for-analysis" class="nav-link" data-scroll-target="#using-purrr-for-analysis"><span class="header-section-number">37.4</span> Using purrr for analysis</a>
   <ul class="collapse">
-  <li><a href="#example-1-continuous-statistics" id="toc-example-1-continuous-statistics" class="nav-link" data-scroll-target="#example-1-continuous-statistics"><span class="header-section-number">29.4.1</span> Example 1: Continuous statistics</a></li>
-  <li><a href="#example-2-categorical-statistics" id="toc-example-2-categorical-statistics" class="nav-link" data-scroll-target="#example-2-categorical-statistics"><span class="header-section-number">29.4.2</span> Example 2: Categorical statistics</a></li>
+  <li><a href="#example-1-continuous-statistics" id="toc-example-1-continuous-statistics" class="nav-link" data-scroll-target="#example-1-continuous-statistics"><span class="header-section-number">37.4.1</span> Example 1: Continuous statistics</a></li>
+  <li><a href="#example-2-categorical-statistics" id="toc-example-2-categorical-statistics" class="nav-link" data-scroll-target="#example-2-categorical-statistics"><span class="header-section-number">37.4.2</span> Example 2: Categorical statistics</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/brad-cannell/r4epi_quarto/edit/main/chapters/using_purrr/using_purrr.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/brad-cannell/r4epi_quarto/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -511,9 +570,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/using_purrr/using_purrr.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">Repeated Operations</a></li><li class="breadcrumb-item"><a href="../../chapters/using_purrr/using_purrr.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></h1>
+<h1 class="title"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Using the purrr Package</span></h1>
 </div>
 
 
@@ -658,8 +717,8 @@ Note
 <p>Finally, when we use <code>map_dbl()</code> there isn’t a leftover index variable (i.e., <code>i</code>) floating around our global environment the way there was when we were writing for loops.</p>
 <p>For those reasons, and possibly others, it’s been an observation that the majority of R users prefer the functional approach to iteration – either <code>purrr</code> or the <code>apply</code> functions – over using for loops in most situations.</p>
 <p>However, some of you reading this text book might have had their first experiences with programming in a language other than R that relied more heavily on for loops. For this reason, you might tend to think first in terms of a for loop and then mentally convert the for loop to a <code>map</code> function before writing your code. Therefore, the next section is going to compare and contrast the <em>basic</em> for loop with the <code>map</code> functions. You may find this section instructive or interesting even if you aren’t someone who first learned iteration using for loops.</p>
-<section id="comparing-for-loops-and-the-map-functions" class="level2" data-number="29.1">
-<h2 data-number="29.1" class="anchored" data-anchor-id="comparing-for-loops-and-the-map-functions"><span class="header-section-number">29.1</span> Comparing for loops and the map functions</h2>
+<section id="comparing-for-loops-and-the-map-functions" class="level2" data-number="37.1">
+<h2 data-number="37.1" class="anchored" data-anchor-id="comparing-for-loops-and-the-map-functions"><span class="header-section-number">37.1</span> Comparing for loops and the map functions</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -791,10 +850,10 @@ Caused by error:
 <p>Finally, the function passed to the <code>.f</code> argument can replace the rest of the “stuff” going on in the for loop body. We can pass a single function (e.g., mean) to the <code>.f</code> argument as we did above. However, we can also pass anonymous functions to the <code>.f</code> argument. We pass anonymous functions to the <code>.f</code> function in basically the exact same way passed anonymous functions to the <code>.fns</code> argument of the <code>across()</code> function in the <a href="#column-wise-operations-in-dplyr">chapter on column-wise operations</a>. And, yes, we can also write our anonymous functions using purrr-style lambdas. In fact, the purrr-style lambda syntax is called the purrr-style lambda syntax because it was first created for the <code>purrr</code> package and later adopted by <code>dplyr::across()</code>. That name probably makes a lot more sense than it did a couple of chapters ago!</p>
 <p>That pretty much covers the basics of using the <code>purrr::map</code> functions. If you’ve been reading this book in sequence, there won’t really be any conceptually new material in this chapter. We’re basically going to do the same things we’ve been doing for the last couple of chapters. We’ll just be using a slightly different (and perhaps preferable) syntax. If you haven’t been reading the book in sequence, you might want to read the chapters on <a href="#writing-functions">writing functions</a>, <a href="#column-wise-operations-in-dplyr">column-wise operations</a>, and <a href="#writing-for-loops">writing for loops</a> to get the most of the examples below.</p>
 </section>
-<section id="using-purrr-for-data-transfer" class="level2" data-number="29.2">
-<h2 data-number="29.2" class="anchored" data-anchor-id="using-purrr-for-data-transfer"><span class="header-section-number">29.2</span> Using purrr for data transfer</h2>
-<section id="example-1-importing-multiple-sheets-from-an-excel-workbook" class="level3" data-number="29.2.1">
-<h3 data-number="29.2.1" class="anchored" data-anchor-id="example-1-importing-multiple-sheets-from-an-excel-workbook"><span class="header-section-number">29.2.1</span> Example 1: Importing multiple sheets from an Excel workbook</h3>
+<section id="using-purrr-for-data-transfer" class="level2" data-number="37.2">
+<h2 data-number="37.2" class="anchored" data-anchor-id="using-purrr-for-data-transfer"><span class="header-section-number">37.2</span> Using purrr for data transfer</h2>
+<section id="example-1-importing-multiple-sheets-from-an-excel-workbook" class="level3" data-number="37.2.1">
+<h3 data-number="37.2.1" class="anchored" data-anchor-id="example-1-importing-multiple-sheets-from-an-excel-workbook"><span class="header-section-number">37.2.1</span> Example 1: Importing multiple sheets from an Excel workbook</h3>
 <p>In the <a href="#writing-functions">chapter on writing functions</a> we used a for loop to help us import data from an Excel workbook that was stored across multiple sheets. We will once again go through this example using the <code>purrr</code> approach.</p>
 <p>The simulated data contains some demographic information about three different cities: Houston, Atlanta, and Charlotte. In this scenario, we need to import each sheet, clean the data, and combine them into a single data frame in order to complete our analysis. First, we will load the <code>readxl</code> package:</p>
 <div class="cell">
@@ -910,8 +969,8 @@ Caused by error:
 </ul>
 <p>Additionally, you may have some questions swirling around your head right now about the <code>walk()</code> function itself. In particular, you might be wondering why we used <code>walk()</code> instead of <code>map()</code> and why we didn’t assign the return value of <code>walk()</code> to an object. We’ll answer both questions next.</p>
 </section>
-<section id="why-walk-instead-of-map" class="level3" data-number="29.2.2">
-<h3 data-number="29.2.2" class="anchored" data-anchor-id="why-walk-instead-of-map"><span class="header-section-number">29.2.2</span> Why walk instead of map?</h3>
+<section id="why-walk-instead-of-map" class="level3" data-number="37.2.2">
+<h3 data-number="37.2.2" class="anchored" data-anchor-id="why-walk-instead-of-map"><span class="header-section-number">37.2.2</span> Why walk instead of map?</h3>
 <p>The short answer is that <code>map</code> functions return <em>one</em> thing (i.e., a vector, list, or data frame). In this situation, we wanted to “return” <em>three</em> things (i.e., the <code>houston</code> data frame, the <code>atlanta</code> data frame, and the <code>charlotte</code> data frame).</p>
 <p>Technically, we could have used the <code>map()</code> function to return a list of data frames like this:</p>
 <div class="cell">
@@ -1040,8 +1099,8 @@ Caused by error:
 </div>
 <p>There would be absolutely nothing wrong with taking this approach and then cleaning up the combined data you see above. However, in this case, the preference was to import each sheet as a separate data frame, clean up each separate data frame, and then combine ourselves. If your preference is to use <code>map_dfr()</code> instead, then you definitely should.</p>
 </section>
-<section id="why-we-didnt-assign-the-return-value-of-walk-to-an-object" class="level3" data-number="29.2.3">
-<h3 data-number="29.2.3" class="anchored" data-anchor-id="why-we-didnt-assign-the-return-value-of-walk-to-an-object"><span class="header-section-number">29.2.3</span> why we didn’t assign the return value of <code>walk()</code> to an object?</h3>
+<section id="why-we-didnt-assign-the-return-value-of-walk-to-an-object" class="level3" data-number="37.2.3">
+<h3 data-number="37.2.3" class="anchored" data-anchor-id="why-we-didnt-assign-the-return-value-of-walk-to-an-object"><span class="header-section-number">37.2.3</span> why we didn’t assign the return value of <code>walk()</code> to an object?</h3>
 <p>As we discussed above, the only thing <code>walk()</code> “returns” is exactly what was passed to its <code>.x</code> argument. No matter what you pass to the <code>.f</code> argument, the object passed to <code>.x</code> will be returned by <code>walk()</code> unmodified. In this case, that would just be the sheet names:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>returned_by_walk <span class="ot">&lt;-</span> <span class="fu">walk</span>(</span>
@@ -1108,10 +1167,10 @@ Caused by error:
 </div>
 </section>
 </section>
-<section id="using-purrr-for-data-management" class="level2" data-number="29.3">
-<h2 data-number="29.3" class="anchored" data-anchor-id="using-purrr-for-data-management"><span class="header-section-number">29.3</span> Using purrr for data management</h2>
-<section id="example-1-adding-na-at-multiple-positions" class="level3" data-number="29.3.1">
-<h3 data-number="29.3.1" class="anchored" data-anchor-id="example-1-adding-na-at-multiple-positions"><span class="header-section-number">29.3.1</span> Example 1: Adding NA at multiple positions</h3>
+<section id="using-purrr-for-data-management" class="level2" data-number="37.3">
+<h2 data-number="37.3" class="anchored" data-anchor-id="using-purrr-for-data-management"><span class="header-section-number">37.3</span> Using purrr for data management</h2>
+<section id="example-1-adding-na-at-multiple-positions" class="level3" data-number="37.3.1">
+<h3 data-number="37.3.1" class="anchored" data-anchor-id="example-1-adding-na-at-multiple-positions"><span class="header-section-number">37.3.1</span> Example 1: Adding NA at multiple positions</h3>
 <p>We’ll start this section with a relatively simple example using the same data we used to start the <a href="#column-wise-operations-in-dplyr">chapter on column-wise operations</a> and the <a href="#writing-for-loops">chapter on writing for loops</a>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
@@ -1455,8 +1514,8 @@ $z
 </div>
 <p>Whichever style you choose to use is largely just a matter of preference in this case (as it is in many cases).</p>
 </section>
-<section id="example-2.-detecting-matching-values-by-position" class="level3" data-number="29.3.2">
-<h3 data-number="29.3.2" class="anchored" data-anchor-id="example-2.-detecting-matching-values-by-position"><span class="header-section-number">29.3.2</span> Example 2. Detecting matching values by position</h3>
+<section id="example-2.-detecting-matching-values-by-position" class="level3" data-number="37.3.2">
+<h3 data-number="37.3.2" class="anchored" data-anchor-id="example-2.-detecting-matching-values-by-position"><span class="header-section-number">37.3.2</span> Example 2. Detecting matching values by position</h3>
 <p>In the <a href="../writing_functions/writing_functions.html#the-function-writing-process">chapter on writing functions</a>, we created an <code>is_match()</code> function. In that scenario, we wanted to see if first name, last name, and street name matched at each ID between our data frames. More specifically, we wanted to combine the two data frames into a single data frame and create three new dummy variables that indicated whether first name, last name, and address matched respectively.</p>
 <p>Here are the data frames we simulated and combined:</p>
 <div class="cell">
@@ -1610,8 +1669,8 @@ $z
 <p>In the code above, we used roughly the same amount of code to complete the task with a loop that we used to complete it without a loop. However, this code still has some advantages. We only typed “name_first”, “name_last”, and “street” once at the beginning of the code chunk. Therefore, we didn’t have to worry about forgetting to change a column name after copying and pasting code. Additionally, if we later decide that we also want to compare other columns (e.g., middle name, birth date, city, state, zip code), we only have to update the code in one place – where we create the <code>cols</code> vector.</p>
 </section>
 </section>
-<section id="using-purrr-for-analysis" class="level2" data-number="29.4">
-<h2 data-number="29.4" class="anchored" data-anchor-id="using-purrr-for-analysis"><span class="header-section-number">29.4</span> Using purrr for analysis</h2>
+<section id="using-purrr-for-analysis" class="level2" data-number="37.4">
+<h2 data-number="37.4" class="anchored" data-anchor-id="using-purrr-for-analysis"><span class="header-section-number">37.4</span> Using purrr for analysis</h2>
 <p>Let’s return to the examples from the <a href="../dplyr_column_wise/dplyr_column_wise.html#across-with-summarise">column-wise operations chapter</a> and the <a href="../writing_for_loops/writing_for_loops.html#using-for-loops-for-analysis">chapter on writing for loops</a> for our discussion of using the <code>purrr</code> package to remove unnecessary repetition from our analyses. We will once again use the simulated for the examples below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>study <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
@@ -1675,8 +1734,8 @@ $z
 # ℹ 58 more rows</code></pre>
 </div>
 </div>
-<section id="example-1-continuous-statistics" class="level3" data-number="29.4.1">
-<h3 data-number="29.4.1" class="anchored" data-anchor-id="example-1-continuous-statistics"><span class="header-section-number">29.4.1</span> Example 1: Continuous statistics</h3>
+<section id="example-1-continuous-statistics" class="level3" data-number="37.4.1">
+<h3 data-number="37.4.1" class="anchored" data-anchor-id="example-1-continuous-statistics"><span class="header-section-number">37.4.1</span> Example 1: Continuous statistics</h3>
 <p>In this first example, we will use <code>purrr</code> to calculate a set of statistics for multiple continuous variables in our data frame. We will start by creating the same function we created at the beginning of the <a href="#writing-functions">chapter on writing functions</a>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>continuous_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(var) {</span>
@@ -1828,8 +1887,8 @@ $z
 </div>
 </div>
 </section>
-<section id="example-2-categorical-statistics" class="level3" data-number="29.4.2">
-<h3 data-number="29.4.2" class="anchored" data-anchor-id="example-2-categorical-statistics"><span class="header-section-number">29.4.2</span> Example 2: Categorical statistics</h3>
+<section id="example-2-categorical-statistics" class="level3" data-number="37.4.2">
+<h3 data-number="37.4.2" class="anchored" data-anchor-id="example-2-categorical-statistics"><span class="header-section-number">37.4.2</span> Example 2: Categorical statistics</h3>
 <p>For our second example of using the <code>purrr</code> package for analysis, we’ll once again write some code to iteratively analyze all the categorical variables in our <code>study</code> data frame. In the last chapter, we learned how to use a for loop to do this analysis. As a refresher, here is the final solution we arrived at:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Structure 1. An object to contain the results.</span></span>
@@ -2047,6 +2106,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -2157,6 +2218,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -2385,12 +2447,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../chapters/writing_for_loops/writing_for_loops.html" class="pagination-link" aria-label="Writing For Loops">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Writing For Loops</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../chapters/intro_git_github/intro_git_github.html" class="pagination-link" aria-label="Introduction to git and GitHub">
-        <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Introduction to git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
