@@ -252,7 +252,7 @@ The purrr-style lambda always begins with the tilde symbol (\~). Then we type ou
 
 We've already seen a number of examples of manipulating columns of our data frames using the `mutate()` function. In this section, we are going to take a look at two examples where using the `across()` function inside `mutate()` will allow us to apply the same manipulation to multiple columns in our data frame at once.
 
-Let's go ahead and simulate the same `demographics` data frame we simulated for the [recoding missing](#recode-missing) section of the conditional operations chapter. Let's also add two new columns: a four-category education column and a six-category income column. For all columns except `id` and `age`, a value of `7` represents "Don't know" and a value of `9` represents "refused."
+Let's go ahead and simulate the same `demographics` data frame we simulated for the [recoding missing](../conditional_operations/conditional_operations.qmd) section of the conditional operations chapter. Let's also add two new columns: a four-category education column and a six-category income column. For all columns except `id` and `age`, a value of `7` represents "Don't know" and a value of `9` represents "refused."
 
 ```{r}
 set.seed(123)
@@ -367,7 +367,7 @@ library(here)
 #| label: read-in-ehr-rds-2
 #| cache: TRUE 
 # Read in the data
-ehr <- read_rds(here::here("data/ehr.Rds"))
+ehr <- read_rds("ehr.Rds")
 ```
 
 For this example, the only column we will concern ourselves with is the `symptoms` column:
@@ -474,7 +474,7 @@ symptom_summary <- symptoms %>%
 
 In this case, it's probably fine to stop here. But, what if we had 20 or 30 symptoms that we were analyzing? It would be really difficult to read and compare them arranged horizontally like this, wouldn't it?
 
-Do you recall us discussing restructuring our results in the 🔴 [chapter on restructuring data frames][Restructuring data frames]? This is a circumstance where we might want to use `pivot_longer()` to make our results easier to read and interpret:
+Do you recall us discussing restructuring our results in the [chapter on restructuring data frames](../restructuring_data_frames/restructuring_data_frames.qmd)? This is a circumstance where we might want to use `pivot_longer()` to make our results easier to read and interpret:
 
 ```{r}
 symptom_summary %>% 
@@ -492,7 +492,7 @@ There! Isn't that result much easier to read?
 rm(ehr, symptom_summary, symptoms)
 ```
 
-For our final example of this section, let's return the first example from the [writing functions chapter](#writing-functions). We started with some simulated study data:
+For our final example of this section, let's return the first example from the [writing functions chapter](../writing_functions/writing_functions.qmd). We started with some simulated study data:
 
 ```{r}
 study <- tibble(

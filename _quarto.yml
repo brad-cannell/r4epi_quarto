@@ -117,6 +117,10 @@ book:
       - chapters/intro_git_github/intro_git_github.qmd
       - chapters/using_git_github/using_git_github.qmd
     
+    - part: "Presenting Results"
+      chapters: 
+        - chapters/creating_word_tables/creating_word_tables.qmd
+        
     - part: "References"
       chapters:
         - references.qmd
