@@ -1,5 +1,10 @@
 # Introduction to Data Management
 
+```{r}
+#| echo: false
+library(dplyr, warn.conflicts = FALSE)
+```
+
 Way back in the [Getting Started](#managing-data) chapter, I told you that managing data includes all the things you may have to do to your data to get it ready for analysis. We also talked about the 80/20 "rule." The basic idea of the 80/20 rule is that data management is where we will spend the majority of our time and effort when we are involved in just about any project that makes use of data. Unfortunately, we can't cover strategies for overcoming every single data management challenge that you will encounter in epidemiology. However, in this part of the book, we will try to give you a foundation in some of the most common data management tasks that you will encounter. We will also try to point you towards some of the best tools and resources for data management that the R community has to offer.
 
 ## Multiple paradigms for data management in R

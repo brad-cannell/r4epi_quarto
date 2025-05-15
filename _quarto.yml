@@ -82,17 +82,6 @@ book:
       - chapters/importing_binary_files/importing_binary_files.qmd
       - chapters/rstudio_import_tool/rstudio_import_tool.qmd
       - chapters/exporting_data_to_disk/exporting_data_to_disk.qmd
-
-    - part: "Data Management"
-      chapters: 
-        - chapters/intro_data_management/01_introduction.qmd
-        - chapters/creating_and_modifying_columns/02_creating_and_modifying_columns.qmd
-        - chapters/subsetting_data_frames/03_subsetting_data_frames.qmd
-        - chapters/working_with_dates/04_working_with_dates.qmd
-        - chapters/working_with_character_strings/05_working_with_character_strings.qmd
-        - chapters/conditional_operations/06_conditional_operation.qmd
-        - chapters/multiple_data_frames/06_multiple_data_frames.qmd
-        - chapters/restructuring_data_frames/10_restructuring_data_frames.qmd
       
     - part: "Descriptive Analysis"
       chapters: 
@@ -103,6 +92,17 @@ book:
       - chapters/cont_out_cont_pred/cont_out_cont_pred.qmd
       - chapters/cont_out_cat_pred/cont_out_cat_pred.qmd
       - chapters/cat_out_cat_pred/cat_out_cat_pred.qmd
+
+    - part: "Data Management"
+      chapters: 
+        - chapters/intro_data_management/01_introduction.qmd
+        - chapters/creating_and_modifying_columns/02_creating_and_modifying_columns.qmd
+        - chapters/subsetting_data_frames/03_subsetting_data_frames.qmd
+        - chapters/working_with_dates/04_working_with_dates.qmd
+        - chapters/working_with_character_strings/05_working_with_character_strings.qmd
+        - chapters/conditional_operations/06_conditional_operations.qmd
+        - chapters/multiple_data_frames/08_multiple_data_frames.qmd
+        - chapters/restructuring_data_frames/10_restructuring_data_frames.qmd
       
     - part: "Repeated Operations"
       chapters:

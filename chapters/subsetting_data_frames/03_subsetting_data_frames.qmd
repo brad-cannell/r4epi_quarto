@@ -27,7 +27,7 @@ For example, we may need to subset the rows of a data frame because we're intere
 ```{r}
 #| label: 1_subsetting_data_frames_rows_chunk
 #| echo: false
-knitr::include_graphics("/chapters/subsetting_data_frames/rows.png")
+knitr::include_graphics("rows.png")
 ```
 
 Or, perhaps we're only interested in a subset of the statistics returned to me in a data frame of analysis results. Below, we only want to view and present the variable name, variable category, count, and percent.
@@ -35,7 +35,7 @@ Or, perhaps we're only interested in a subset of the statistics returned to me i
 ```{r}
 #| label: 2_subsetting_data_frames_columns_chunk
 #| echo: false
-knitr::include_graphics("/chapters/subsetting_data_frames/columns.png")
+knitr::include_graphics("columns.png")
 ```
 
 Fortunately, the `dplyr` package includes functions that make it really easy for us to subset our data frames -- even in some fairly complicated ways. Let's start by simulating the same drug trial data we simulated in the last chapter and use it to work through some examples.
