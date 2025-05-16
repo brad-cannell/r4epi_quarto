@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R 4 Epidemiology – 26&nbsp; Creating and Modifying Columns</title>
+<title>26&nbsp; Creating and Modifying Columns – R 4 Epidemiology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -472,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Presenting Results</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -480,8 +480,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  <a href="../../chapters/creating_word_tables/creating_word_tables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Creating Tables with R and Microsoft Word</span></span></a>
   </div>
 </li>
       </ul>
@@ -489,12 +489,29 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">References</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/appendices/glossary.html" class="sidebar-item-text sidebar-link">
@@ -563,12 +580,12 @@ mutate already in the book.
 <ol type="1">
 <li><p>Using name-value pairs to add columns to a data frame during its initial creation. This was one of the first methods we used in this book for creating columns in a data frame. However, this method does not apply to creating or modifying columns in <em>a data frame that already exists</em>. Therefore, we won’t discuss it much in this chapter.</p></li>
 <li><p>Dollar sign notation. This is probably the most commonly used base R way of creating and modifying columns in a data frame. In this book, we won’t use it as much as we use <code>dplyr::mutate()</code>, but you will see it all over the place in the R community.</p></li>
-<li><p>Bracket notation. Again, we won’t use bracket notation very often in this book. However, we will use it later on when we learn about <a href="#for-loops">for loops</a>. Therefore, we’re going to introduce you to using bracket notation to create and modify data frame columns now.</p></li>
+<li><p>Bracket notation. Again, we won’t use bracket notation very often in this book. However, we will use it later on when we learn about <a href="../../chapters/writing_for_loops/writing_for_loops.html">for loops</a>. Therefore, we’re going to introduce you to using bracket notation to create and modify data frame columns now.</p></li>
 <li><p>The <code>mutate()</code> function from the <code>dplyr</code> package. This is the method that we will use the vast majority of the time in this book (and in our real-life projects). We’re going to recommend that you do the same.</p></li>
 </ol>
 <section id="creating-data-frames" class="level2" data-number="26.1">
 <h2 data-number="26.1" class="anchored" data-anchor-id="creating-data-frames"><span class="header-section-number">26.1</span> Creating data frames</h2>
-<p>Very early on, in the <a href="#lets-get-programming">Let’s get programming</a> chapter, we learned how to create data frame columns using name-value pairs passed directly into the <code>tibble()</code> function.</p>
+<p>Very early on, in the <a href="../../chapters/lets_get_programming/lets_get_programming.html">Let’s get programming</a> chapter, we learned how to create data frame columns using name-value pairs passed directly into the <code>tibble()</code> function.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 2
@@ -584,7 +601,7 @@ mutate already in the book.
 </section>
 <section id="dollar-sign-notation" class="level2" data-number="26.2">
 <h2 data-number="26.2" class="anchored" data-anchor-id="dollar-sign-notation"><span class="header-section-number">26.2</span> Dollar sign notation</h2>
-<p>Later in the <a href="#lets-get-programming">Let’s get programming</a> chapter, we learned about <strong>dollar sign notation</strong>. At that time, we used dollar sign notation to access or “get” values from a column.</p>
+<p>Later in the <a href="../../chapters/lets_get_programming/lets_get_programming.html">Let’s get programming</a> chapter, we learned about <strong>dollar sign notation</strong>. At that time, we used dollar sign notation to access or “get” values from a column.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 68 63 71 72</code></pre>
@@ -638,7 +655,7 @@ Note
 </section>
 <section id="bracket-notation" class="level2" data-number="26.3">
 <h2 data-number="26.3" class="anchored" data-anchor-id="bracket-notation"><span class="header-section-number">26.3</span> Bracket notation</h2>
-<p>we also learned how to access or “get” values from a column using bracket notation in the <a href="#lets-get-programming">Let’s get programming</a> chapter. There, we actually used a combination of dollar sign and bracket notation to access single individual values from a data frame column. For example:</p>
+<p>we also learned how to access or “get” values from a column using bracket notation in the <a href="../../chapters/lets_get_programming/lets_get_programming.html">Let’s get programming</a> chapter. There, we actually used a combination of dollar sign and bracket notation to access single individual values from a data frame column. For example:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5.916667</code></pre>
@@ -696,7 +713,7 @@ Note
 </section>
 <section id="modify-individual-values" class="level2" data-number="26.4">
 <h2 data-number="26.4" class="anchored" data-anchor-id="modify-individual-values"><span class="header-section-number">26.4</span> Modify individual values</h2>
-<p>Before moving on to the <code>mutate()</code> function, we wanted to quickly discuss using dollar sign and bracket notation for modifying individual values in a column. Recall that we already learned how to access individual column values in the <a href="#lets-get-programming">Let’s get programming</a> chapter.</p>
+<p>Before moving on to the <code>mutate()</code> function, we wanted to quickly discuss using dollar sign and bracket notation for modifying individual values in a column. Recall that we already learned how to access individual column values in the <a href="../../chapters/lets_get_programming/lets_get_programming.html">Let’s get programming</a> chapter.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 71</code></pre>
@@ -736,11 +753,11 @@ Note
 4     4 CA   </code></pre>
 </div>
 </div>
-<p>Keep in mind that we said that we fix <em>little one-off typos</em>. If we needed to change <code>tx</code> to <code>TX</code> in multiple different places in the data, we wouldn’t use this method. Instead, we would use a <a href="#conditional-operations">conditional operation</a>, which we will discuss later in the book.</p>
+<p>Keep in mind that we said that we fix <em>little one-off typos</em>. If we needed to change <code>tx</code> to <code>TX</code> in multiple different places in the data, we wouldn’t use this method. Instead, we would use a <a href="../../chapters/conditional_operations/conditional_operations.html">conditional operation</a>, which we will discuss later in the book.</p>
 </section>
 <section id="the-mutate-function" class="level2" data-number="26.5">
 <h2 data-number="26.5" class="anchored" data-anchor-id="the-mutate-function"><span class="header-section-number">26.5</span> The mutate() function</h2>
-<p>we first discussed <code>mutate()</code> in the <a href="../categorical_variables/categorical_variables.html#coerce-a-numeric-variable">chapter on exporting data</a>, and again in the <a href="introduction-to-data-management">Introduction to data management chapter</a>. As we said there, the first two arguments to <code>mutate()</code> are <code>.data</code> and <code>...</code>.</p>
+<p>we first discussed <code>mutate()</code> in the <a href="../../chapters/exporting_data_to_disk/exporting_data_to_disk.html">chapter on exporting data</a>, and again in the <a href="../../chapters/intro_data_management/introduction.html">Introduction to data management chapter</a>. As we said there, the first two arguments to <code>mutate()</code> are <code>.data</code> and <code>...</code>.</p>
 <p>The value passed to <code>.data</code> should always be a data frame. In this book, we will often pass data frames to the <code>.data</code> argument using the pipe operator (e.g., <code>df %&gt;% mutate()</code>).</p>
 <p>The value passed to the <code>...</code> argument should be a name-value pair or multiple name value pairs separated by commas. The <code>...</code> argument is where you will tell <code>mutate()</code> to create or modify columns in your data frame and how.</p>
 <ul>
@@ -761,7 +778,7 @@ Note
 <li><p>mi: Participant had myocardial infarction in study year, Y/N.</p></li>
 </ul></li>
 <li><p>we used the <code>tibble()</code> function above to create our data frame instead of the <code>data.frame()</code> function. This allows us to pass the <code>drug</code> column as a value to the <code>if_else()</code> function when we create <code>se_headache</code>, <code>se_diarrhea</code>, <code>se_dry_mouth</code>, and <code>mi</code>. If we had used <code>data.frame()</code> instead, we would have had to create <code>se_headache</code>, <code>se_diarrhea</code>, <code>se_dry_mouth</code>, and <code>mi</code> in a separate step.</p></li>
-<li><p>we used a new function, <code>if_else()</code>, above to help us simulate this data. This function allows us to do something called <strong>conditional operations</strong>. There will be an entire chapter on [conditional operations] later in the book.</p></li>
+<li><p>we used a new function, <code>if_else()</code>, above to help us simulate this data. This function allows us to do something called <strong>conditional operations</strong>. There will be an entire chapter on <a href="../../chapters/conditional_operations/conditional_operations.html">conditional operations</a> later in the book.</p></li>
 <li><p>we used a new function, <code>sample()</code>, above to help us simulate this data. We used this function to randomly assign values to <code>age</code>, <code>drug</code>, <code>se_headache</code>, <code>se_diarrhea</code>, <code>se_dry_mouth</code>, and <code>mi</code> instead of manually assigning each value ourselves.</p>
 <ul>
 <li><p>You can type <code>?sample</code> into your R console to view the help documentation for this function and follow along with the explanation below.</p></li>
@@ -1038,7 +1055,7 @@ object length</code></pre>
 </section>
 <section id="using-existing-variables-in-name-value-pairs" class="level3" data-number="26.5.3">
 <h3 data-number="26.5.3" class="anchored" data-anchor-id="using-existing-variables-in-name-value-pairs"><span class="header-section-number">26.5.3</span> Using existing variables in name-value pairs</h3>
-<p>In the example above, we create a new column called <code>complete</code> by directly supplying values for that column in the name-value pair. In our experience, it is probably more common to create new columns in our data frames by combining or transforming the values of columns that already exist in our data frame. You’ve already seen an example of doing so when <a href="../lets_get_programming/lets_get_programming.html#factor-vectors">we created factor versions of variables</a>. As an additional example, we could create a factor version of our <code>mi</code> variable like this:</p>
+<p>In the example above, we create a new column called <code>complete</code> by directly supplying values for that column in the name-value pair. In our experience, it is probably more common to create new columns in our data frames by combining or transforming the values of columns that already exist in our data frame. You’ve already seen an example of doing so when <a href="../../chapters/lets_get_programming/lets_get_programming.html">we created factor versions of variables</a>. As an additional example, we could create a factor version of our <code>mi</code> variable like this:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 60 × 9
@@ -1130,7 +1147,7 @@ object length</code></pre>
 #   se_dry_mouth_f &lt;fct&gt;</code></pre>
 </div>
 </div>
-<p>Notice that in the code above we type <code>c(0, 1)</code> and <code>c("No", "Yes")</code> once each instead of 3 times each. In the chapter on <a href="#repeated-operations">repeated operations</a> we will learn techniques for removing even more repetition from the code above.</p>
+<p>Notice that in the code above we type <code>c(0, 1)</code> and <code>c("No", "Yes")</code> once each instead of 3 times each. In the chapter on <a href="../../chapters/intro_repeated_operations/intro_repeated_operations.html">repeated operations</a> we will learn techniques for removing even more repetition from the code above.</p>
 </section>
 <section id="rowwise-mutations" class="level3" data-number="26.5.5">
 <h3 data-number="26.5.5" class="anchored" data-anchor-id="rowwise-mutations"><span class="header-section-number">26.5.5</span> Rowwise mutations</h3>
@@ -1249,8 +1266,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1361,7 +1376,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
