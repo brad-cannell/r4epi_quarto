@@ -140,7 +140,7 @@ demo
 
 👆**Here's what we did above:**
 
-* We used `dplyr`'s `mutate()` function to create a new variable (`edu_f`) in the data frame called `demo`. The purpose of the `mutate()` function is to add new variables to data frames. We will discuss `mutate()` in greater detail [later in the book][creating-modifying-columns].🔴
+* We used `dplyr`'s `mutate()` function to create a new variable (`edu_f`) in the data frame called `demo`. The purpose of the `mutate()` function is to add new variables to data frames. We will discuss `mutate()` in greater detail [later in the book](../creating_and_modifying_columns/creating_and_modifying_columns.qmd).
 
   - You can type `?mutate` into your R console to view the help documentation for this function and follow along with the explanation below.
 
@@ -342,7 +342,7 @@ gmodels::CrossTable(height_and_weight_20$sex)
 The final way we're going to discuss here is the `tidyverse` way, which is our preference. We will have to write a little additional code, but the end result will be more flexible, more readable, and will return our statistics to us in a data frame that we can save and use for further analysis. Let's walk through this step by step...
 
 :::callout-note
-You should already be familiar with the pipe operator (`|>`), but if it doesn't look familiar to you, you can learn more about it in [Using pipes][]🔴. Don't forget, if you are using RStudio, you can use the keyboard shortcut `shift + command + m` (Mac) or `shift + control + m` (Windows) to insert the pipe operator.
+You should already be familiar with the pipe operator (`|>`), but if it doesn't look familiar to you, you can learn more about it in [Using pipes](../using_pipes/using_pipes.qmd). Don't forget, if you are using RStudio, you can use the keyboard shortcut `shift + command + m` (Mac) or `shift + control + m` (Windows) to insert the pipe operator.
 :::
 
 First, we don't want to view the individual values in our data frame. Instead, we want to condense those values into summary statistics. This is a job for the [summarise()](https://dplyr.tidyverse.org/reference/summarise.html) function. 

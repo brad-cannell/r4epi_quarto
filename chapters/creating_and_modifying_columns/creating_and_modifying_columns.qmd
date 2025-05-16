@@ -22,13 +22,13 @@ In this book, we are actually going to learn 4 different methods for creating an
 
 2. Dollar sign notation. This is probably the most commonly used base R way of creating and modifying columns in a data frame. In this book, we won't use it as much as we use `dplyr::mutate()`, but you will see it all over the place in the R community.
 
-3. Bracket notation. Again, we won't use bracket notation very often in this book. However, we will use it later on when we learn about [for loops](#for-loops). Therefore, we're going to introduce you to using bracket notation to create and modify data frame columns now.
+3. Bracket notation. Again, we won't use bracket notation very often in this book. However, we will use it later on when we learn about [for loops](../writing_for_loops/writing_for_loops.qmd). Therefore, we're going to introduce you to using bracket notation to create and modify data frame columns now.
 
 4. The `mutate()` function from the `dplyr` package. This is the method that we will use the vast majority of the time in this book (and in our real-life projects). We're going to recommend that you do the same.
 
 ## Creating data frames
 
-Very early on, in the [Let's get programming](#lets-get-programming) chapter, we learned how to create data frame columns using name-value pairs passed directly into the `tibble()` function.
+Very early on, in the [Let's get programming](../lets_get_programming/lets_get_programming.qmd) chapter, we learned how to create data frame columns using name-value pairs passed directly into the `tibble()` function.
 
 ```{r}
 #| echo: false
@@ -43,7 +43,7 @@ This is an absolutely fundamental R programming skill, and one that you will lik
 
 ## Dollar sign notation
 
-Later in the [Let's get programming](#lets-get-programming) chapter, we learned about **dollar sign notation**. At that time, we used dollar sign notation to access or "get" values from a column.
+Later in the [Let's get programming](../lets_get_programming/lets_get_programming.qmd) chapter, we learned about **dollar sign notation**. At that time, we used dollar sign notation to access or "get" values from a column.
 
 ```{r}
 #| echo: false
@@ -79,7 +79,7 @@ class
 
 ## Bracket notation
 
-we also learned how to access or "get" values from a column using bracket notation in the [Let's get programming](#lets-get-programming) chapter. There, we actually used a combination of dollar sign and bracket notation to access single individual values from a data frame column. For example:
+we also learned how to access or "get" values from a column using bracket notation in the [Let's get programming](../lets_get_programming/lets_get_programming.qmd) chapter. There, we actually used a combination of dollar sign and bracket notation to access single individual values from a data frame column. For example:
 
 ```{r}
 #| echo: false
@@ -128,7 +128,7 @@ we don't want you to get too hung up on the difference between single and double
 
 ## Modify individual values
 
-Before moving on to the `mutate()` function, we wanted to quickly discuss using dollar sign and bracket notation for modifying individual values in a column. Recall that we already learned how to access individual column values in the [Let's get programming](#lets-get-programming) chapter.
+Before moving on to the `mutate()` function, we wanted to quickly discuss using dollar sign and bracket notation for modifying individual values in a column. Recall that we already learned how to access individual column values in the [Let's get programming](../lets_get_programming/lets_get_programming.qmd) chapter.
 
 ```{r}
 #| echo: false
@@ -166,7 +166,7 @@ study_data$site[3] <- "TX"
 study_data
 ```
 
-Keep in mind that we said that we fix _little one-off typos_. If we needed to change `tx` to `TX` in multiple different places in the data, we wouldn't use this method. Instead, we would use a [conditional operation](#conditional-operations), which we will discuss later in the book.
+Keep in mind that we said that we fix _little one-off typos_. If we needed to change `tx` to `TX` in multiple different places in the data, we wouldn't use this method. Instead, we would use a [conditional operation](../conditional_operations/conditional_operations.qmd), which we will discuss later in the book.
 
 ## The mutate() function
 
@@ -176,7 +176,7 @@ Keep in mind that we said that we fix _little one-off typos_. If we needed to ch
 library(dplyr)
 ```
 
-we first discussed `mutate()` in the [chapter on exporting data](#coerce-a-numeric-variable), and again in the [Introduction to data management chapter](introduction-to-data-management). As we said there, the first two arguments to `mutate()` are `.data` and `...`. 
+we first discussed `mutate()` in the [chapter on exporting data](../exporting_data_to_disk/exporting_data_to_disk.qmd), and again in the [Introduction to data management chapter](../intro_data_management/introduction.qmd). As we said there, the first two arguments to `mutate()` are `.data` and `...`. 
 
 The value passed to `.data` should always be a data frame. In this book, we will often pass data frames to the `.data` argument using the pipe operator (e.g., `df %>% mutate()`). 
 
@@ -250,7 +250,7 @@ drug_trial <- tibble(
   
 * we used the `tibble()` function above to create our data frame instead of the `data.frame()` function. This allows us to pass the `drug` column as a value to the `if_else()` function when we create `se_headache`, `se_diarrhea`, `se_dry_mouth`, and `mi`. If we had used `data.frame()` instead, we would have had to create `se_headache`, `se_diarrhea`, `se_dry_mouth`, and `mi` in a separate step.
 
-* we used a new function, `if_else()`, above to help us simulate this data. This function allows us to do something called **conditional operations**. There will be an entire chapter on [conditional operations] later in the book.
+* we used a new function, `if_else()`, above to help us simulate this data. This function allows us to do something called **conditional operations**. There will be an entire chapter on [conditional operations](../conditional_operations/conditional_operations.qmd) later in the book.
 
 * we used a new function, `sample()`, above to help us simulate this data. We used this function to randomly assign values to `age`, `drug`, `se_headache`, `se_diarrhea`, `se_dry_mouth`, and `mi` instead of manually assigning each value ourselves.
 
@@ -431,7 +431,7 @@ That's a lot less typing than the first method we tried, and it also has the add
 
 ### Using existing variables in name-value pairs
 
-In the example above, we create a new column called `complete` by directly supplying values for that column in the name-value pair. In our experience, it is probably more common to create new columns in our data frames by combining or transforming the values of columns that already exist in our data frame. You've already seen an example of doing so when [we created factor versions of variables](#factor-vectors). As an additional example, we could create a factor version of our `mi` variable like this:
+In the example above, we create a new column called `complete` by directly supplying values for that column in the name-value pair. In our experience, it is probably more common to create new columns in our data frames by combining or transforming the values of columns that already exist in our data frame. You've already seen an example of doing so when [we created factor versions of variables](../lets_get_programming/lets_get_programming.qmd). As an additional example, we could create a factor version of our `mi` variable like this:
 
 ```{r}
 #| echo: false
@@ -492,7 +492,7 @@ drug_trial %>%
   )
 ```
 
-Notice that in the code above we type `c(0, 1)` and `c("No", "Yes")` once each instead of 3 times each. In the chapter on [repeated operations](#repeated-operations) we will learn techniques for removing even more repetition from the code above.
+Notice that in the code above we type `c(0, 1)` and `c("No", "Yes")` once each instead of 3 times each. In the chapter on [repeated operations](../intro_repeated_operations/intro_repeated_operations.qmd) we will learn techniques for removing even more repetition from the code above.
 
 ### Rowwise mutations
 
