@@ -8,7 +8,7 @@ library(dplyr)
 
 At this point, you should all know that it is generally a bad idea to submit raw R output as part of a report, presentation, or publication. You should also understand when it is most appropriate to use tables, as opposed to charts and graphs, to present your results. If not, please stop here and read Chapter 7 of _Successful Scientific Writing_, which discusses the "why" behind much of what we will show you "how" to do in this chapter. @Matthews2014-ah
 
-_R for Epidemiology_ is predominantly a book about using R to manage, visualize, and analyze data in ways that are common in the field epidemiology. However, in most modern work/research environments it is difficult to escape the requirement to share your results in a Microsoft Word document. And often, because we are dealing with data, those results include tables of some sort. However, not all tables communicate your results equally well. In this chapter, we will walk you through the process of starting with some results you calculated in R and ending with a nicely formatted table in Microsoft Word. Specifically, we are going to create a Table 1.
+_R for Epidemiology_ is predominantly a book about using R to manage, visualize, and analyze data in ways that are common in the field of epidemiology. However, in most modern work/research environments it is difficult to escape the requirement to share your results in a Microsoft Word document. And often, because we are dealing with data, those results include tables of some sort. However, not all tables communicate your results equally well. In this chapter, we will walk you through the process of starting with some results you calculated in R and ending with a nicely formatted table in Microsoft Word. Specifically, we are going to create a Table 1.
 
 ## Table 1
 
@@ -102,7 +102,7 @@ Specifically, we want our final Table 1 to look like this:
 knitr::include_graphics("table1.png")
 ```
 
-You may also [click here to view/download the Word file that contains the Table 1](https://www.dropbox.com/s/bu8r81jhzr2r3cj/final_table_01.docx?dl=0).
+You may also [click here to view/download the Word file that contains Table 1](https://www.dropbox.com/s/bu8r81jhzr2r3cj/final_table_01.docx?dl=0).
 
 Now that you've seen the end result, let's learn how to make this Table 1 together, step-by-step. Go ahead and open Microsoft Word now if you want to follow along.
 
@@ -174,10 +174,18 @@ So, we will need 6 total rows.
 
 Now that we know we need to create a table with 4 columns and 6 rows, let's go ahead and do that in Microsoft Word. We do so by clicking the `Insert` tab in the ribbon above our document. Then, we click the `Table` button and select the number of columns and rows we want.
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-make-table
 #| echo: false
+#| fig-cap: |
+#|   A gif showing how to insert a table into a Microsoft Word document.
+#| fig-alt: |
+#|   A gif showing how to insert a table into a Microsoft Word document.
+
 knitr::include_graphics("make_table.gif")
 ```
+:::
 
 ## Fill in column headers
 
@@ -243,12 +251,12 @@ Here are a couple of suggestions for filling in your row headers:
 
 ### Label statistics
 
-You should always tell the reader what kind statistics they are looking at -- don't assume that they know. For example, the highlighted number in figure \@ref(fig:what-stats) are 36.8 and 10. What is 36.8? The mean, the median? The percentage of people who had a non-missing value for age? What is 10? The sample size? The standard error of the mean? An odds ratio? You know that 36.8 is a mean and 10 is the standard deviation because we identified what they were in row header. \@ref(fig:identify-stats) When you label the statistics in the row headers as we've done in our example, they should take the format you see in figure \@ref(fig:identify-stats). That is, the variable name, followed by a comma, followed by the statistics used in that row. Also notice the use of parentheses. We used parentheses around the letters "sd" (for standard deviation) because the numbers inside the parentheses in that row are standard deviations. So, the label used to identify the statistics should give the reader a blueprint for interpreting the statistics that matches the format of the statistics themselves.
+You should always tell the reader what kind of statistics they are looking at -- don't assume that they know. For example, the highlighted numbers in figure \@ref(fig:what-stats) are 36.8 and 10. What is 36.8? The mean, the median? The percentage of people who had a non-missing value for age? What is 10? The sample size? The standard error of the mean? An odds ratio? You know that 36.8 is a mean and 10 is the standard deviation because we identified what they were in the row header. \@ref(fig:identify-stats) When you label the statistics in the row headers as we've done in our example, they should take the format you see in figure \@ref(fig:identify-stats). That is, the variable name, followed by a comma, followed by the statistics used in that row. Also notice the use of parentheses. We used parentheses around the letters "sd" (for standard deviation) because the numbers inside the parentheses in that row are standard deviations. So, the label used to identify the statistics should give the reader a blueprint for interpreting the statistics that matches the format of the statistics themselves.
 
 ```{r}
 #| label: 20_creating_word_tables_what_stats_chunk
 #| echo: false
-#| fig-cap: What are these numbers.
+#| fig-cap: What are these numbers?
 knitr::include_graphics("what_stats.png")
 ```
 
@@ -277,11 +285,11 @@ knitr::include_graphics("good_stat_labels.png")
 
 ### Formatting row headers
 
-* Whenever possible, make sure that variable name and statistic identifier fit on one line (i.e., they don't carryover into the line below).
+* Whenever possible, make sure that variable name and statistic identifier fit on one line (i.e., they don't carry over into the line below).
 
-* Always type the category labels for categorical variables in the same cell as the variable name. However, each category should have it's own line (i.e., hit the return key).
+* Always type the category labels for categorical variables in the same cell as the variable name. However, each category should have its own line (i.e., hit the return key).
 
-* Whenever possible, make sure that each category label fits on one line (i.e., it doesn't carryover into the line below).
+* Whenever possible, make sure that each category label fits on one line (i.e., it doesn't carry over into the line below).
 
 * Indent each category label two spaces to the left of the variable name. 
 
@@ -315,7 +323,7 @@ Another option is to copy and paste values from RStudio into Word. This option i
   
 👍 If you are in a hurry, or if you just need to update a small handful of statistics in your table, then this option is also pretty straightforward. However, there are still issues associated with this method. 
     
-👎 First, it is still somewhat error prone. It's true that the numbers and decimal placements should always be correct when you copy and paste; however, you may be surprised by how often many people accidently paste the values into the wrong place or in the wrong order. 
+👎 First, it is still somewhat error prone. It's true that the numbers and decimal placements should always be correct when you copy and paste; however, you may be surprised by how often many people accidentally paste the values into the wrong place or in the wrong order. 
     
 👎 Second, I've noticed that there are often weird formatting things that happen when we copy from RStudio and paste into Word. They are usually pretty easy to fix, but this is still a small bit of extra hassle. 
     
@@ -351,11 +359,11 @@ Notice the level of precision there. R gives us the percentage out to 6 decimal 
 
 * we don't recall _ever_ presenting a level of precision greater than 3 decimal places in the research we've been involved with. If you are working in physics or genetics and measuring really tiny things it may be totally valid to report 6, 8, or 10 digits to the right of the decimal. But, in epidemiology -- a population science -- this is rarely, if ever, useful.
   
-* What is the overall message we are trying to communicate? That is the point of the table, right? We're trying to clearly and honestly communicate information to our reader. In general, the simpler the numbers are to read and compare, the clearer the communication. So, we tend to error on the side of simplifying as much as possible. For example, in the R results below, we could say that 83.274912% of our sample reported that they don't use drugs, 15.343015% reported that they use drugs other than opioids, and 1.382073% reported that they use opioid drugs. Is saying it that way really more useful than saying that "83% of our sample reported that they don't use drugs, 15% reported that they use drugs other than opioids, and 1% reported that they use opioid drugs"? Are we missing any actionable information by rounding our percentages to the nearest integer here? Are our overall conclusions about drug use any different? No, probably not. And, the rounded percentages are much easier to read, compare, and remember. 
+* What is the overall message we are trying to communicate? That is the point of the table, right? We're trying to clearly and honestly communicate information to our readers. In general, the simpler the numbers are to read and compare, the clearer the communication. So, we tend to err on the side of simplifying as much as possible. For example, in the R results below, we could say that 83.274912% of our sample reported that they don't use drugs, 15.343015% reported that they use drugs other than opioids, and 1.382073% reported that they use opioid drugs. Is saying it that way really more useful than saying that "83% of our sample reported that they don't use drugs, 15% reported that they use drugs other than opioids, and 1% reported that they use opioid drugs"? Are we missing any actionable information by rounding our percentages to the nearest integer here? Are our overall conclusions about drug use any different? No, probably not. And, the rounded percentages are much easier to read, compare, and remember. 
 
-* Be consistent -- especially within a single table. We have experienced some rare occasions where it made sense to round one variable to 1 decimal place and another variable to 3 decimals places in the same table. But, circumstances like this are definitely the exception. Generally speaking, if you round one variable to 1 decimal place then you want to round them all to one decimal place.
+* Be consistent -- especially within a single table. We have experienced some rare occasions where it made sense to round one variable to 1 decimal place and another variable to 3 decimal places in the same table. But, circumstances like this are definitely the exception. Generally speaking, if you round one variable to 1 decimal place then you want to round them all to one decimal place.
 
-Like all other calculations we've done in this book, we suggest you let R do the heavy lifting when it comes to rounding. In other words, have R round the values for you _before_ you move them to Word. R is much less likely to make a rounding error than your are! You may recall that we learned how to round in the [chapter on numerical descriptions of categorical variables](../categorical_variables/categorical_variables.qmd).
+Like all other calculations we've done in this book, we suggest you let R do the heavy lifting when it comes to rounding. In other words, have R round the values for you _before_ you move them to Word. R is much less likely to make a rounding error than you are! You may recall that we learned how to round in the [chapter on numerical descriptions of categorical variables](../categorical_variables/categorical_variables.qmd).
 
 ### Formatting data values
 
@@ -397,7 +405,7 @@ Don't worry about your title being all bunched up in the corner. We will fix it 
 
 Footnotes are another tool we can use to help our table stand on its own. The footnotes give readers additional information that they may need to read and understand our table. Again, there are few hard and fast rules regarding what footnotes you should include, but we can give you some general categories of things to think about.
 
-First, use footnotes to explain any abbreviations in your table that aren't standard and broadly understood. These abbreviations are typically related to statistics used in the table (e.g., RR = risk ratio) and/or units of measure (e.g., mmHg = millimeters of mercury). Admittedly, there is some subjectivity associated with "standard and broadly understood." In our example, we did not provide a footnote for "n", "sd", or "%" because most researchers would agree that these abbreviations are standard and broadly understood, but we typically do provide footnotes for statistics like "OR" (odds ration) and "RR" (relative risk or risk ratio).
+First, use footnotes to explain any abbreviations in your table that aren't standard and broadly understood. These abbreviations are typically related to statistics used in the table (e.g., RR = risk ratio) and/or units of measure (e.g., mmHg = millimeters of mercury). Admittedly, there is some subjectivity associated with "standard and broadly understood." In our example, we did not provide a footnote for "n", "sd", or "%" because most researchers would agree that these abbreviations are standard and broadly understood, but we typically do provide footnotes for statistics like "OR" (odds ratio) and "RR" (relative risk or risk ratio).
 
 Additionally, we mentioned above that it is desirable, but sometimes challenging, to get your variable names and category labels to fit on a single line. Footnotes can sometimes help with this. In our example, instead of writing "Age in years, mean (sd)" as a row header we wrote "Age, mean (sd)" and added a footnote that tells the reader that age is measured in years. This may not be the best possible example, but hopefully you get the idea.
 
@@ -427,12 +435,20 @@ As another example, the following would be inappropriate because the number 2 co
 knitr::include_graphics("bad_footnote_2.png")
 ```
 
-Additionally, when using numbers to match table elements to footnotes, it's a good idea to superscript the numbers in the table. This makes it clear that the number is being used to identify a footnote rather than being part of the text or abbreviation. Formatting a number as a superscript is easy in Microsoft Word. Just highlight the number you want to format and click the superscript button like so:
+Additionally, when using numbers to match table elements to footnotes, it's a good idea to superscript the numbers in the table. This makes it clear that the number is being used to identify a footnote rather than being part of the text or abbreviation. Formatting a number as a superscript is easy in Microsoft Word. Just highlight the number you want to format and click the superscript button.
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-make-footnotes
 #| echo: false
+#| fig-cap: |
+#|   A gif showing the superscript button in Microsoft Word.
+#| fig-alt: |
+#|   A gif showing the superscript button in Microsoft Word.
+
 knitr::include_graphics("make_footnotes.gif")
 ```
+:::
 
 At this point, your table should look like this in Microsoft Word:
 
@@ -444,36 +460,60 @@ knitr::include_graphics("make_footnotes.png")
 
 ## Final formatting
 
-we have all of our data and explanatory text in our table. The last few remaining steps are just about formatting our table to make it as easy to read and digest as possible.
+We have all of our data and explanatory text in our table. The last few remaining steps are just about formatting our table to make it as easy to read and digest as possible.
 
 ### Adjust column widths
 
 As I've already mentioned more than once, we don't want our text carryover onto multiple lines whenever we can help it. In my experience, this occurs most often in the row headings. Therefore, we will often need to adjust (widen) the first column of our table. You can do that by clicking on the black border that separates the columns and moving your mouse left or right.
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-adjust-columns
 #| echo: false
+#| fig-cap: |
+#|   A gif showing the superscript button in Microsoft Word.
+#| fig-alt: |
+#|   A gif showing the superscript button in Microsoft Word.
+
 knitr::include_graphics("adjust_columns.gif")
 ```
+:::
 
-After you adjust the width of your first column, the widths of the remaining columns will likely be uneven. To distribute the remaining space in the table evenly among the remaining columns, first select the columns by clicking immediately above the first column you want to select and dragging your cursor across the remaining columns. Then, click the `layout` tab in ribbon above your document and the `Distribute Columns` button. 
+After you adjust the width of your first column, the widths of the remaining columns will likely be uneven. To distribute the remaining space in the table evenly among the remaining columns, first select the columns by clicking immediately above the first column you want to select and dragging your cursor across the remaining columns. Then, click the `layout` tab in the ribbon above your document and the `Distribute Columns` button.
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-even-columns
 #| echo: false
+#| fig-cap: |
+#|   A gif showing how to distribute columns evenly in Microsoft Word.
+#| fig-alt: |
+#|   A gif showing how to distribute columns evenly in Microsoft Word.
+
 knitr::include_graphics("even_columns.gif")
 ```
+:::
 
 In our particular example, there was no need to adjust column widths because all of our text fit into the default widths.
 
 ### Merge cells
 
-Now, we can finally merge some cells so that our title and footnote spread the entire width of the table. We waited until now to merge cells because if we had done so earlier it would have made the previous step (i.e., adjust column widths) more difficult. 
+Now, we can finally merge some cells so that our title and footnote spread the entire width of the table. We waited until now to merge cells because if we had done so earlier it would have made the previous step (i.e., adjusting column widths) more difficult. 
 
-To spread our title out across the entire width of the table, we just need to will select all the cells in the first row, then right click and select `merge cells`. 
+To spread our title out across the entire width of the table, we just need to select all the cells in the first row, then right click and select `merge cells`. 
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-merge-title
 #| echo: false
+#| fig-cap: |
+#|   A gif showing how to merge table cells in Microsoft Word.
+#| fig-alt: |
+#|   A gif showing how to merge table cells in Microsoft Word.
+
 knitr::include_graphics("merge_title.gif")
 ```
+:::
 
 After merging the footnote cells in exactly the same way, your table should look like this:
 
@@ -487,17 +527,33 @@ knitr::include_graphics("make_merged.png")
 
 The final step is to clean up our borders. In my experience, students like to do all kinds of creative things with cell borders. However, when it comes to borders, keeping it simple is usually the best approach. Therefore, we will start by removing _all_ borders in the table. We do so by clicking the little cross with arrowheads that pops up diagonal to the top-left corner of the table when you move your mouse over it. Clicking this button will highlight your entire table. Then, we will click the downward facing arrow next to the `borders` button in the ribbon above your document. Then, we will click the `No Border` option.
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-remove-borders
 #| echo: false
+#| fig-cap: |
+#|   A gif showing how to remove table borders in Microsoft Word.
+#| fig-alt: |
+#|   A gif showing how to remove table borders in Microsoft Word.
+
 knitr::include_graphics("remove_borders.gif")
 ```
+:::
 
-Our final step will be to add a single horizontal border under the title, as single horizontal border under the column header row, and a single horizontal border above the footnotes. We will add the borders by highlighting the correct rows and selecting the correct options for the same `borders` dropdown menu we used above.
+Our final step will be to add a single horizontal border under the title, a single horizontal border under the column header row, and a single horizontal border above the footnotes. We will add the borders by highlighting the correct rows and selecting the correct options for the same `borders` dropdown menu we used above.
 
+::: {.content-visible when-format="html"}
 ```{r}
+#| label: fig-make-borders
 #| echo: false
+#| fig-cap: |
+#|   A gif showing how to add borders to table cells in Microsoft Word.
+#| fig-alt: |
+#|   A gif showing how to add borders to table cells in Microsoft Word.
+
 knitr::include_graphics("make_borders.gif")
 ```
+:::
 
 Notice that there are _no vertical lines (borders) anywhere on our table_. That should almost always be the case for your tables too.
 
